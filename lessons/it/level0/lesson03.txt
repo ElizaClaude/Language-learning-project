@@ -1,0 +1,20 @@
+# Level 0, Lesson 3: Words for Numbers 1-10
+# words and short phrases from Level 1, Lesson 3.  Italian | English
+uno | one
+due | two
+tre | three
+quattro | four
+cinque | five
+sei | six
+sette | seven
+otto | eight
+nove | nine
+dieci | ten
+Quanti? | How many?
+il libro | the book
+l'uccello | the bird
+la mano | the hand
+la matita | the pencil
+la sorella | the sister
+contare | to count
+per favore | please

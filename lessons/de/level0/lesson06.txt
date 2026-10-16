@@ -1,0 +1,21 @@
+# Level 0, Lesson 6: Words for Animals
+# words and short phrases from Level 1, Lesson 6.  German | English
+das Tier | the animal
+der Hund | the dog
+die Katze | the cat
+der Affe | the monkey
+der Panda | the panda
+der Tiger | the tiger
+die Maus | the mouse
+die Ente | the duck
+der Vogel | the bird
+das Pferd | the horse
+der Elefant | the elephant
+der Zoo | the zoo
+lustig | funny
+groß | big
+klein | small
+schwimmen | to swim
+fliegen | to fly
+kann | can
+Was ist das? | What is that?

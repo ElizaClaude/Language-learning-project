@@ -10,6 +10,8 @@ cached in clips/, so re-running only fetches new or changed sentences.
 Run:  C:\\Users\\Eliza\\anaconda3\\python.exe make_lessons.py               (all languages)
       C:\\Users\\Eliza\\anaconda3\\python.exe make_lessons.py zh            (one language)
       C:\\Users\\Eliza\\anaconda3\\python.exe make_lessons.py zh level1     (one level)
+Add --slow to make the slow versions instead (audio/<lang>/slow/...): the foreign voice at
+half of normal speech (-50%, the slowest edge-tts allows), English at its usual speed.
 """
 import asyncio
 import hashlib
@@ -28,6 +30,7 @@ FOREIGN = {"de": ("de-DE-KatjaNeural", "-10%"),
            "zh": ("zh-CN-XiaoxiaoNeural", "-15%"),
            "es": ("es-ES-ElviraNeural", "-10%"),   # Spain Spanish (Eliza, 16 Oct)
            "it": ("it-IT-ElsaNeural", "-10%")}
+SLOW_RATE = "-50%"            # --slow: foreign voice at half speed (edge-tts clamps anything slower)
 ENGLISH_VOICE = "en-US-JennyNeural"
 ENGLISH_RATE = "+0%"
 PAUSE_AFTER_FOREIGN = 2.0     # seconds
@@ -75,10 +78,13 @@ def read_lesson(path):
     return pairs
 
 
-async def make_lesson(lang, path):
-    out = AUDIO / lang / f"{path.parent.name}_{path.stem}.mp3"
+async def make_lesson(lang, path, slow=False):
+    folder = AUDIO / lang / "slow" if slow else AUDIO / lang
+    out = folder / f"{path.parent.name}_{path.stem}.mp3"
     out.parent.mkdir(parents=True, exist_ok=True)
     voice, rate = FOREIGN[lang]
+    if slow:
+        rate = SLOW_RATE
     pieces = []
     for foreign, english in read_lesson(path):
         fo = await speak(foreign, voice, rate)
@@ -86,17 +92,19 @@ async def make_lesson(lang, path):
         pair = [fo, silence(fo, PAUSE_AFTER_FOREIGN), en, silence(en, PAUSE_AFTER_ENGLISH)]
         pieces += pair * REPEATS
     out.write_bytes(b"".join(pieces))
-    print(f"{lang}/{out.name}: {len(pieces) // (4 * REPEATS)} sentences x{REPEATS}, "
+    print(f"{out.relative_to(AUDIO).as_posix()}: {len(pieces) // (4 * REPEATS)} sentences x{REPEATS}, "
           f"{out.stat().st_size / 1e3:.0f} kB")
 
 
 async def main():
     CLIPS.mkdir(exist_ok=True)
-    langs = [sys.argv[1]] if len(sys.argv) > 1 else list(FOREIGN)
-    level = sys.argv[2] if len(sys.argv) > 2 else "level*"
+    slow = "--slow" in sys.argv
+    args = [a for a in sys.argv[1:] if a != "--slow"]
+    langs = [args[0]] if args else list(FOREIGN)
+    level = args[1] if len(args) > 1 else "level*"
     for lang in langs:
         for path in sorted((LESSONS / lang).glob(f"{level}/lesson*.txt")):
-            await make_lesson(lang, path)
+            await make_lesson(lang, path, slow)
 
 
 if __name__ == "__main__":

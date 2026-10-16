@@ -1,0 +1,17 @@
+# Level 0, Lesson 11: Words for Weather
+# words and short phrases from Level 1, Lesson 11.  German | English
+das Wetter | the weather
+heute | today
+die Sonne | the sun
+sonnig | sunny
+bewölkt | cloudy
+Es regnet. | It's raining.
+Es schneit. | It's snowing.
+windig | windy
+heiß | hot
+kalt | cold
+warm | warm
+der Regenschirm | the umbrella
+der Schneemann | the snowman
+bauen | to build
+Wie ist das Wetter? | What's the weather like?

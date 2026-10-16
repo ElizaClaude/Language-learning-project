@@ -1,0 +1,20 @@
+# Level 0, Lesson 3: Words for Numbers 1-10
+# words and short phrases from Level 1, Lesson 3.  German | English
+eins | one
+zwei | two
+drei | three
+vier | four
+fünf | five
+sechs | six
+sieben | seven
+acht | eight
+neun | nine
+zehn | ten
+Wie viele? | How many?
+das Buch, die Bücher | the book, the books
+der Vogel, die Vögel | the bird, the birds
+die Hand, die Hände | the hand, the hands
+der Stift | the pencil
+die Schwester | the sister
+zählen | to count
+bitte | please

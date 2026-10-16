@@ -39,6 +39,8 @@ def main():
                     "n": int(txt.stem[6:]),
                     "title": html.escape(lesson_title(txt)),
                     "file": mp3.relative_to(HERE).as_posix(),
+                    "slow": (slow.relative_to(HERE).as_posix()
+                             if (slow := mp3.parent / "slow" / mp3.name).exists() else None),
                     "dur": round(mp3.stat().st_size * 8 / (KBIT * 1000)),
                     "lines": [[html.escape(f), html.escape(e)] for f, e in read_lesson(txt)],
                 })

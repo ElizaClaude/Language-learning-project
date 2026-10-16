@@ -1,0 +1,21 @@
+# Level 0, Lesson 1: Words for Hello!
+# words and short phrases from Level 1, Lesson 1.  German | English
+Hallo! | Hello!
+Guten Morgen! | Good morning!
+ich | I
+du | you
+er | he
+ich heiße | my name is
+Wie heißt du? | What's your name?
+Wie geht es dir? | How are you?
+gut | good, fine
+danke | thank you
+der Freund | the friend
+Frau Li | Ms Li
+alt | old
+Wie alt bist du? | How old are you?
+sieben Jahre | seven years
+Schön, dich kennenzulernen. | Nice to meet you.
+Auf Wiedersehen! | Goodbye!
+morgen | tomorrow
+Bis morgen! | See you tomorrow!

@@ -1,5 +1,9 @@
 # Syllabus (same topics for every language)
 
+## Level 0 (words first, added 16 Oct after feedback that Level 1 is too hard)
+
+The words and short phrases of each Level 1 lesson, one at a time: Level 0 lesson N = the vocabulary of Level 1 lesson N. Nouns come with their article (der/die/das, el/la, il/la…), so the gender is learned from the start. About 14–20 items per lesson, same format (word, pause, English, pause, twice). Do Level 0 lesson N first, then Level 1 lesson N.
+
 ## Level 1 (like grade 1–2 English listening tests)
 
 Short everyday sentences, present tense, the most common words. Each lesson has about 12–13 sentences and is about 4 minutes long with the repeat.

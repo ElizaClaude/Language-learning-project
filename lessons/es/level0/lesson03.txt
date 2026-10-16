@@ -1,0 +1,20 @@
+# Level 0, Lesson 3: Words for Numbers 1-10
+# words and short phrases from Level 1, Lesson 3.  Spanish (Spain) | English
+uno | one
+dos | two
+tres | three
+cuatro | four
+cinco | five
+seis | six
+siete | seven
+ocho | eight
+nueve | nine
+diez | ten
+¿Cuántos? | How many?
+el libro | the book
+el pájaro | the bird
+la mano | the hand
+el lápiz | the pencil
+la hermana | the sister
+contar | to count
+por favor | please

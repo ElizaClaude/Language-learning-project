@@ -1,0 +1,16 @@
+# Level 0, Lesson 11: Words for Weather
+# words and short phrases from Level 1, Lesson 11.  Spanish (Spain) | English
+el tiempo | the weather
+hoy | today
+el sol | the sun
+Hace sol. | It's sunny.
+nublado | cloudy
+Está lloviendo. | It's raining.
+Está nevando. | It's snowing.
+Hace viento. | It's windy.
+Hace calor. | It's hot.
+Hace frío. | It's cold.
+el paraguas | the umbrella
+el muñeco de nieve | the snowman
+¿Qué tiempo hace? | What's the weather like?
+Sevilla | Seville

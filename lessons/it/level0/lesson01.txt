@@ -1,0 +1,20 @@
+# Level 0, Lesson 1: Words for Hello!
+# words and short phrases from Level 1, Lesson 1.  Italian | English
+Ciao! | Hi!
+Buongiorno! | Good morning!
+io | I
+tu | you
+lui | he
+mi chiamo | my name is
+Come ti chiami? | What's your name?
+Come stai? | How are you?
+bene | well, fine
+grazie | thank you
+l'amico | the friend
+la maestra | the teacher
+Piacere di conoscerti. | Nice to meet you.
+Quanti anni hai? | How old are you?
+sette anni | seven years
+Arrivederci! | Goodbye!
+domani | tomorrow
+A domani! | See you tomorrow!

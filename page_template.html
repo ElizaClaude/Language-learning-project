@@ -156,7 +156,15 @@ input[type="range"] { width: 100%; accent-color: var(--accent); margin: 0; }
 
 <script>
 const DATA = /*DATA*/;
-const SPEEDS = [0.75, 1, 1.25];
+const SPEEDS = [0.5, 0.75, 1, 1.25];   // 0.5 = the slow files: foreign voice at half speed, English normal
+const srcOf = x => (speed === 0.5 && x.slow) ? x.slow : x.file;
+const rateOf = () => speed === 0.5 ? 1 : speed;
+// saved position = fraction of the lesson (0-1), so it fits both the normal and the slow file
+const fracOf = x => { const p = pos[x.file] || 0; return p > 1 ? p / x.dur : p; };
+const savePos = () => {
+  if (!current || !(audio.duration > 0) || !(audio.currentTime > 0)) return;
+  pos[lessonsOf(current.lang)[current.i].file] = audio.currentTime / audio.duration; store.set("pos", pos);
+};
 const $ = id => document.getElementById(id);
 const audio = $("audio");
 
@@ -188,7 +196,7 @@ function render() {
     sec.style.display = "grid"; sec.style.gap = ".6rem";
     const total = lv.lessons.reduce((a, x) => a + x.dur, 0);
     const nDone = lv.lessons.filter(x => done[x.file]).length;
-    sec.innerHTML = `<h2>Level ${lv.level} <small>${lv.lessons.length} lessons · ${Math.round(total / 60)} min · ${nDone} done</small></h2>`;
+    sec.innerHTML = `<h2>Level ${lv.level}${lv.level === 0 ? " · first words" : ""} <small>${lv.lessons.length} lessons · ${Math.round(total / 60)} min · ${nDone} done</small></h2>`;
     const ol = document.createElement("ol"); ol.className = "lessons";
     for (const x of lv.lessons) {
       const idx = i++;
@@ -196,11 +204,11 @@ function render() {
       const b = document.createElement("button");
       b.type = "button"; b.className = "lesson";
       b.setAttribute("aria-current", current && current.lang === lang && current.i === idx);
-      const p = pos[x.file];
+      const p = fracOf(x) * x.dur;
       const state = done[x.file] ? `<span class="state done">✓ done</span>`
         : p > 5 ? `<span class="state">resume ${fmt(p)}</span>` : `<span class="state">${fmt(x.dur)}</span>`;
       b.innerHTML = `<span class="num">${String(x.n).padStart(2, "0")}</span>
-        <span class="t"><b>${x.title}</b><span>${x.lines.length} sentences</span></span>${state}`;
+        <span class="t"><b>${x.title}</b><span>${x.lines.length} ${lv.level === 0 ? "words and phrases" : "sentences"}</span></span>${state}`;
       b.addEventListener("click", () => load(lang, idx, true));
       li.append(b); ol.append(li);
     }
@@ -225,10 +233,10 @@ function load(l, i, play) {
   const x = list[i];
   if (!(current && current.lang === l && current.i === i)) {
     current = { lang: l, i };
-    audio.src = x.file;
-    audio.playbackRate = speed;
-    const start = done[x.file] ? 0 : (pos[x.file] || 0);
-    audio.addEventListener("loadedmetadata", () => { audio.currentTime = Math.min(start, audio.duration - 1); audio.playbackRate = speed; }, { once: true });
+    audio.src = srcOf(x);
+    audio.playbackRate = rateOf();
+    const start = done[x.file] ? 0 : fracOf(x);
+    audio.addEventListener("loadedmetadata", () => { audio.currentTime = Math.min(start * audio.duration, audio.duration - 1); audio.playbackRate = rateOf(); }, { once: true });
     $("now-title").textContent = `${DATA.langs[l].short} · ${x.n}. ${x.title}`;
     if ("mediaSession" in navigator) {
       navigator.mediaSession.metadata = new MediaMetadata({ title: `${x.n}. ${x.title}`, artist: `Two-Voice Lessons · ${DATA.langs[l].label}`, album: "Level 1" });
@@ -245,7 +253,8 @@ function updateButtons() {
   $("next").disabled = !current || current.i >= n - 1;
   for (const id of ["back", "fwd", "seek"]) $(id).disabled = !current;
   $("play").disabled = false;
-  $("speed").textContent = `Speed ${speed}×`;
+  $("speed").textContent = speed === 0.5 ? "Slow 0.5×" : `Speed ${speed}×`;
+  $("speed").title = speed === 0.5 ? "Foreign voice at half speed, English at normal speed" : "Playback speed";
   $("auto").setAttribute("aria-pressed", auto);
   $("text").setAttribute("aria-pressed", showText);
 }
@@ -270,7 +279,18 @@ $("prev").addEventListener("click", () => current && load(current.lang, current.
 $("next").addEventListener("click", () => current && load(current.lang, current.i + 1, true));
 $("seek").addEventListener("input", e => { if (audio.duration) audio.currentTime = e.target.value / 100 * audio.duration; });
 $("speed").addEventListener("click", () => {
-  speed = SPEEDS[(SPEEDS.indexOf(speed) + 1) % SPEEDS.length]; audio.playbackRate = speed; store.set("speed", speed); updateButtons();
+  const x = current && lessonsOf(current.lang)[current.i];
+  const oldSrc = x && srcOf(x);
+  speed = SPEEDS[(SPEEDS.indexOf(speed) + 1) % SPEEDS.length]; store.set("speed", speed);
+  if (x && srcOf(x) !== oldSrc) {            // switch between the normal and the slow file, same place
+    const frac = audio.duration ? audio.currentTime / audio.duration : 0, playing = !audio.paused;
+    audio.src = srcOf(x);
+    audio.addEventListener("loadedmetadata", () => {
+      audio.currentTime = frac * audio.duration; audio.playbackRate = rateOf();
+      if (playing) audio.play().catch(() => {});
+    }, { once: true });
+  }
+  audio.playbackRate = rateOf(); updateButtons();
 });
 $("auto").addEventListener("click", () => { auto = !auto; store.set("auto", auto); updateButtons(); });
 $("text").addEventListener("click", () => { showText = !showText; updateButtons(); renderScript(); });
@@ -290,13 +310,13 @@ audio.addEventListener("timeupdate", () => {
   if (d) $("seek").value = audio.currentTime / d * 100;
   if (current && Date.now() - lastSave > 3000) {
     lastSave = Date.now();
-    pos[lessonsOf(current.lang)[current.i].file] = audio.currentTime; store.set("pos", pos);
+    savePos();
   }
 });
 audio.addEventListener("play", setPlayIcon);
 audio.addEventListener("pause", () => {
   setPlayIcon();
-  if (current) { pos[lessonsOf(current.lang)[current.i].file] = audio.currentTime; store.set("pos", pos); render(); }
+  if (current) { savePos(); render(); }
 });
 audio.addEventListener("ended", () => {
   const list = lessonsOf(current.lang), x = list[current.i];

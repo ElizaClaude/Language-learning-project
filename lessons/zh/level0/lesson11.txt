@@ -1,0 +1,17 @@
+# Level 0, Lesson 11: Words for Weather
+# words and short phrases from Level 1, Lesson 11.  Chinese | English
+天气 | weather
+今天 | today
+晴天 | sunny day
+阴天 | cloudy day
+下雨 | to rain
+下雪 | to snow
+风 | wind
+热 | hot
+冷 | cold
+暖和 | warm
+雨伞 | umbrella
+雪人 | snowman
+堆雪人 | to make a snowman
+怎么样？ | How is it?
+北京 | Beijing

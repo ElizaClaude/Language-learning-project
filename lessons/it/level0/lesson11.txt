@@ -1,0 +1,16 @@
+# Level 0, Lesson 11: Words for Weather
+# words and short phrases from Level 1, Lesson 11.  Italian | English
+il tempo | the weather
+oggi | today
+il sole | the sun
+C'è il sole. | It's sunny.
+nuvoloso | cloudy
+Piove. | It's raining.
+Nevica. | It's snowing.
+C'è vento. | It's windy.
+Fa caldo. | It's hot.
+Fa freddo. | It's cold.
+l'ombrello | the umbrella
+il pupazzo di neve | the snowman
+Che tempo fa? | What's the weather like?
+Roma | Rome
