@@ -1,0 +1,15 @@
+# Level 2, Lesson 5: Seasons and months
+# one sentence per line:  Spanish (Spain) | English
+Hay cuatro estaciones. | There are four seasons.
+En primavera hace buen tiempo. | In spring the weather is nice.
+En verano hace calor. | In summer it's hot.
+En otoño caen las hojas. | In autumn the leaves fall.
+En invierno hace frío. | In winter it's cold.
+¿Qué estación te gusta? | Which season do you like?
+Me gusta el verano porque puedo nadar. | I like summer because I can swim.
+Un año tiene doce meses. | A year has twelve months.
+Enero es el primer mes. | January is the first month.
+La Navidad es en diciembre. | Christmas is in December.
+En agosto estamos de vacaciones. | In August we're on vacation.
+¿En qué mes estamos? | What month is it now?
+Estamos en octubre. | It's October now.

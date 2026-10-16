@@ -1,0 +1,15 @@
+# Level 2, Lesson 2: Days of the week
+# one sentence per line:  Spanish (Spain) | English
+¿Qué día es hoy? | What day is it today?
+Hoy es lunes. | Today is Monday.
+Mañana es martes. | Tomorrow is Tuesday.
+El miércoles tengo música. | On Wednesday I have music.
+El jueves juego al fútbol. | On Thursday I play soccer.
+El viernes es mi día favorito. | Friday is my favorite day.
+El sábado visito a mi abuela. | On Saturday I visit my grandma.
+El domingo duermo hasta tarde. | On Sunday I sleep in.
+¿Qué haces el fin de semana? | What do you do on the weekend?
+Voy al parque. | I go to the park.
+Una semana tiene siete días. | A week has seven days.
+¿Qué clases tienes el lunes? | What classes do you have on Monday?
+Tengo matemáticas e inglés. | I have math and English.

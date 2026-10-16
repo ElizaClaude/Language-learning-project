@@ -1,0 +1,15 @@
+# Level 2, Lesson 11: Feelings and health
+# one sentence per line:  Spanish (Spain) | English
+¿Cómo te sientes? | How do you feel?
+Estoy feliz. | I'm happy.
+Estoy triste. | I'm sad.
+Estoy cansado. | I'm tired.
+Él está enfadado. | He's angry.
+¿Tienes miedo? | Are you scared?
+¿Qué te pasa? | What's wrong?
+Me duele la cabeza. | I have a headache.
+Tengo fiebre. | I have a fever.
+Estoy resfriado. | I have a cold.
+Deberías ir al médico. | You should see a doctor.
+Toma mucha agua y descansa. | Drink lots of water and get some rest.
+¡Que te mejores! | Get well soon!

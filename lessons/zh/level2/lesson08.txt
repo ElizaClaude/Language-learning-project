@@ -1,0 +1,15 @@
+# Level 2, Lesson 8: Jobs
+# one sentence per line:  Chinese | English
+你爸爸是做什么工作的？ | What does your father do?
+他是警察。 | He's a police officer.
+我阿姨是护士。 | My aunt is a nurse.
+我叔叔是厨师。 | My uncle is a cook.
+她在医院工作。 | She works in a hospital.
+他在饭馆工作。 | He works in a restaurant.
+你长大想做什么？ | What do you want to be when you grow up?
+我想当飞行员。 | I want to be a pilot.
+我想当医生。 | I want to be a doctor.
+司机开公共汽车。 | The driver drives the bus.
+农民在地里干活。 | The farmer works in the field.
+老师帮助我们。 | The teacher helps us.
+这是很重要的工作。 | That's important work.

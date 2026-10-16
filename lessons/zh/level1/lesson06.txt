@@ -1,0 +1,15 @@
+# Level 1, Lesson 6: Animals
+# one sentence per line:  Chinese | English
+这是什么？ | What's this?
+这是一只狗。 | It's a dog.
+我有一只猫。 | I have a cat.
+猴子很有趣。 | The monkey is funny.
+熊猫是黑白色的。 | The panda is black and white.
+老虎很大。 | The tiger is big.
+老鼠很小。 | The mouse is small.
+鸭子会游泳。 | The duck can swim.
+小鸟会飞。 | The bird can fly.
+你喜欢马吗？ | Do you like horses?
+是的，我喜欢马。 | Yes, I like horses.
+我们去动物园吧！ | Let's go to the zoo!
+我看到一头大象。 | I can see an elephant.

@@ -1,0 +1,15 @@
+# Level 1, Lesson 7: Food and drinks
+# one sentence per line:  Chinese | English
+我饿了。 | I'm hungry.
+我渴了。 | I'm thirsty.
+你想喝牛奶吗？ | Would you like some milk?
+好的，谢谢。 | Yes, please.
+不用了，谢谢。 | No, thank you.
+你想吃什么？ | What would you like to eat?
+我想吃面条。 | I'd like some noodles.
+我喜欢米饭和鱼。 | I like rice and fish.
+我不喜欢胡萝卜。 | I don't like carrots.
+我可以喝点水吗？ | Can I have some water?
+请给我一个鸡蛋和一杯果汁。 | An egg and a juice, please.
+面包很好吃。 | The bread is delicious.
+请慢用！ | Enjoy your meal!

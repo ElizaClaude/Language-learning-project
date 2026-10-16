@@ -1,0 +1,15 @@
+# Level 1, Lesson 2: Colors
+# one sentence per line:  Italian | English
+Di che colore è? | What color is it?
+È rosso. | It's red.
+La mia palla è blu. | My ball is blue.
+Mi piace il verde. | I like green.
+Qual è il tuo colore preferito? | What's your favorite color?
+Il mio colore preferito è il giallo. | My favorite color is yellow.
+Il gatto è nero. | The cat is black.
+Il cane è bianco. | The dog is white.
+La mela è rossa? | Is the apple red?
+Sì, è rossa. | Yes, it's red.
+No, è verde. | No, it's green.
+Guarda, un arcobaleno! | Look, a rainbow!
+È bellissimo. | It's very beautiful.

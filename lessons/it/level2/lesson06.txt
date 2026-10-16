@@ -1,0 +1,15 @@
+# Level 2, Lesson 6: Shopping
+# one sentence per line:  Italian | English
+Quanto costa? | How much is it?
+Costa due euro. | It's two euros.
+Vorrei questa maglietta. | I'd like this T-shirt.
+Che taglia? | What size?
+Ce l'ha in blu? | Do you have it in blue?
+È troppo cara. | It's too expensive.
+È economica. | It's cheap.
+La prendo. | I'll take it.
+Quanto costano le mele? | How much are the apples?
+Tre euro al chilo. | Three euros a kilo.
+Ecco i soldi. | Here's the money.
+Ecco il resto. | Here's your change.
+Grazie, arrivederci! | Thank you, goodbye!

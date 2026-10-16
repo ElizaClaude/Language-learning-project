@@ -1,0 +1,15 @@
+# Level 2, Lesson 9: Getting around
+# one sentence per line:  German | English
+Wie kommst du zur Schule? | How do you get to school?
+Ich gehe zu Fuß. | I walk.
+Ich fahre mit dem Fahrrad. | I go by bike.
+Mein Vater fährt mit dem Auto zur Arbeit. | My father drives to work.
+Wir fahren mit dem Bus. | We go by bus.
+Die U-Bahn ist schnell. | The subway is fast.
+Wo ist die Bushaltestelle? | Where is the bus stop?
+Geh geradeaus. | Go straight ahead.
+Dann bieg links ab. | Then turn left.
+Dann bieg rechts ab. | Then turn right.
+Ist es weit? | Is it far?
+Nein, es ist ganz nah. | No, it's very close.
+Halt! Die Ampel ist rot. | Stop! The light is red.

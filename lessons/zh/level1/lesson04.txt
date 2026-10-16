@@ -1,0 +1,15 @@
+# Level 1, Lesson 4: My family
+# one sentence per line:  Chinese | English
+这是我的家人。 | This is my family.
+这是我爸爸。 | This is my father.
+这是我妈妈。 | This is my mother.
+这是谁？ | Who is this?
+这是我哥哥。 | This is my older brother.
+这是我姐姐。 | This is my older sister.
+我爷爷年纪很大了。 | My grandpa is old.
+我奶奶喜欢做饭。 | My grandma likes to cook.
+你有哥哥吗？ | Do you have an older brother?
+没有，但是我有一个姐姐。 | No, but I have an older sister.
+我爸爸是医生。 | My father is a doctor.
+我妈妈是老师。 | My mother is a teacher.
+我爱我的家人。 | I love my family.

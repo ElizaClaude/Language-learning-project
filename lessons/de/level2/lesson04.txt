@@ -1,0 +1,15 @@
+# Level 2, Lesson 4: Hobbies
+# one sentence per line:  German | English
+Was ist dein Hobby? | What's your hobby?
+Ich lese gern. | I like reading.
+Ich male gern. | I like drawing.
+Kannst du schwimmen? | Can you swim?
+Ja, ich kann schwimmen. | Yes, I can swim.
+Nein, ich kann nicht schwimmen. | No, I can't swim.
+Ich kann Klavier spielen. | I can play the piano.
+Mein Bruder spielt gern Tischtennis. | My brother likes playing ping-pong.
+Sie singt sehr gut. | She sings very well.
+Wir tanzen gern. | We like dancing.
+Kannst du Fahrrad fahren? | Can you ride a bike?
+Spielen wir zusammen Basketball? | Shall we play basketball together?
+Gute Idee! | Good idea!

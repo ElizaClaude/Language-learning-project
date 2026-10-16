@@ -1,0 +1,15 @@
+# Level 2, Lesson 4: Hobbies
+# one sentence per line:  Chinese | English
+你的爱好是什么？ | What's your hobby?
+我喜欢看书。 | I like reading.
+我喜欢画画。 | I like drawing.
+你会游泳吗？ | Can you swim?
+会，我会游泳。 | Yes, I can swim.
+不会，我不会游泳。 | No, I can't swim.
+我会弹钢琴。 | I can play the piano.
+我哥哥喜欢打乒乓球。 | My older brother likes playing ping-pong.
+她唱歌唱得很好。 | She sings very well.
+我们喜欢跳舞。 | We like dancing.
+你会骑自行车吗？ | Can you ride a bike?
+我们一起打篮球吧？ | Shall we play basketball together?
+好主意！ | Good idea!

@@ -1,0 +1,15 @@
+# Level 2, Lesson 10: Birthdays and dates
+# one sentence per line:  Italian | English
+Quando è il tuo compleanno? | When is your birthday?
+Il mio compleanno è il tre maggio. | My birthday is May third.
+Oggi è il mio compleanno! | Today is my birthday!
+Buon compleanno! | Happy birthday!
+Quanti anni compi? | How old are you turning?
+Compio dieci anni. | I'm turning ten.
+Questo regalo è per te. | This present is for you.
+Grazie! È bellissimo. | Thank you! It's lovely.
+Mangiamo la torta. | Let's eat cake.
+Spegni le candeline! | Blow out the candles!
+Esprimi un desiderio! | Make a wish!
+I miei amici vengono alla mia festa. | My friends are coming to my party.
+Quanti ne abbiamo oggi? | What's the date today?

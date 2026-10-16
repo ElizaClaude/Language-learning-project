@@ -1,0 +1,15 @@
+# Level 2, Lesson 2: Days of the week
+# one sentence per line:  German | English
+Welcher Tag ist heute? | What day is it today?
+Heute ist Montag. | Today is Monday.
+Morgen ist Dienstag. | Tomorrow is Tuesday.
+Am Mittwoch habe ich Musik. | On Wednesday I have music.
+Am Donnerstag spiele ich Fußball. | On Thursday I play soccer.
+Freitag ist mein Lieblingstag. | Friday is my favorite day.
+Am Samstag besuche ich meine Oma. | On Saturday I visit my grandma.
+Am Sonntag schlafe ich lange. | On Sunday I sleep in.
+Was machst du am Wochenende? | What do you do on the weekend?
+Ich gehe in den Park. | I go to the park.
+Eine Woche hat sieben Tage. | A week has seven days.
+Was hast du am Montag? | What classes do you have on Monday?
+Ich habe Mathe und Englisch. | I have math and English.

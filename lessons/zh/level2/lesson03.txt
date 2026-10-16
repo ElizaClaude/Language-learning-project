@@ -1,0 +1,15 @@
+# Level 2, Lesson 3: My home
+# one sentence per line:  Chinese | English
+这是我的家。 | This is my home.
+我家有三个房间。 | My home has three rooms.
+这是客厅。 | This is the living room.
+厨房很大。 | The kitchen is big.
+我的房间很小，但是很漂亮。 | My room is small but nice.
+洗手间在哪儿？ | Where is the bathroom?
+在厨房旁边。 | It's next to the kitchen.
+妈妈在厨房里。 | Mom is in the kitchen.
+爸爸在客厅看电视。 | Dad is watching TV in the living room.
+猫在沙发上睡觉。 | The cat is sleeping on the sofa.
+卧室里有一张床。 | There is a bed in the bedroom.
+有一个窗户和一扇门。 | There is a window and a door.
+请进！ | Come in!

@@ -1,0 +1,15 @@
+# Level 2, Lesson 4: Hobbies
+# one sentence per line:  Spanish (Spain) | English
+¿Cuál es tu afición? | What's your hobby?
+Me gusta leer. | I like reading.
+Me gusta dibujar. | I like drawing.
+¿Sabes nadar? | Can you swim?
+Sí, sé nadar. | Yes, I can swim.
+No, no sé nadar. | No, I can't swim.
+Sé tocar el piano. | I can play the piano.
+A mi hermano le gusta jugar al ping-pong. | My brother likes playing ping-pong.
+Ella canta muy bien. | She sings very well.
+Nos gusta bailar. | We like dancing.
+¿Sabes montar en bici? | Can you ride a bike?
+¿Jugamos al baloncesto juntos? | Shall we play basketball together?
+¡Buena idea! | Good idea!

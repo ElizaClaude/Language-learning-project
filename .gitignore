@@ -1,0 +1,7 @@
+# voice-clip cache: rebuilt by make_lessons.py, no need to store it online
+clips/
+__pycache__/
+# private notes and step reports stay on this PC only
+HANDOFF.md
+reports/
+app.html

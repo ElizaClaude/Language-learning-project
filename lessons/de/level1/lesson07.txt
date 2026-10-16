@@ -1,0 +1,15 @@
+# Level 1, Lesson 7: Food and drinks
+# one sentence per line:  German | English
+Ich habe Hunger. | I'm hungry.
+Ich habe Durst. | I'm thirsty.
+Möchtest du Milch? | Would you like some milk?
+Ja, bitte. | Yes, please.
+Nein, danke. | No, thank you.
+Was möchtest du essen? | What would you like to eat?
+Ich möchte Nudeln. | I'd like some noodles.
+Ich mag Reis und Fisch. | I like rice and fish.
+Ich mag keine Karotten. | I don't like carrots.
+Kann ich Wasser haben? | Can I have some water?
+Ein Ei und einen Saft, bitte. | An egg and a juice, please.
+Das Brot ist lecker. | The bread is delicious.
+Guten Appetit! | Enjoy your meal!

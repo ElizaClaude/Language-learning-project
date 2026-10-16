@@ -1,0 +1,15 @@
+# Level 1, Lesson 12: Clothes
+# one sentence per line:  Chinese | English
+我戴着一顶帽子。 | I'm wearing a hat.
+这是我的新连衣裙。 | This is my new dress.
+你的衬衫很好看。 | Your shirt is nice.
+我的T恤是黄色的。 | My T-shirt is yellow.
+我的袜子是蓝色的。 | My socks are blue.
+我的鞋子在哪儿？ | Where are my shoes?
+在床底下。 | They're under the bed.
+这是你的裤子吗？ | Are these your pants?
+不是，这是我哥哥的。 | No, they're my brother's.
+这条裙子太短了。 | The skirt is too short.
+穿上你的外套。 | Put on your jacket.
+戴上帽子，天很冷。 | Put on your hat, it's cold.
+把鞋脱掉。 | Take off your shoes.

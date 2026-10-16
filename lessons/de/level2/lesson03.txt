@@ -1,0 +1,15 @@
+# Level 2, Lesson 3: My home
+# one sentence per line:  German | English
+Das ist unser Haus. | This is our house.
+Unsere Wohnung hat drei Zimmer. | Our apartment has three rooms.
+Das ist das Wohnzimmer. | This is the living room.
+Die Küche ist groß. | The kitchen is big.
+Mein Zimmer ist klein, aber schön. | My room is small but nice.
+Wo ist das Badezimmer? | Where is the bathroom?
+Es ist neben der Küche. | It's next to the kitchen.
+Meine Mutter ist in der Küche. | My mother is in the kitchen.
+Mein Vater sieht im Wohnzimmer fern. | My father is watching TV in the living room.
+Die Katze schläft auf dem Sofa. | The cat is sleeping on the sofa.
+Im Schlafzimmer steht ein Bett. | There is a bed in the bedroom.
+Es gibt ein Fenster und eine Tür. | There is a window and a door.
+Komm herein! | Come in!

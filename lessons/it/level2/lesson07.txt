@@ -1,0 +1,15 @@
+# Level 2, Lesson 7: At a restaurant
+# one sentence per line:  Italian | English
+Ho tanta fame. | I'm very hungry.
+Andiamo al ristorante! | Let's go to a restaurant!
+Cosa prendete? | What would you like to order?
+Per me una minestra. | A soup for me.
+E per me pollo con riso. | And chicken with rice for me.
+Cosa volete da bere? | What would you like to drink?
+Un succo d'arancia, per favore. | An orange juice, please.
+È buonissimo! | This is delicious!
+Sono pieno. | I'm full.
+Il conto, per favore. | The check, please.
+Sono venti euro. | That's twenty euros.
+Mi piace la pizza margherita. | I like margherita pizza.
+Una forchetta e un coltello, per favore. | A fork and a knife, please.

@@ -1,0 +1,15 @@
+# Level 2, Lesson 1: Time and my day
+# one sentence per line:  Chinese | English
+现在几点了？ | What time is it now?
+现在七点。 | It's seven o'clock.
+现在七点半。 | It's half past seven.
+我七点起床。 | I get up at seven.
+我七点半吃早饭。 | I have breakfast at seven thirty.
+我八点去上学。 | I go to school at eight.
+八点一刻上课。 | Class starts at a quarter past eight.
+我十二点吃午饭。 | I have lunch at twelve.
+我四点回家。 | I come home at four.
+然后我做作业。 | Then I do my homework.
+我们六点吃晚饭。 | We have dinner at six.
+我九点睡觉。 | I go to bed at nine.
+快点儿，要迟到了！ | Hurry up, we're going to be late!

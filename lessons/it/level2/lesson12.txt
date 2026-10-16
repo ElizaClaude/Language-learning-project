@@ -1,0 +1,15 @@
+# Level 2, Lesson 12: Yesterday
+# one sentence per line:  Italian | English
+Cosa hai fatto ieri? | What did you do yesterday?
+Ho giocato a calcio. | I played soccer.
+Ho letto un libro. | I read a book.
+Siamo andati allo zoo. | We went to the zoo.
+Sono andato dalla nonna. | I went to my grandma's.
+Abbiamo mangiato la pasta. | We ate pasta.
+Ho visto un film. | I watched a movie.
+È stato molto divertente. | It was a lot of fun.
+Dove sei stato nel fine settimana? | Where were you on the weekend?
+Sono stato al parco. | I was at the park.
+Ha fatto bel tempo. | The weather was nice.
+Hai fatto i compiti? | Did you do your homework?
+Sì, ho già finito! | Yes, I'm already done!

@@ -1,0 +1,15 @@
+# Level 1, Lesson 1: Hello! (greetings, names, age)
+# one sentence per line:  Chinese | English
+你好！我叫汤姆。 | Hello! My name is Tom.
+你叫什么名字？ | What's your name?
+我叫安娜。 | My name is Anna.
+早上好，李老师。 | Good morning, Teacher Li.
+你好吗？ | How are you?
+我很好，谢谢。 | I'm fine, thank you.
+这是我的朋友。 | This is my friend.
+他叫本。 | His name is Ben.
+很高兴认识你。 | Nice to meet you.
+你几岁了？ | How old are you?
+我七岁了。 | I'm seven years old.
+再见！ | Goodbye!
+明天见！ | See you tomorrow!

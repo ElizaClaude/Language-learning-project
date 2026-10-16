@@ -1,0 +1,15 @@
+# Level 1, Lesson 12: Clothes
+# one sentence per line:  German | English
+Ich trage einen Hut. | I'm wearing a hat.
+Das ist mein neues Kleid. | This is my new dress.
+Dein Hemd ist schön. | Your shirt is nice.
+Mein T-Shirt ist gelb. | My T-shirt is yellow.
+Meine Socken sind blau. | My socks are blue.
+Wo sind meine Schuhe? | Where are my shoes?
+Sie sind unter dem Bett. | They're under the bed.
+Ist das deine Hose? | Are these your pants?
+Nein, das ist die Hose von meinem Bruder. | No, they're my brother's.
+Der Rock ist zu kurz. | The skirt is too short.
+Zieh deine Jacke an. | Put on your jacket.
+Zieh deine Mütze an, es ist kalt. | Put on your hat, it's cold.
+Zieh deine Schuhe aus. | Take off your shoes.

@@ -1,0 +1,15 @@
+# Level 1, Lesson 5: My body
+# one sentence per line:  Italian | English
+Questa è la mia testa. | This is my head.
+Ho due occhi. | I have two eyes.
+Ho un naso e una bocca. | I have a nose and a mouth.
+Toccati le orecchie. | Touch your ears.
+Alza la mano. | Raise your hand.
+Batti le mani! | Clap your hands!
+Batti i piedi! | Stamp your feet!
+Chiudi gli occhi. | Close your eyes.
+Apri la bocca. | Open your mouth.
+Lavati le mani. | Wash your hands.
+Mi fa male la gamba. | My leg hurts.
+L'elefante ha le orecchie grandi. | The elephant has big ears.
+Il coniglio ha le orecchie lunghe. | The rabbit has long ears.

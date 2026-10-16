@@ -1,0 +1,15 @@
+# Level 2, Lesson 9: Getting around
+# one sentence per line:  Spanish (Spain) | English
+¿Cómo vas a la escuela? | How do you get to school?
+Voy andando. | I walk.
+Voy en bicicleta. | I go by bike.
+Mi papá va al trabajo en coche. | My father drives to work.
+Vamos en autobús. | We go by bus.
+El metro es rápido. | The subway is fast.
+¿Dónde está la parada del autobús? | Where is the bus stop?
+Sigue recto. | Go straight ahead.
+Luego gira a la izquierda. | Then turn left.
+Luego gira a la derecha. | Then turn right.
+¿Está lejos? | Is it far?
+No, está muy cerca. | No, it's very close.
+¡Alto! El semáforo está en rojo. | Stop! The light is red.

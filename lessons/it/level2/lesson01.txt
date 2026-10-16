@@ -1,0 +1,15 @@
+# Level 2, Lesson 1: Time and my day
+# one sentence per line:  Italian | English
+Che ore sono? | What time is it?
+Sono le sette. | It's seven o'clock.
+Sono le sette e mezza. | It's half past seven.
+Mi alzo alle sette. | I get up at seven.
+Faccio colazione alle sette e mezza. | I have breakfast at seven thirty.
+Vado a scuola alle otto. | I go to school at eight.
+La lezione comincia alle otto e un quarto. | Class starts at a quarter past eight.
+Pranzo all'una. | I have lunch at one.
+Torno a casa alle quattro. | I come home at four.
+Poi faccio i compiti. | Then I do my homework.
+Ceniamo alle otto. | We have dinner at eight.
+Vado a letto alle nove e mezza. | I go to bed at half past nine.
+Sbrigati, è tardi! | Hurry up, it's late!

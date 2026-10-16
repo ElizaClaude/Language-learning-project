@@ -1,0 +1,14 @@
+# Level 1, Lesson 11: Weather
+# one sentence per line:  Italian | English
+Che tempo fa oggi? | What's the weather like today?
+C'è il sole. | It's sunny.
+È nuvoloso. | It's cloudy.
+Piove. | It's raining.
+Nevica! | It's snowing!
+C'è vento. | It's windy.
+Fa caldo. | It's hot.
+Fa freddo. | It's cold.
+Fa caldo a Roma? | Is it hot in Rome?
+Sì, fa molto caldo. | Yes, it's very hot.
+Prendi l'ombrello. | Take your umbrella.
+Facciamo un pupazzo di neve! | Let's make a snowman!

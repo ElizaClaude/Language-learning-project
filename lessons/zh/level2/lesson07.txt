@@ -1,0 +1,15 @@
+# Level 2, Lesson 7: At a restaurant
+# one sentence per line:  Chinese | English
+我很饿。 | I'm very hungry.
+我们去饭馆吧！ | Let's go to a restaurant!
+你们想点什么？ | What would you like to order?
+我要一碗汤。 | I'd like a bowl of soup.
+我要鸡肉和米饭。 | I'd like chicken and rice.
+你们想喝点什么？ | Would you like something to drink?
+请给我一杯橙汁。 | A glass of orange juice, please.
+真好吃！ | This is delicious!
+我吃饱了。 | I'm full.
+服务员，买单！ | Waiter, the check please!
+一共二十块。 | That's twenty yuan in total.
+我会用筷子。 | I can use chopsticks.
+请给我一把勺子。 | A spoon, please.

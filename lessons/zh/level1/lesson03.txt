@@ -1,0 +1,14 @@
+# Level 1, Lesson 3: Numbers 1-10
+# one sentence per line:  Chinese | English
+一，二，三，四，五。 | One, two, three, four, five.
+六，七，八，九，十。 | Six, seven, eight, nine, ten.
+跟我一起数！ | Count with me!
+你有几本书？ | How many books do you have?
+我有三本书。 | I have three books.
+你看到几只鸟？ | How many birds can you see?
+我看到四只鸟。 | I can see four birds.
+我有两只手。 | I have two hands.
+这里有五支铅笔。 | Here are five pencils.
+你妹妹几岁？ | How old is your little sister?
+她九岁。 | She's nine.
+请给我十个苹果。 | Ten apples, please.

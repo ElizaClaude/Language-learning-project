@@ -1,0 +1,15 @@
+# Level 1, Lesson 10: Toys
+# one sentence per line:  Italian | English
+È la tua macchinina? | Is this your toy car?
+No, è la sua macchinina. | No, it's his car.
+Ho un orsacchiotto. | I have a teddy bear.
+La mia bambola è bella. | My doll is beautiful.
+Dov'è la mia palla? | Where is my ball?
+È sotto la sedia. | It's under the chair.
+È sul tavolo. | It's on the table.
+La barca è nella scatola. | The boat is in the box.
+Il mio aquilone vola alto. | My kite flies high.
+Posso giocare con te? | May I play with you?
+Sì, certo! | Yes, of course!
+Giochiamo! | Let's play!
+Metti a posto i tuoi giocattoli. | Put away your toys.

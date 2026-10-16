@@ -1,0 +1,15 @@
+# Level 2, Lesson 9: Getting around
+# one sentence per line:  Italian | English
+Come vai a scuola? | How do you get to school?
+Vado a piedi. | I walk.
+Vado in bicicletta. | I go by bike.
+Mio papà va al lavoro in macchina. | My father drives to work.
+Andiamo in autobus. | We go by bus.
+La metropolitana è veloce. | The subway is fast.
+Dov'è la fermata dell'autobus? | Where is the bus stop?
+Vai sempre dritto. | Go straight ahead.
+Poi gira a sinistra. | Then turn left.
+Poi gira a destra. | Then turn right.
+È lontano? | Is it far?
+No, è vicinissimo. | No, it's very close.
+Fermo! Il semaforo è rosso. | Stop! The light is red.

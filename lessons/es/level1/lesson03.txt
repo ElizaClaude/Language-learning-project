@@ -1,0 +1,14 @@
+# Level 1, Lesson 3: Numbers 1-10
+# one sentence per line:  Spanish (Spain) | English
+Uno, dos, tres, cuatro, cinco. | One, two, three, four, five.
+Seis, siete, ocho, nueve, diez. | Six, seven, eight, nine, ten.
+¡Cuenta conmigo! | Count with me!
+¿Cuántos libros tienes? | How many books do you have?
+Tengo tres libros. | I have three books.
+¿Cuántos pájaros ves? | How many birds can you see?
+Veo cuatro pájaros. | I can see four birds.
+Tengo dos manos. | I have two hands.
+Aquí hay cinco lápices. | Here are five pencils.
+¿Cuántos años tiene tu hermana? | How old is your sister?
+Tiene nueve años. | She's nine.
+Diez manzanas, por favor. | Ten apples, please.

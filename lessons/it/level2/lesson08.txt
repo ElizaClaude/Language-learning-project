@@ -1,0 +1,15 @@
+# Level 2, Lesson 8: Jobs
+# one sentence per line:  Italian | English
+Che lavoro fa tuo papà? | What does your father do?
+Fa il poliziotto. | He's a police officer.
+Mia zia fa l'infermiera. | My aunt is a nurse.
+Mio zio fa il cuoco. | My uncle is a cook.
+Lei lavora in ospedale. | She works in a hospital.
+Lui lavora in un ristorante. | He works in a restaurant.
+Cosa vuoi fare da grande? | What do you want to be when you grow up?
+Voglio fare il pilota. | I want to be a pilot.
+Voglio fare la dottoressa. | I want to be a doctor.
+L'autista guida l'autobus. | The driver drives the bus.
+Il contadino lavora nei campi. | The farmer works in the fields.
+La maestra ci aiuta. | The teacher helps us.
+È un lavoro importante. | That's important work.

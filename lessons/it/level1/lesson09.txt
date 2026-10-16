@@ -1,0 +1,15 @@
+# Level 1, Lesson 9: Fruit
+# one sentence per line:  Italian | English
+Mi piacciono le mele. | I like apples.
+Ti piacciono le banane? | Do you like bananas?
+Sì, mi piacciono. | Yes, I do.
+L'arancia è dolce. | The orange is sweet.
+Il limone è aspro. | The lemon is sour.
+Quante pere ci sono? | How many pears?
+Sei pere. | Six pears.
+L'uva è viola. | The grapes are purple.
+Le fragole sono rosse. | Strawberries are red.
+Vorrei un'anguria. | I'd like a watermelon.
+Tieni, una pesca per te. | Here's a peach for you.
+Grazie mille! | Thank you very much!
+La frutta fa bene. | Fruit is good for you.

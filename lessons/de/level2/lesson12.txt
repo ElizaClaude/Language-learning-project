@@ -1,0 +1,15 @@
+# Level 2, Lesson 12: Yesterday
+# one sentence per line:  German | English
+Was hast du gestern gemacht? | What did you do yesterday?
+Ich habe Fußball gespielt. | I played soccer.
+Ich habe ein Buch gelesen. | I read a book.
+Wir sind in den Zoo gegangen. | We went to the zoo.
+Ich habe meine Oma besucht. | I visited my grandma.
+Wir haben Nudeln gegessen. | We ate noodles.
+Ich habe einen Film gesehen. | I watched a movie.
+Es hat viel Spaß gemacht. | It was a lot of fun.
+Wo warst du am Wochenende? | Where were you on the weekend?
+Ich war im Park. | I was at the park.
+Das Wetter war schön. | The weather was nice.
+Hast du deine Hausaufgaben gemacht? | Did you do your homework?
+Ja, schon fertig! | Yes, already done!

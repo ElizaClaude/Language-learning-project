@@ -1,0 +1,15 @@
+# Level 2, Lesson 12: Yesterday
+# one sentence per line:  Spanish (Spain) | English
+¿Qué hiciste ayer? | What did you do yesterday?
+Jugué al fútbol. | I played soccer.
+Leí un libro. | I read a book.
+Fuimos al zoológico. | We went to the zoo.
+Visité a mi abuela. | I visited my grandma.
+Comimos paella. | We ate paella.
+Vi una película. | I watched a movie.
+Fue muy divertido. | It was a lot of fun.
+¿Dónde estuviste el fin de semana? | Where were you on the weekend?
+Estuve en el parque. | I was at the park.
+Hizo buen tiempo. | The weather was nice.
+¿Hiciste la tarea? | Did you do your homework?
+¡Sí, ya terminé! | Yes, I'm already done!

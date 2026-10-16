@@ -1,0 +1,14 @@
+# Level 1, Lesson 3: Numbers 1-10
+# one sentence per line:  Italian | English
+Uno, due, tre, quattro, cinque. | One, two, three, four, five.
+Sei, sette, otto, nove, dieci. | Six, seven, eight, nine, ten.
+Conta con me! | Count with me!
+Quanti libri hai? | How many books do you have?
+Ho tre libri. | I have three books.
+Quanti uccelli vedi? | How many birds can you see?
+Vedo quattro uccelli. | I can see four birds.
+Ho due mani. | I have two hands.
+Ecco cinque matite. | Here are five pencils.
+Quanti anni ha tua sorella? | How old is your sister?
+Ha nove anni. | She's nine.
+Dieci mele, per favore. | Ten apples, please.

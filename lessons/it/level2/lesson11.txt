@@ -1,0 +1,15 @@
+# Level 2, Lesson 11: Feelings and health
+# one sentence per line:  Italian | English
+Come ti senti? | How do you feel?
+Sono felice. | I'm happy.
+Sono triste. | I'm sad.
+Sono stanco. | I'm tired.
+Lui è arrabbiato. | He's angry.
+Hai paura? | Are you scared?
+Cosa c'è? | What's wrong?
+Ho mal di testa. | I have a headache.
+Ho la febbre. | I have a fever.
+Ho il raffreddore. | I have a cold.
+Dovresti andare dal medico. | You should see a doctor.
+Bevi tanta acqua e riposati. | Drink lots of water and get some rest.
+Guarisci presto! | Get well soon!

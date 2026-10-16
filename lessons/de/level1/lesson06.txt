@@ -1,0 +1,15 @@
+# Level 1, Lesson 6: Animals
+# one sentence per line:  German | English
+Was ist das? | What's this?
+Das ist ein Hund. | It's a dog.
+Ich habe eine Katze. | I have a cat.
+Der Affe ist lustig. | The monkey is funny.
+Der Panda ist schwarz und weiß. | The panda is black and white.
+Der Tiger ist groß. | The tiger is big.
+Die Maus ist klein. | The mouse is small.
+Die Ente kann schwimmen. | The duck can swim.
+Der Vogel kann fliegen. | The bird can fly.
+Magst du Pferde? | Do you like horses?
+Ja, ich mag Pferde. | Yes, I like horses.
+Gehen wir in den Zoo! | Let's go to the zoo!
+Ich sehe einen Elefanten. | I can see an elephant.

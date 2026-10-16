@@ -1,0 +1,15 @@
+# Level 2, Lesson 2: Days of the week
+# one sentence per line:  Chinese | English
+今天星期几？ | What day is it today?
+今天星期一。 | Today is Monday.
+明天星期二。 | Tomorrow is Tuesday.
+星期三我有音乐课。 | On Wednesday I have music class.
+星期四我踢足球。 | On Thursday I play soccer.
+我最喜欢星期五。 | Friday is my favorite day.
+星期六我去看奶奶。 | On Saturday I visit my grandma.
+星期天我睡懒觉。 | On Sunday I sleep in.
+你周末做什么？ | What do you do on the weekend?
+我去公园。 | I go to the park.
+一个星期有七天。 | A week has seven days.
+星期一你有什么课？ | What classes do you have on Monday?
+我有数学课和英语课。 | I have math and English.

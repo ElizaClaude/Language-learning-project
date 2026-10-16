@@ -1,0 +1,14 @@
+# Level 1, Lesson 11: Weather
+# one sentence per line:  Spanish (Spain) | English
+¿Qué tiempo hace hoy? | What's the weather like today?
+Hace sol. | It's sunny.
+Está nublado. | It's cloudy.
+Está lloviendo. | It's raining.
+¡Está nevando! | It's snowing!
+Hace viento. | It's windy.
+Hace calor. | It's hot.
+Hace frío. | It's cold.
+¿Hace calor en Sevilla? | Is it hot in Seville?
+Sí, hace mucho calor. | Yes, it's very hot.
+Coge el paraguas. | Take your umbrella.
+¡Hagamos un muñeco de nieve! | Let's make a snowman!

@@ -1,0 +1,15 @@
+# Level 1, Lesson 12: Clothes
+# one sentence per line:  Italian | English
+Porto un cappello. | I'm wearing a hat.
+Questo è il mio vestito nuovo. | This is my new dress.
+La tua camicia è bella. | Your shirt is nice.
+La mia maglietta è gialla. | My T-shirt is yellow.
+I miei calzini sono blu. | My socks are blue.
+Dove sono le mie scarpe? | Where are my shoes?
+Sono sotto il letto. | They're under the bed.
+Sono i tuoi pantaloni? | Are these your pants?
+No, sono di mio fratello. | No, they're my brother's.
+La gonna è troppo corta. | The skirt is too short.
+Mettiti la giacca. | Put on your jacket.
+Mettiti il berretto, fa freddo. | Put on your hat, it's cold.
+Togliti le scarpe. | Take off your shoes.

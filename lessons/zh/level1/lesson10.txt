@@ -1,0 +1,15 @@
+# Level 1, Lesson 10: Toys
+# one sentence per line:  Chinese | English
+这是你的小汽车吗？ | Is this your toy car?
+不，这是他的小汽车。 | No, it's his car.
+我有一只泰迪熊。 | I have a teddy bear.
+我的娃娃很漂亮。 | My doll is beautiful.
+我的球在哪儿？ | Where is my ball?
+在椅子下面。 | It's under the chair.
+在桌子上。 | It's on the table.
+小船在箱子里。 | The boat is in the box.
+我的风筝飞得很高。 | My kite flies high.
+我可以和你一起玩吗？ | May I play with you?
+当然可以！ | Yes, of course!
+我们一起玩吧！ | Let's play!
+把你的玩具收好。 | Put away your toys.

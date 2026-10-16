@@ -1,0 +1,15 @@
+# Level 1, Lesson 2: Colors
+# one sentence per line:  German | English
+Welche Farbe ist das? | What color is this?
+Das ist rot. | It's red.
+Mein Ball ist blau. | My ball is blue.
+Ich mag Grün. | I like green.
+Was ist deine Lieblingsfarbe? | What's your favorite color?
+Meine Lieblingsfarbe ist Gelb. | My favorite color is yellow.
+Die Katze ist schwarz. | The cat is black.
+Der Hund ist weiß. | The dog is white.
+Ist der Apfel rot? | Is the apple red?
+Ja, er ist rot. | Yes, it's red.
+Nein, er ist grün. | No, it's green.
+Schau, ein Regenbogen! | Look, a rainbow!
+Er ist sehr schön. | It's very beautiful.

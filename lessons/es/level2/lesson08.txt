@@ -1,0 +1,15 @@
+# Level 2, Lesson 8: Jobs
+# one sentence per line:  Spanish (Spain) | English
+¿En qué trabaja tu papá? | What does your father do?
+Es policía. | He's a police officer.
+Mi tía es enfermera. | My aunt is a nurse.
+Mi tío es cocinero. | My uncle is a cook.
+Ella trabaja en un hospital. | She works in a hospital.
+Él trabaja en un restaurante. | He works in a restaurant.
+¿Qué quieres ser de grande? | What do you want to be when you grow up?
+Quiero ser piloto. | I want to be a pilot.
+Quiero ser médica. | I want to be a doctor.
+El conductor conduce el autobús. | The driver drives the bus.
+El agricultor trabaja en el campo. | The farmer works in the field.
+La maestra nos ayuda. | The teacher helps us.
+Es un trabajo importante. | That's important work.

@@ -1,0 +1,15 @@
+# Level 1, Lesson 8: At school
+# one sentence per line:  Chinese | English
+这是我的学校。 | This is my school.
+我们在一年级。 | We're in Grade One.
+这是我们的老师。 | This is our teacher.
+请起立。 | Stand up, please.
+请坐。 | Sit down, please.
+打开你们的书。 | Open your books.
+我有一支铅笔。 | I have a pencil.
+我有一把尺子。 | I have a ruler.
+这是你的橡皮吗？ | Is this your eraser?
+是的，是我的。 | Yes, it's mine.
+我的钢笔在哪儿？ | Where is my pen?
+在你的书包里。 | It's in your bag.
+我的书包是新的。 | My schoolbag is new.

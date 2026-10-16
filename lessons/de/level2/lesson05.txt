@@ -1,0 +1,15 @@
+# Level 2, Lesson 5: Seasons and months
+# one sentence per line:  German | English
+Es gibt vier Jahreszeiten. | There are four seasons.
+Im Frühling ist es warm. | In spring it's warm.
+Im Sommer ist es heiß. | In summer it's hot.
+Im Herbst fallen die Blätter. | In autumn the leaves fall.
+Im Winter ist es kalt und es schneit. | In winter it's cold and it snows.
+Welche Jahreszeit magst du? | Which season do you like?
+Ich mag den Sommer, denn ich kann schwimmen. | I like summer because I can swim.
+Ein Jahr hat zwölf Monate. | A year has twelve months.
+Januar ist der erste Monat. | January is the first month.
+Im Dezember ist Weihnachten. | Christmas is in December.
+Im Juli haben wir Ferien. | We have vacation in July.
+Welcher Monat ist jetzt? | What month is it now?
+Jetzt ist Oktober. | It's October now.

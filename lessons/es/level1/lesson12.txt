@@ -1,0 +1,15 @@
+# Level 1, Lesson 12: Clothes
+# one sentence per line:  Spanish (Spain) | English
+Llevo un sombrero. | I'm wearing a hat.
+Este es mi vestido nuevo. | This is my new dress.
+Tu camisa es bonita. | Your shirt is nice.
+Mi camiseta es amarilla. | My T-shirt is yellow.
+Mis calcetines son azules. | My socks are blue.
+¿Dónde están mis zapatos? | Where are my shoes?
+Están debajo de la cama. | They're under the bed.
+¿Son tus pantalones? | Are these your pants?
+No, son de mi hermano. | No, they're my brother's.
+La falda es demasiado corta. | The skirt is too short.
+Ponte la chaqueta. | Put on your jacket.
+Ponte el gorro, hace frío. | Put on your hat, it's cold.
+Quítate los zapatos. | Take off your shoes.

@@ -1,0 +1,15 @@
+# Level 2, Lesson 5: Seasons and months
+# one sentence per line:  Chinese | English
+一年有四个季节。 | There are four seasons in a year.
+春天很暖和。 | Spring is warm.
+夏天很热。 | Summer is hot.
+秋天树叶落了。 | In autumn the leaves fall.
+冬天很冷，会下雪。 | Winter is cold, and it snows.
+你喜欢哪个季节？ | Which season do you like?
+我喜欢夏天，因为我可以游泳。 | I like summer because I can swim.
+一年有十二个月。 | A year has twelve months.
+一月是第一个月。 | January is the first month.
+春节一般在一月或者二月。 | Chinese New Year is usually in January or February.
+七月我们放暑假。 | We have summer vacation in July.
+现在是几月？ | What month is it now?
+现在是十月。 | It's October now.

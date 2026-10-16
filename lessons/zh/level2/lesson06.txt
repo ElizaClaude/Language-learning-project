@@ -1,0 +1,15 @@
+# Level 2, Lesson 6: Shopping
+# one sentence per line:  Chinese | English
+这个多少钱？ | How much is this?
+两块钱。 | It's two yuan.
+我想要这件T恤。 | I'd like this T-shirt.
+你要多大号的？ | What size do you want?
+有蓝色的吗？ | Do you have it in blue?
+太贵了。 | It's too expensive.
+很便宜。 | It's cheap.
+我买了。 | I'll take it.
+苹果多少钱一斤？ | How much are the apples per half kilo?
+三块钱一斤。 | Three yuan per half kilo.
+给你钱。 | Here's the money.
+找你五块。 | Here's five yuan change.
+谢谢，再见！ | Thank you, goodbye!

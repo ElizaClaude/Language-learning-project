@@ -1,0 +1,15 @@
+# Level 1, Lesson 1: Hello!
+# one sentence per line:  Italian | English
+Ciao! Mi chiamo Tom. | Hello! My name is Tom.
+Come ti chiami? | What's your name?
+Mi chiamo Anna. | My name is Anna.
+Buongiorno, maestra Li. | Good morning, Ms Li.
+Come stai? | How are you?
+Sto bene, grazie. | I'm fine, thank you.
+Questo è il mio amico. | This is my friend.
+Si chiama Ben. | His name is Ben.
+Piacere di conoscerti. | Nice to meet you.
+Quanti anni hai? | How old are you?
+Ho sette anni. | I'm seven years old.
+Arrivederci! | Goodbye!
+A domani! | See you tomorrow!

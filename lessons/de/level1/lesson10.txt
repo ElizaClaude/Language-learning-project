@@ -1,0 +1,15 @@
+# Level 1, Lesson 10: Toys
+# one sentence per line:  German | English
+Ist das dein Auto? | Is this your car?
+Nein, das ist sein Auto. | No, it's his car.
+Ich habe einen Teddybär. | I have a teddy bear.
+Meine Puppe ist schön. | My doll is beautiful.
+Wo ist mein Ball? | Where is my ball?
+Er ist unter dem Stuhl. | It's under the chair.
+Er ist auf dem Tisch. | It's on the table.
+Das Boot ist in der Kiste. | The boat is in the box.
+Mein Drachen fliegt hoch. | My kite flies high.
+Darf ich mit dir spielen? | May I play with you?
+Ja, natürlich! | Yes, of course!
+Lass uns spielen! | Let's play!
+Räum deine Spielsachen auf. | Put away your toys.

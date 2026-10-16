@@ -1,0 +1,14 @@
+# Level 1, Lesson 11: Weather
+# one sentence per line:  German | English
+Wie ist das Wetter heute? | What's the weather like today?
+Es ist sonnig. | It's sunny.
+Es ist bewölkt. | It's cloudy.
+Es regnet. | It's raining.
+Es schneit! | It's snowing!
+Es ist windig. | It's windy.
+Es ist heiß. | It's hot.
+Es ist kalt. | It's cold.
+Ist es warm in Peking? | Is it warm in Beijing?
+Ja, es ist warm. | Yes, it's warm.
+Nimm deinen Regenschirm. | Take your umbrella.
+Lass uns einen Schneemann bauen! | Let's make a snowman!

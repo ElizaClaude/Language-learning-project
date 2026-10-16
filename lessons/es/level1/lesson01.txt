@@ -1,0 +1,15 @@
+# Level 1, Lesson 1: Hello!
+# one sentence per line:  Spanish (Spain) | English
+¡Hola! Me llamo Tom. | Hello! My name is Tom.
+¿Cómo te llamas? | What's your name?
+Me llamo Ana. | My name is Ana.
+Buenos días, maestra Li. | Good morning, Ms Li.
+¿Cómo estás? | How are you?
+Estoy bien, gracias. | I'm fine, thank you.
+Este es mi amigo. | This is my friend.
+Se llama Ben. | His name is Ben.
+Mucho gusto. | Nice to meet you.
+¿Cuántos años tienes? | How old are you?
+Tengo siete años. | I'm seven years old.
+¡Adiós! | Goodbye!
+¡Hasta mañana! | See you tomorrow!

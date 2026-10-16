@@ -1,0 +1,15 @@
+# Level 1, Lesson 8: At school
+# one sentence per line:  German | English
+Das ist meine Schule. | This is my school.
+Wir sind in Klasse eins. | We're in Class One.
+Das ist unsere Lehrerin. | This is our teacher.
+Steht bitte auf. | Stand up, please.
+Setzt euch, bitte. | Sit down, please.
+Öffnet eure Bücher. | Open your books.
+Ich habe einen Bleistift. | I have a pencil.
+Ich habe ein Lineal. | I have a ruler.
+Ist das dein Radiergummi? | Is this your eraser?
+Ja, er gehört mir. | Yes, it's mine.
+Wo ist mein Kugelschreiber? | Where is my pen?
+Er ist in deiner Tasche. | It's in your bag.
+Meine Schultasche ist neu. | My schoolbag is new.

@@ -1,0 +1,15 @@
+# Level 1, Lesson 5: My body
+# one sentence per line:  Chinese | English
+这是我的头。 | This is my head.
+我有两只眼睛。 | I have two eyes.
+我有一个鼻子和一张嘴。 | I have a nose and a mouth.
+摸摸你的耳朵。 | Touch your ears.
+举起你的手。 | Raise your hand.
+拍拍手！ | Clap your hands!
+跺跺脚！ | Stamp your feet!
+闭上眼睛。 | Close your eyes.
+张开嘴巴。 | Open your mouth.
+去洗手。 | Go wash your hands.
+我的腿疼。 | My leg hurts.
+大象的耳朵很大。 | The elephant has big ears.
+兔子的耳朵很长。 | The rabbit has long ears.

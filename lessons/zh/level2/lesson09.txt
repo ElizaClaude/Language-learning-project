@@ -1,0 +1,15 @@
+# Level 2, Lesson 9: Getting around
+# one sentence per line:  Chinese | English
+你怎么去学校？ | How do you get to school?
+我走路去。 | I walk.
+我骑自行车去。 | I go by bike.
+我爸爸开车去上班。 | My father drives to work.
+我们坐公共汽车去。 | We go by bus.
+地铁很快。 | The subway is fast.
+公共汽车站在哪儿？ | Where is the bus stop?
+一直往前走。 | Go straight ahead.
+然后往左拐。 | Then turn left.
+然后往右拐。 | Then turn right.
+远吗？ | Is it far?
+不远，很近。 | No, it's very close.
+红灯停，绿灯行。 | Stop at red, go at green.

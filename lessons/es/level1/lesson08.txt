@@ -1,0 +1,15 @@
+# Level 1, Lesson 8: At school
+# one sentence per line:  Spanish (Spain) | English
+Esta es mi escuela. | This is my school.
+Estamos en primero de primaria. | We're in first grade.
+Ella es nuestra maestra. | This is our teacher.
+Poneos de pie, por favor. | Stand up, please.
+Sentaos, por favor. | Sit down, please.
+Abrid los libros. | Open your books.
+Tengo un lápiz. | I have a pencil.
+Tengo una regla. | I have a ruler.
+¿Es tu goma? | Is this your eraser?
+Sí, es mía. | Yes, it's mine.
+¿Dónde está mi bolígrafo? | Where is my pen?
+Está en tu mochila. | It's in your bag.
+Mi mochila es nueva. | My schoolbag is new.

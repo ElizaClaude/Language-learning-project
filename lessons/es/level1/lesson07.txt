@@ -1,0 +1,15 @@
+# Level 1, Lesson 7: Food and drinks
+# one sentence per line:  Spanish (Spain) | English
+Tengo hambre. | I'm hungry.
+Tengo sed. | I'm thirsty.
+¿Quieres leche? | Would you like some milk?
+Sí, por favor. | Yes, please.
+No, gracias. | No, thank you.
+¿Qué quieres comer? | What would you like to eat?
+Quiero un bocadillo. | I'd like a sandwich.
+Me gusta el arroz con pescado. | I like rice with fish.
+No me gustan las zanahorias. | I don't like carrots.
+¿Me das agua, por favor? | Can I have some water, please?
+Un huevo y un zumo, por favor. | An egg and a juice, please.
+El pan está delicioso. | The bread is delicious.
+¡Buen provecho! | Enjoy your meal!

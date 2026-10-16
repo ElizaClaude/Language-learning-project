@@ -1,0 +1,15 @@
+# Level 2, Lesson 12: Yesterday
+# one sentence per line:  Chinese | English
+你昨天做什么了？ | What did you do yesterday?
+我踢足球了。 | I played soccer.
+我看了一本书。 | I read a book.
+我们去动物园了。 | We went to the zoo.
+我去看奶奶了。 | I visited my grandma.
+我们吃了面条。 | We ate noodles.
+我看了一部电影。 | I watched a movie.
+很有意思。 | It was very interesting.
+你周末去哪儿了？ | Where did you go on the weekend?
+我去公园了。 | I went to the park.
+天气很好。 | The weather was nice.
+你做完作业了吗？ | Did you finish your homework?
+做完了！ | Yes, I'm done!

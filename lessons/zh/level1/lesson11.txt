@@ -1,0 +1,14 @@
+# Level 1, Lesson 11: Weather
+# one sentence per line:  Chinese | English
+今天天气怎么样？ | What's the weather like today?
+今天是晴天。 | It's sunny.
+今天是阴天。 | It's cloudy.
+下雨了。 | It's raining.
+下雪了！ | It's snowing!
+今天风很大。 | It's windy.
+天气很热。 | It's hot.
+天气很冷。 | It's cold.
+北京暖和吗？ | Is it warm in Beijing?
+是的，很暖和。 | Yes, it's warm.
+带上你的雨伞。 | Take your umbrella.
+我们堆雪人吧！ | Let's make a snowman!

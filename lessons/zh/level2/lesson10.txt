@@ -1,0 +1,15 @@
+# Level 2, Lesson 10: Birthdays and dates
+# one sentence per line:  Chinese | English
+你的生日是几月几号？ | When is your birthday?
+我的生日是五月三号。 | My birthday is May third.
+今天是我的生日！ | Today is my birthday!
+祝你生日快乐！ | Happy birthday!
+你今年几岁了？ | How old are you this year?
+我今年十岁了。 | I'm ten this year.
+这是给你的礼物。 | This is a present for you.
+谢谢！真漂亮。 | Thank you! It's lovely.
+我们一起吃蛋糕吧。 | Let's eat cake together.
+快吹蜡烛！ | Blow out the candles!
+许个愿吧！ | Make a wish!
+我的朋友们都来了。 | All my friends came.
+今天几月几号？ | What's the date today?

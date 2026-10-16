@@ -1,0 +1,15 @@
+# Level 2, Lesson 7: At a restaurant
+# one sentence per line:  German | English
+Ich habe großen Hunger. | I'm very hungry.
+Gehen wir ins Restaurant! | Let's go to a restaurant!
+Was möchten Sie bestellen? | What would you like to order?
+Ich hätte gern eine Suppe. | I'd like a soup.
+Und für mich Hähnchen mit Reis. | And chicken with rice for me.
+Möchten Sie etwas trinken? | Would you like something to drink?
+Ein Glas Orangensaft, bitte. | A glass of orange juice, please.
+Das schmeckt sehr gut! | This tastes very good!
+Ich bin satt. | I'm full.
+Die Rechnung, bitte. | The check, please.
+Das macht zwanzig Euro. | That's twenty euros.
+Ich kann mit Stäbchen essen. | I can eat with chopsticks.
+Messer und Gabel, bitte. | A knife and fork, please.

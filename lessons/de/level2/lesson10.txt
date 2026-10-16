@@ -1,0 +1,15 @@
+# Level 2, Lesson 10: Birthdays and dates
+# one sentence per line:  German | English
+Wann hast du Geburtstag? | When is your birthday?
+Mein Geburtstag ist am dritten Mai. | My birthday is on May third.
+Heute ist mein Geburtstag! | Today is my birthday!
+Alles Gute zum Geburtstag! | Happy birthday!
+Wie alt wirst du? | How old are you turning?
+Ich werde zehn. | I'm turning ten.
+Das ist ein Geschenk für dich. | This is a present for you.
+Danke! Es ist wunderschön. | Thank you! It's lovely.
+Wir essen Kuchen. | We're eating cake.
+Puste die Kerzen aus! | Blow out the candles!
+Wünsch dir was! | Make a wish!
+Meine Freunde kommen zu meiner Party. | My friends are coming to my party.
+Welches Datum ist heute? | What's the date today?

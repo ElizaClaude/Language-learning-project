@@ -1,0 +1,15 @@
+# Level 2, Lesson 1: Time and my day
+# one sentence per line:  German | English
+Wie spät ist es? | What time is it?
+Es ist sieben Uhr. | It's seven o'clock.
+Es ist halb acht. | It's half past seven.
+Ich stehe um sieben Uhr auf. | I get up at seven o'clock.
+Ich frühstücke um halb acht. | I have breakfast at half past seven.
+Ich gehe um acht Uhr zur Schule. | I go to school at eight o'clock.
+Der Unterricht fängt um Viertel nach acht an. | Class starts at a quarter past eight.
+Ich esse um zwölf Uhr zu Mittag. | I have lunch at twelve o'clock.
+Um vier Uhr komme ich nach Hause. | I come home at four o'clock.
+Dann mache ich meine Hausaufgaben. | Then I do my homework.
+Wir essen um sechs Uhr zu Abend. | We have dinner at six o'clock.
+Ich gehe um neun Uhr ins Bett. | I go to bed at nine o'clock.
+Beeil dich, es ist spät! | Hurry up, it's late!

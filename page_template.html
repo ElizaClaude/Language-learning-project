@@ -1,0 +1,319 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Two-Voice Lessons</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&display=swap">
+<style>
+/* Layout: one narrow column of lessons, a player docked at the bottom like a phone audio app. */
+:root {
+  --bg: #f3f4f1;
+  --surface: #ffffff;
+  --ink: #1d2320;
+  --muted: #5f6964;
+  --line: #dcdfda;
+  --accent: #a4561b;          /* set per language below */
+  --accent-soft: #f4e6da;
+  --on-accent: #ffffff;
+  --done: #2f7d4f;
+  --font-display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --font-body: "Atkinson Hyperlegible", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --font-han: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+}
+:root[data-lang="zh"] { --accent: #b3261e; --accent-soft: #f7e1de; }
+:root[data-lang="es"] { --accent: #8b3a7e; --accent-soft: #f3e2ef; }
+:root[data-lang="it"] { --accent: #2f6b4f; --accent-soft: #e0eee6; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #141816; --surface: #1d2220; --ink: #e8ebe7; --muted: #9aa49f; --line: #2e3532;
+    --accent: #e09a5f; --accent-soft: #3a2a1d; --on-accent: #1a120b; --done: #6cc28f;
+    color-scheme: dark;
+  }
+  :root[data-lang="zh"]:not([data-theme="light"]) { --accent: #f08a7e; --accent-soft: #3d2120; }
+  :root[data-lang="es"]:not([data-theme="light"]) { --accent: #dc9ad0; --accent-soft: #38202f; }
+  :root[data-lang="it"]:not([data-theme="light"]) { --accent: #84c9a5; --accent-soft: #1c3127; }
+}
+:root[data-theme="dark"] {
+  --bg: #141816; --surface: #1d2220; --ink: #e8ebe7; --muted: #9aa49f; --line: #2e3532;
+  --accent: #e09a5f; --accent-soft: #3a2a1d; --on-accent: #1a120b; --done: #6cc28f;
+  color-scheme: dark;
+}
+:root[data-theme="dark"][data-lang="zh"] { --accent: #f08a7e; --accent-soft: #3d2120; }
+:root[data-theme="dark"][data-lang="es"] { --accent: #dc9ad0; --accent-soft: #38202f; }
+:root[data-theme="dark"][data-lang="it"] { --accent: #84c9a5; --accent-soft: #1c3127; }
+
+* { box-sizing: border-box; }
+body {
+  background: var(--bg); color: var(--ink);
+  font-family: var(--font-body); font-size: 1rem; line-height: 1.45;
+  padding-inline: 16px; padding-block: 20px 13rem;
+}
+.wrap { max-width: 34rem; margin: 0 auto; display: grid; gap: 1.25rem; }
+header { display: grid; gap: .75rem; }
+h1 {
+  font-family: var(--font-display); font-weight: 800; font-size: 1.9rem;
+  line-height: 1.05; margin: 0; letter-spacing: -.01em; text-wrap: balance;
+}
+.sub { color: var(--muted); margin: 0; font-size: .95rem; }
+
+.switch { display: grid; grid-auto-flow: column; grid-auto-columns: 1fr; background: var(--surface);
+  border: 1px solid var(--line); border-radius: 999px; padding: 4px; gap: 2px; }
+.switch button {
+  font: inherit; font-weight: 700; font-size: .92rem; border: 0; border-radius: 999px; padding: .6rem .25rem;
+  background: transparent; color: var(--muted); cursor: pointer;
+}
+.switch button[aria-pressed="true"] { background: var(--accent); color: var(--on-accent); }
+.switch .han { font-family: var(--font-han); }
+
+h2 { font-family: var(--font-display); font-weight: 600; font-size: 1.05rem; margin: 0;
+  display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; }
+h2 small { font-family: var(--font-body); font-weight: 400; color: var(--muted); font-size: .85rem; }
+
+ol.lessons { list-style: none; margin: 0; padding: 0; background: var(--surface);
+  border: 1px solid var(--line); border-radius: 14px; overflow: hidden; }
+ol.lessons li + li { border-top: 1px solid var(--line); }
+.lesson {
+  width: 100%; display: grid; grid-template-columns: 2.2rem 1fr auto; align-items: center; gap: .75rem;
+  padding: .8rem 1rem; background: none; border: 0; color: inherit; font: inherit; text-align: left; cursor: pointer;
+}
+.lesson:focus-visible, button:focus-visible, input:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+.num { font-family: var(--font-display); font-weight: 600; color: var(--muted);
+  font-variant-numeric: tabular-nums; font-size: 1.05rem; }
+.lesson .t { min-width: 0; }
+.lesson .t b { display: block; font-weight: 700; }
+.lesson .t span { color: var(--muted); font-size: .85rem; }
+.state { font-size: .8rem; color: var(--muted); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.state.done { color: var(--done); font-weight: 700; }
+.lesson[aria-current="true"] { background: var(--accent-soft); }
+.lesson[aria-current="true"] .num { color: var(--accent); }
+
+.how { color: var(--muted); font-size: .85rem; margin: 0; }
+
+/* bottom player */
+.player {
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 5;
+  background: var(--surface); border-top: 1px solid var(--line);
+  padding: .75rem 16px calc(.75rem + env(safe-area-inset-bottom, 0px));
+  box-shadow: 0 -6px 24px rgb(0 0 0 / .08);
+}
+.player-in { max-width: 34rem; margin: 0 auto; display: grid; gap: .5rem; }
+.now { display: flex; justify-content: space-between; align-items: baseline; gap: .75rem; min-width: 0; }
+.now b { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.now span { color: var(--muted); font-size: .85rem; font-variant-numeric: tabular-nums; white-space: nowrap; }
+input[type="range"] { width: 100%; accent-color: var(--accent); margin: 0; }
+.controls { display: grid; grid-template-columns: repeat(5, 1fr); align-items: center; justify-items: center; }
+.controls button {
+  font: inherit; font-size: .85rem; font-weight: 700; color: var(--ink); background: none; border: 0;
+  min-width: 2.75rem; min-height: 2.75rem; border-radius: 999px; cursor: pointer;
+}
+.controls button:disabled { opacity: .35; cursor: default; }
+.controls .play { background: var(--accent); color: var(--on-accent); width: 3.4rem; height: 3.4rem; }
+.controls svg { width: 1.4rem; height: 1.4rem; fill: currentColor; display: block; margin: auto; }
+.extras { display: flex; justify-content: space-between; align-items: center; gap: .5rem; flex-wrap: wrap; }
+.chip { font: inherit; font-size: .8rem; border: 1px solid var(--line); background: var(--bg); color: var(--ink);
+  border-radius: 999px; padding: .3rem .7rem; cursor: pointer; }
+.chip[aria-pressed="true"] { border-color: var(--accent); color: var(--accent); font-weight: 700; }
+
+.script { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: .5rem 1rem; }
+.script ol { margin: 0; padding-left: 1.4rem; display: grid; gap: .55rem; }
+.script li::marker { color: var(--muted); font-variant-numeric: tabular-nums; }
+.script .fo { display: block; font-weight: 700; }
+.script .fo.han { font-family: var(--font-han); font-size: 1.1rem; }
+.script .en { color: var(--muted); font-size: .9rem; }
+@media (prefers-reduced-motion: no-preference) { .lesson { transition: background .15s; } }
+</style>
+
+<div class="wrap">
+  <header>
+    <h1>Two-Voice Lessons</h1>
+    <p class="sub" id="sub">Each sentence is said in the language you're learning, then in English, twice.</p>
+    <div class="switch" id="switch" role="group" aria-label="Language"></div>
+  </header>
+  <main id="levels"></main>
+  <section class="script" id="script" hidden aria-label="Sentences of the current lesson"></section>
+  <p class="how">Your place in each lesson is remembered on this phone. Tap a lesson to start or resume it.</p>
+</div>
+
+<div class="player" aria-label="Player">
+  <div class="player-in">
+    <div class="now"><b id="now-title">Choose a lesson</b><span id="now-time">0:00 / 0:00</span></div>
+    <input type="range" id="seek" min="0" max="100" step="0.1" value="0" aria-label="Position in lesson">
+    <div class="controls">
+      <button type="button" id="prev" aria-label="Previous lesson"><svg viewBox="0 0 24 24"><path d="M6 5h2v14H6zM20 5v14L9 12z"/></svg></button>
+      <button type="button" id="back" aria-label="Back 10 seconds">−10s</button>
+      <button type="button" id="play" class="play" aria-label="Play"><svg viewBox="0 0 24 24" id="play-icon"><path d="M8 5v14l11-7z"/></svg></button>
+      <button type="button" id="fwd" aria-label="Forward 10 seconds">+10s</button>
+      <button type="button" id="next" aria-label="Next lesson"><svg viewBox="0 0 24 24"><path d="M16 5h2v14h-2zM4 5v14l11-7z"/></svg></button>
+    </div>
+    <div class="extras">
+      <button type="button" class="chip" id="speed" aria-label="Playback speed">Speed 1×</button>
+      <button type="button" class="chip" id="auto" aria-pressed="true">Auto-next</button>
+      <button type="button" class="chip" id="text" aria-pressed="false">Show text</button>
+    </div>
+  </div>
+</div>
+<audio id="audio" preload="metadata"></audio>
+
+<script>
+const DATA = /*DATA*/;
+const SPEEDS = [0.75, 1, 1.25];
+const $ = id => document.getElementById(id);
+const audio = $("audio");
+
+const store = {
+  get(k, d) { try { const v = localStorage.getItem("tvl:" + k); return v === null ? d : JSON.parse(v); } catch { return d; } },
+  set(k, v) { try { localStorage.setItem("tvl:" + k, JSON.stringify(v)); } catch {} },
+};
+let lang = DATA.langs[store.get("lang")] ? store.get("lang") : "de";
+let pos = store.get("pos", {});        // file -> seconds
+let done = store.get("done", {});      // file -> true
+let speed = store.get("speed", 1);
+let auto = store.get("auto", true);
+let showText = false;
+let current = null;                    // {lang, i}
+
+const fmt = s => { s = Math.max(0, Math.floor(s || 0)); return Math.floor(s / 60) + ":" + String(s % 60).padStart(2, "0"); };
+const lessonsOf = l => DATA.langs[l].levels.flatMap(v => v.lessons);
+
+function render() {
+  document.documentElement.dataset.lang = lang;
+  for (const b of document.querySelectorAll(".switch button")) b.setAttribute("aria-pressed", b.dataset.lang === lang);
+  const L = DATA.langs[lang];
+  $("sub").textContent = `Each sentence is said in ${L.label}, then in English, and the pair is played twice.`;
+  const main = $("levels");
+  main.innerHTML = "";
+  let i = 0;
+  for (const lv of L.levels) {
+    const sec = document.createElement("section");
+    sec.style.display = "grid"; sec.style.gap = ".6rem";
+    const total = lv.lessons.reduce((a, x) => a + x.dur, 0);
+    const nDone = lv.lessons.filter(x => done[x.file]).length;
+    sec.innerHTML = `<h2>Level ${lv.level} <small>${lv.lessons.length} lessons · ${Math.round(total / 60)} min · ${nDone} done</small></h2>`;
+    const ol = document.createElement("ol"); ol.className = "lessons";
+    for (const x of lv.lessons) {
+      const idx = i++;
+      const li = document.createElement("li");
+      const b = document.createElement("button");
+      b.type = "button"; b.className = "lesson";
+      b.setAttribute("aria-current", current && current.lang === lang && current.i === idx);
+      const p = pos[x.file];
+      const state = done[x.file] ? `<span class="state done">✓ done</span>`
+        : p > 5 ? `<span class="state">resume ${fmt(p)}</span>` : `<span class="state">${fmt(x.dur)}</span>`;
+      b.innerHTML = `<span class="num">${String(x.n).padStart(2, "0")}</span>
+        <span class="t"><b>${x.title}</b><span>${x.lines.length} sentences</span></span>${state}`;
+      b.addEventListener("click", () => load(lang, idx, true));
+      li.append(b); ol.append(li);
+    }
+    sec.append(ol); main.append(sec);
+  }
+  renderScript();
+}
+
+function renderScript() {
+  const box = $("script");
+  box.hidden = !(showText && current);
+  if (box.hidden) return;
+  const x = lessonsOf(current.lang)[current.i];
+  const han = current.lang === "zh" ? " han" : "";
+  box.innerHTML = "<ol>" + x.lines.map(([fo, en]) =>
+    `<li><span class="fo${han}">${fo}</span><span class="en">${en}</span></li>`).join("") + "</ol>";
+}
+
+function load(l, i, play) {
+  const list = lessonsOf(l);
+  if (i < 0 || i >= list.length) return;
+  const x = list[i];
+  if (!(current && current.lang === l && current.i === i)) {
+    current = { lang: l, i };
+    audio.src = x.file;
+    audio.playbackRate = speed;
+    const start = done[x.file] ? 0 : (pos[x.file] || 0);
+    audio.addEventListener("loadedmetadata", () => { audio.currentTime = Math.min(start, audio.duration - 1); audio.playbackRate = speed; }, { once: true });
+    $("now-title").textContent = `${DATA.langs[l].short} · ${x.n}. ${x.title}`;
+    if ("mediaSession" in navigator) {
+      navigator.mediaSession.metadata = new MediaMetadata({ title: `${x.n}. ${x.title}`, artist: `Two-Voice Lessons · ${DATA.langs[l].label}`, album: "Level 1" });
+    }
+    if (done[x.file]) { delete done[x.file]; store.set("done", done); }
+  }
+  if (play) audio.play().catch(() => {});
+  updateButtons(); render();
+}
+
+function updateButtons() {
+  const n = current ? lessonsOf(current.lang).length : 0;
+  $("prev").disabled = !current || current.i === 0;
+  $("next").disabled = !current || current.i >= n - 1;
+  for (const id of ["back", "fwd", "seek"]) $(id).disabled = !current;
+  $("play").disabled = false;
+  $("speed").textContent = `Speed ${speed}×`;
+  $("auto").setAttribute("aria-pressed", auto);
+  $("text").setAttribute("aria-pressed", showText);
+}
+
+function setPlayIcon() {
+  const playing = !audio.paused;
+  $("play-icon").innerHTML = playing ? '<path d="M7 5h4v14H7zM13 5h4v14h-4z"/>' : '<path d="M8 5v14l11-7z"/>';
+  $("play").setAttribute("aria-label", playing ? "Pause" : "Play");
+}
+
+$("play").addEventListener("click", () => {
+  if (!current) {
+    const list = lessonsOf(lang);
+    const first = list.findIndex(x => !done[x.file]);
+    return load(lang, first < 0 ? 0 : first, true);
+  }
+  audio.paused ? audio.play().catch(() => {}) : audio.pause();
+});
+$("back").addEventListener("click", () => { audio.currentTime = Math.max(0, audio.currentTime - 10); });
+$("fwd").addEventListener("click", () => { audio.currentTime = Math.min(audio.duration || 0, audio.currentTime + 10); });
+$("prev").addEventListener("click", () => current && load(current.lang, current.i - 1, true));
+$("next").addEventListener("click", () => current && load(current.lang, current.i + 1, true));
+$("seek").addEventListener("input", e => { if (audio.duration) audio.currentTime = e.target.value / 100 * audio.duration; });
+$("speed").addEventListener("click", () => {
+  speed = SPEEDS[(SPEEDS.indexOf(speed) + 1) % SPEEDS.length]; audio.playbackRate = speed; store.set("speed", speed); updateButtons();
+});
+$("auto").addEventListener("click", () => { auto = !auto; store.set("auto", auto); updateButtons(); });
+$("text").addEventListener("click", () => { showText = !showText; updateButtons(); renderScript(); });
+for (const [code, L] of Object.entries(DATA.langs)) {
+  const b = document.createElement("button");
+  b.type = "button"; b.id = "lang-" + code; b.dataset.lang = code;
+  b.setAttribute("aria-label", L.label);
+  b.innerHTML = code === "zh" ? `<span class="han">${L.native}</span>` : L.native;
+  b.addEventListener("click", () => { lang = code; store.set("lang", lang); render(); });
+  $("switch").append(b);
+}
+
+let lastSave = 0;
+audio.addEventListener("timeupdate", () => {
+  const d = audio.duration || 0;
+  $("now-time").textContent = `${fmt(audio.currentTime)} / ${fmt(d)}`;
+  if (d) $("seek").value = audio.currentTime / d * 100;
+  if (current && Date.now() - lastSave > 3000) {
+    lastSave = Date.now();
+    pos[lessonsOf(current.lang)[current.i].file] = audio.currentTime; store.set("pos", pos);
+  }
+});
+audio.addEventListener("play", setPlayIcon);
+audio.addEventListener("pause", () => {
+  setPlayIcon();
+  if (current) { pos[lessonsOf(current.lang)[current.i].file] = audio.currentTime; store.set("pos", pos); render(); }
+});
+audio.addEventListener("ended", () => {
+  const list = lessonsOf(current.lang), x = list[current.i];
+  done[x.file] = true; delete pos[x.file]; store.set("done", done); store.set("pos", pos);
+  if (auto && current.i < list.length - 1) load(current.lang, current.i + 1, true); else render();
+});
+if ("mediaSession" in navigator) {
+  const ms = navigator.mediaSession;
+  try {
+    ms.setActionHandler("play", () => audio.play());
+    ms.setActionHandler("pause", () => audio.pause());
+    ms.setActionHandler("seekbackward", () => $("back").click());
+    ms.setActionHandler("seekforward", () => $("fwd").click());
+    ms.setActionHandler("previoustrack", () => $("prev").click());
+    ms.setActionHandler("nexttrack", () => $("next").click());
+  } catch {}
+}
+
+render(); updateButtons();
+</script>

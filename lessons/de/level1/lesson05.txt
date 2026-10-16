@@ -1,0 +1,15 @@
+# Level 1, Lesson 5: My body
+# one sentence per line:  German | English
+Das ist mein Kopf. | This is my head.
+Ich habe zwei Augen. | I have two eyes.
+Ich habe eine Nase und einen Mund. | I have a nose and a mouth.
+Berühre deine Ohren. | Touch your ears.
+Heb deine Hand. | Raise your hand.
+Klatsch in die Hände! | Clap your hands!
+Stampf mit den Füßen! | Stamp your feet!
+Schließ die Augen. | Close your eyes.
+Öffne den Mund. | Open your mouth.
+Wasch deine Hände. | Wash your hands.
+Mein Bein tut weh. | My leg hurts.
+Der Elefant hat große Ohren. | The elephant has big ears.
+Das Kaninchen hat lange Ohren. | The rabbit has long ears.

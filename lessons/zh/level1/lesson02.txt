@@ -1,0 +1,15 @@
+# Level 1, Lesson 2: Colors
+# one sentence per line:  Chinese | English
+这是什么颜色？ | What color is this?
+是红色。 | It's red.
+我的球是蓝色的。 | My ball is blue.
+我喜欢绿色。 | I like green.
+你最喜欢什么颜色？ | What's your favorite color?
+我最喜欢黄色。 | My favorite color is yellow.
+这只猫是黑色的。 | The cat is black.
+这只狗是白色的。 | The dog is white.
+苹果是红色的吗？ | Is the apple red?
+是的，它是红色的。 | Yes, it's red.
+不，它是绿色的。 | No, it's green.
+看，彩虹！ | Look, a rainbow!
+它真漂亮。 | It's very beautiful.

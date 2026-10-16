@@ -1,0 +1,15 @@
+# Level 2, Lesson 11: Feelings and health
+# one sentence per line:  Chinese | English
+你感觉怎么样？ | How do you feel?
+我很高兴。 | I'm happy.
+我很难过。 | I'm sad.
+我很累。 | I'm tired.
+他生气了。 | He's angry.
+你害怕吗？ | Are you scared?
+怎么了？ | What's wrong?
+我头疼。 | I have a headache.
+我发烧了。 | I have a fever.
+我感冒了。 | I have a cold.
+你应该去看医生。 | You should see a doctor.
+多喝水，好好休息。 | Drink lots of water and get some rest.
+祝你早日康复！ | Get well soon!

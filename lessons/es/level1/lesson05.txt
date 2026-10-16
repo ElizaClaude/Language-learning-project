@@ -1,0 +1,15 @@
+# Level 1, Lesson 5: My body
+# one sentence per line:  Spanish (Spain) | English
+Esta es mi cabeza. | This is my head.
+Tengo dos ojos. | I have two eyes.
+Tengo una nariz y una boca. | I have a nose and a mouth.
+Tócate las orejas. | Touch your ears.
+Levanta la mano. | Raise your hand.
+¡Aplaude! | Clap your hands!
+¡Pisa fuerte! | Stamp your feet!
+Cierra los ojos. | Close your eyes.
+Abre la boca. | Open your mouth.
+Lávate las manos. | Wash your hands.
+Me duele la pierna. | My leg hurts.
+El elefante tiene orejas grandes. | The elephant has big ears.
+El conejo tiene orejas largas. | The rabbit has long ears.

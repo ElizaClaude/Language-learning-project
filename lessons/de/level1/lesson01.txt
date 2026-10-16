@@ -1,0 +1,15 @@
+# Level 1, Lesson 1: Hello! (greetings, names, age)
+# one sentence per line:  German | English
+Hallo! Ich heiße Tom. | Hello! My name is Tom.
+Wie heißt du? | What's your name?
+Ich heiße Anna. | My name is Anna.
+Guten Morgen, Frau Li. | Good morning, Ms Li.
+Wie geht es dir? | How are you?
+Mir geht es gut, danke. | I'm fine, thank you.
+Das ist mein Freund. | This is my friend.
+Er heißt Ben. | His name is Ben.
+Schön, dich kennenzulernen. | Nice to meet you.
+Wie alt bist du? | How old are you?
+Ich bin sieben Jahre alt. | I'm seven years old.
+Auf Wiedersehen! | Goodbye!
+Bis morgen! | See you tomorrow!

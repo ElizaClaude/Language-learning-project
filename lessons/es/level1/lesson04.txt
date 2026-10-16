@@ -1,0 +1,15 @@
+# Level 1, Lesson 4: My family
+# one sentence per line:  Spanish (Spain) | English
+Esta es mi familia. | This is my family.
+Este es mi papá. | This is my dad.
+Esta es mi mamá. | This is my mom.
+¿Quién es? | Who is this?
+Este es mi hermano. | This is my brother.
+Esta es mi hermana. | This is my sister.
+Mi abuelo es mayor. | My grandpa is old.
+A mi abuela le gusta cocinar. | My grandma likes to cook.
+¿Tienes un hermano? | Do you have a brother?
+No, pero tengo una hermana. | No, but I have a sister.
+Mi papá es médico. | My father is a doctor.
+Mi mamá es maestra. | My mother is a teacher.
+Quiero mucho a mi familia. | I love my family.

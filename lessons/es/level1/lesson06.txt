@@ -1,0 +1,15 @@
+# Level 1, Lesson 6: Animals
+# one sentence per line:  Spanish (Spain) | English
+¿Qué es esto? | What's this?
+Es un perro. | It's a dog.
+Tengo un gato. | I have a cat.
+El mono es gracioso. | The monkey is funny.
+El panda es blanco y negro. | The panda is black and white.
+El tigre es grande. | The tiger is big.
+El ratón es pequeño. | The mouse is small.
+El pato sabe nadar. | The duck can swim.
+El pájaro puede volar. | The bird can fly.
+¿Te gustan los caballos? | Do you like horses?
+Sí, me gustan los caballos. | Yes, I like horses.
+¡Vamos al zoológico! | Let's go to the zoo!
+Veo un elefante. | I can see an elephant.

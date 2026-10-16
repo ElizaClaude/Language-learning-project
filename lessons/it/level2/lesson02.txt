@@ -1,0 +1,15 @@
+# Level 2, Lesson 2: Days of the week
+# one sentence per line:  Italian | English
+Che giorno è oggi? | What day is it today?
+Oggi è lunedì. | Today is Monday.
+Domani è martedì. | Tomorrow is Tuesday.
+Il mercoledì ho musica. | On Wednesdays I have music.
+Il giovedì gioco a calcio. | On Thursdays I play soccer.
+Il venerdì è il mio giorno preferito. | Friday is my favorite day.
+Il sabato vado dalla nonna. | On Saturdays I go to my grandma's.
+La domenica dormo fino a tardi. | On Sundays I sleep in.
+Cosa fai nel fine settimana? | What do you do on the weekend?
+Vado al parco. | I go to the park.
+Una settimana ha sette giorni. | A week has seven days.
+Che lezioni hai il lunedì? | What classes do you have on Mondays?
+Ho matematica e inglese. | I have math and English.

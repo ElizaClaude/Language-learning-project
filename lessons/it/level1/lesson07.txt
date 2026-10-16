@@ -1,0 +1,15 @@
+# Level 1, Lesson 7: Food and drinks
+# one sentence per line:  Italian | English
+Ho fame. | I'm hungry.
+Ho sete. | I'm thirsty.
+Vuoi del latte? | Would you like some milk?
+Sì, per favore. | Yes, please.
+No, grazie. | No, thank you.
+Cosa vuoi mangiare? | What would you like to eat?
+Vorrei la pasta. | I'd like some pasta.
+Mi piacciono il riso e il pesce. | I like rice and fish.
+Non mi piacciono le carote. | I don't like carrots.
+Posso avere dell'acqua? | Can I have some water?
+Un uovo e un succo, per favore. | An egg and a juice, please.
+Il pane è buonissimo. | The bread is delicious.
+Buon appetito! | Enjoy your meal!

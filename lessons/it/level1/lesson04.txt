@@ -1,0 +1,15 @@
+# Level 1, Lesson 4: My family
+# one sentence per line:  Italian | English
+Questa è la mia famiglia. | This is my family.
+Questo è mio papà. | This is my dad.
+Questa è mia mamma. | This is my mom.
+Chi è? | Who is this?
+Questo è mio fratello. | This is my brother.
+Questa è mia sorella. | This is my sister.
+Mio nonno è anziano. | My grandpa is old.
+A mia nonna piace cucinare. | My grandma likes to cook.
+Hai un fratello? | Do you have a brother?
+No, ma ho una sorella. | No, but I have a sister.
+Mio papà è medico. | My father is a doctor.
+Mia mamma è maestra. | My mother is a teacher.
+Voglio bene alla mia famiglia. | I love my family.

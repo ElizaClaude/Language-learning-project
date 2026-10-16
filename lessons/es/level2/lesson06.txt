@@ -1,0 +1,15 @@
+# Level 2, Lesson 6: Shopping
+# one sentence per line:  Spanish (Spain) | English
+¿Cuánto cuesta? | How much is it?
+Cuesta dos euros. | It's two euros.
+Quiero esta camiseta. | I'd like this T-shirt.
+¿De qué talla? | What size?
+¿La tiene en azul? | Do you have it in blue?
+Está demasiado cara. | It's too expensive.
+Está barata. | It's cheap.
+Me la llevo. | I'll take it.
+¿A cuánto están las manzanas? | How much are the apples?
+A tres euros el kilo. | Three euros a kilo.
+Aquí tiene el dinero. | Here's the money.
+Aquí está su cambio. | Here's your change.
+¡Gracias, adiós! | Thank you, goodbye!

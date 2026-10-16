@@ -1,0 +1,15 @@
+# Level 2, Lesson 7: At a restaurant
+# one sentence per line:  Spanish (Spain) | English
+Tengo mucha hambre. | I'm very hungry.
+¡Vamos a un restaurante! | Let's go to a restaurant!
+¿Qué vais a pedir? | What would you like to order?
+Quiero una sopa. | I'd like a soup.
+Y para mí, pollo con arroz. | And chicken with rice for me.
+¿Qué vais a tomar? | What would you like to drink?
+Un zumo de naranja, por favor. | An orange juice, please.
+¡Está muy rico! | This is very tasty!
+Estoy lleno. | I'm full.
+La cuenta, por favor. | The check, please.
+Son veinte euros. | That's twenty euros.
+Me gusta la tortilla de patatas. | I like Spanish omelette.
+Un tenedor y un cuchillo, por favor. | A fork and a knife, please.

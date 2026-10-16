@@ -1,0 +1,15 @@
+# Level 1, Lesson 6: Animals
+# one sentence per line:  Italian | English
+Che cos'è? | What's this?
+È un cane. | It's a dog.
+Ho un gatto. | I have a cat.
+La scimmia è buffa. | The monkey is funny.
+Il panda è bianco e nero. | The panda is black and white.
+La tigre è grande. | The tiger is big.
+Il topo è piccolo. | The mouse is small.
+L'anatra sa nuotare. | The duck can swim.
+L'uccello sa volare. | The bird can fly.
+Ti piacciono i cavalli? | Do you like horses?
+Sì, mi piacciono i cavalli. | Yes, I like horses.
+Andiamo allo zoo! | Let's go to the zoo!
+Vedo un elefante. | I can see an elephant.

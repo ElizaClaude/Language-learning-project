@@ -1,0 +1,15 @@
+# Level 2, Lesson 10: Birthdays and dates
+# one sentence per line:  Spanish (Spain) | English
+¿Cuándo es tu cumpleaños? | When is your birthday?
+Mi cumpleaños es el tres de mayo. | My birthday is May third.
+¡Hoy es mi cumpleaños! | Today is my birthday!
+¡Feliz cumpleaños! | Happy birthday!
+¿Cuántos años cumples? | How old are you turning?
+Cumplo diez años. | I'm turning ten.
+Este regalo es para ti. | This present is for you.
+¡Gracias! Está precioso. | Thank you! It's lovely.
+Vamos a comer tarta. | We're going to eat cake.
+¡Sopla las velas! | Blow out the candles!
+¡Pide un deseo! | Make a wish!
+Mis amigos vienen a mi fiesta. | My friends are coming to my party.
+¿Qué fecha es hoy? | What's the date today?

@@ -1,0 +1,15 @@
+# Level 2, Lesson 1: Time and my day
+# one sentence per line:  Spanish (Spain) | English
+¿Qué hora es? | What time is it?
+Son las siete. | It's seven o'clock.
+Son las siete y media. | It's half past seven.
+Me levanto a las siete. | I get up at seven.
+Desayuno a las siete y media. | I have breakfast at seven thirty.
+Voy a la escuela a las ocho. | I go to school at eight.
+La clase empieza a las ocho y cuarto. | Class starts at a quarter past eight.
+Como a las dos. | I have lunch at two.
+Llego a casa a las cuatro. | I come home at four.
+Luego hago la tarea. | Then I do my homework.
+Cenamos a las nueve. | We have dinner at nine.
+Me acuesto a las diez. | I go to bed at ten.
+¡Date prisa, es tarde! | Hurry up, it's late!

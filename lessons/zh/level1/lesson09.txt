@@ -1,0 +1,15 @@
+# Level 1, Lesson 9: Fruit
+# one sentence per line:  Chinese | English
+我喜欢苹果。 | I like apples.
+你喜欢香蕉吗？ | Do you like bananas?
+是的，我喜欢。 | Yes, I do.
+橙子很甜。 | The orange is sweet.
+柠檬很酸。 | The lemon is sour.
+有几个梨？ | How many pears?
+六个梨。 | Six pears.
+葡萄是紫色的。 | The grapes are purple.
+草莓是红色的。 | Strawberries are red.
+我想要一个西瓜。 | I'd like a watermelon.
+给你一个桃子。 | Here's a peach for you.
+非常感谢！ | Thank you very much!
+多吃水果对身体好。 | Eating fruit is good for you.

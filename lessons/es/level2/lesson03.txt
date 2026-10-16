@@ -1,0 +1,15 @@
+# Level 2, Lesson 3: My home
+# one sentence per line:  Spanish (Spain) | English
+Esta es mi casa. | This is my house.
+Mi piso tiene tres habitaciones. | My apartment has three bedrooms.
+Este es el salón. | This is the living room.
+La cocina es grande. | The kitchen is big.
+Mi habitación es pequeña, pero bonita. | My room is small but nice.
+¿Dónde está el baño? | Where is the bathroom?
+Está al lado de la cocina. | It's next to the kitchen.
+Mi mamá está en la cocina. | My mom is in the kitchen.
+Mi papá ve la tele en el salón. | My dad is watching TV in the living room.
+El gato duerme en el sofá. | The cat is sleeping on the sofa.
+Hay una cama en mi habitación. | There is a bed in my room.
+Hay una ventana y una puerta. | There is a window and a door.
+¡Pasa! | Come in!

@@ -1,0 +1,15 @@
+# Level 1, Lesson 4: My family
+# one sentence per line:  German | English
+Das ist meine Familie. | This is my family.
+Das ist mein Vater. | This is my father.
+Das ist meine Mutter. | This is my mother.
+Wer ist das? | Who is this?
+Das ist mein Bruder. | This is my brother.
+Das ist meine Schwester. | This is my sister.
+Mein Opa ist alt. | My grandpa is old.
+Meine Oma kocht gern. | My grandma likes to cook.
+Hast du einen Bruder? | Do you have a brother?
+Nein, aber ich habe eine Schwester. | No, but I have a sister.
+Mein Vater ist Arzt. | My father is a doctor.
+Meine Mutter ist Lehrerin. | My mother is a teacher.
+Ich liebe meine Familie. | I love my family.

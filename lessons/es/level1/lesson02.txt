@@ -1,0 +1,15 @@
+# Level 1, Lesson 2: Colors
+# one sentence per line:  Spanish (Spain) | English
+¿De qué color es? | What color is it?
+Es rojo. | It's red.
+Mi pelota es azul. | My ball is blue.
+Me gusta el verde. | I like green.
+¿Cuál es tu color favorito? | What's your favorite color?
+Mi color favorito es el amarillo. | My favorite color is yellow.
+El gato es negro. | The cat is black.
+El perro es blanco. | The dog is white.
+¿La manzana es roja? | Is the apple red?
+Sí, es roja. | Yes, it's red.
+No, es verde. | No, it's green.
+¡Mira, un arcoíris! | Look, a rainbow!
+Es muy bonito. | It's very beautiful.

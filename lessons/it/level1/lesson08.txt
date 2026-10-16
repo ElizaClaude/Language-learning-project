@@ -1,0 +1,15 @@
+# Level 1, Lesson 8: At school
+# one sentence per line:  Italian | English
+Questa è la mia scuola. | This is my school.
+Siamo in prima elementare. | We're in first grade.
+Questa è la nostra maestra. | This is our teacher.
+In piedi, per favore. | Stand up, please.
+Sedetevi, per favore. | Sit down, please.
+Aprite i libri. | Open your books.
+Ho una matita. | I have a pencil.
+Ho un righello. | I have a ruler.
+È la tua gomma? | Is this your eraser?
+Sì, è mia. | Yes, it's mine.
+Dov'è la mia penna? | Where is my pen?
+È nel tuo zaino. | It's in your bag.
+Il mio zaino è nuovo. | My schoolbag is new.

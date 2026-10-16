@@ -1,0 +1,15 @@
+# Level 2, Lesson 8: Jobs
+# one sentence per line:  German | English
+Was ist dein Vater von Beruf? | What does your father do?
+Er ist Polizist. | He's a police officer.
+Meine Tante ist Krankenschwester. | My aunt is a nurse.
+Mein Onkel ist Koch. | My uncle is a cook.
+Sie arbeitet im Krankenhaus. | She works in a hospital.
+Er arbeitet in einem Restaurant. | He works in a restaurant.
+Was willst du werden? | What do you want to be?
+Ich will Pilot werden. | I want to be a pilot.
+Ich will Ärztin werden. | I want to be a doctor.
+Der Fahrer fährt den Bus. | The driver drives the bus.
+Der Bauer arbeitet auf dem Feld. | The farmer works in the field.
+Die Lehrerin hilft uns. | The teacher helps us.
+Das ist eine wichtige Arbeit. | That's important work.

@@ -1,0 +1,15 @@
+# Level 2, Lesson 6: Shopping
+# one sentence per line:  German | English
+Was kostet das? | How much is this?
+Es kostet zwei Euro. | It's two euros.
+Ich möchte dieses T-Shirt. | I'd like this T-shirt.
+Welche Größe? | What size?
+Haben Sie das in Blau? | Do you have this in blue?
+Das ist zu teuer. | That's too expensive.
+Das ist billig. | That's cheap.
+Ich nehme es. | I'll take it.
+Was kosten die Äpfel? | How much are the apples?
+Ein Kilo kostet drei Euro. | One kilo costs three euros.
+Hier ist mein Geld. | Here's my money.
+Hier ist Ihr Wechselgeld. | Here's your change.
+Danke, auf Wiedersehen! | Thank you, goodbye!

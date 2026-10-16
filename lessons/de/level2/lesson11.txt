@@ -1,0 +1,15 @@
+# Level 2, Lesson 11: Feelings and health
+# one sentence per line:  German | English
+Wie fühlst du dich? | How do you feel?
+Ich bin glücklich. | I'm happy.
+Ich bin traurig. | I'm sad.
+Ich bin müde. | I'm tired.
+Er ist wütend. | He's angry.
+Hast du Angst? | Are you scared?
+Was ist los? | What's wrong?
+Ich habe Kopfschmerzen. | I have a headache.
+Ich habe Fieber. | I have a fever.
+Ich bin erkältet. | I have a cold.
+Du solltest zum Arzt gehen. | You should see a doctor.
+Trink viel Wasser und ruh dich aus. | Drink lots of water and get some rest.
+Gute Besserung! | Get well soon!

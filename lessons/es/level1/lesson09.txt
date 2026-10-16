@@ -1,0 +1,15 @@
+# Level 1, Lesson 9: Fruit
+# one sentence per line:  Spanish (Spain) | English
+Me gustan las manzanas. | I like apples.
+¿Te gustan los plátanos? | Do you like bananas?
+Sí, me gustan. | Yes, I do.
+La naranja es dulce. | The orange is sweet.
+El limón es ácido. | The lemon is sour.
+¿Cuántas peras hay? | How many pears?
+Seis peras. | Six pears.
+Las uvas son moradas. | The grapes are purple.
+Las fresas son rojas. | Strawberries are red.
+Quiero una sandía. | I'd like a watermelon.
+Toma, un melocotón para ti. | Here's a peach for you.
+¡Muchas gracias! | Thank you very much!
+La fruta es saludable. | Fruit is healthy.

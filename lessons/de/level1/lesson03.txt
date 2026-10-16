@@ -1,0 +1,14 @@
+# Level 1, Lesson 3: Numbers 1-10
+# one sentence per line:  German | English
+Eins, zwei, drei, vier, fünf. | One, two, three, four, five.
+Sechs, sieben, acht, neun, zehn. | Six, seven, eight, nine, ten.
+Zähl mit mir! | Count with me!
+Wie viele Bücher hast du? | How many books do you have?
+Ich habe drei Bücher. | I have three books.
+Wie viele Vögel siehst du? | How many birds can you see?
+Ich sehe vier Vögel. | I can see four birds.
+Ich habe zwei Hände. | I have two hands.
+Hier sind fünf Stifte. | Here are five pencils.
+Wie alt ist deine Schwester? | How old is your sister?
+Sie ist neun. | She's nine.
+Zehn Äpfel, bitte. | Ten apples, please.

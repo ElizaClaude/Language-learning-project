@@ -1,0 +1,15 @@
+# Level 2, Lesson 3: My home
+# one sentence per line:  Italian | English
+Questa è la nostra casa. | This is our home.
+Il nostro appartamento ha tre stanze. | Our apartment has three rooms.
+Questo è il soggiorno. | This is the living room.
+La cucina è grande. | The kitchen is big.
+La mia camera è piccola, ma carina. | My room is small but nice.
+Dov'è il bagno? | Where is the bathroom?
+È accanto alla cucina. | It's next to the kitchen.
+La mamma è in cucina. | Mom is in the kitchen.
+Il papà guarda la televisione in soggiorno. | Dad is watching TV in the living room.
+Il gatto dorme sul divano. | The cat is sleeping on the sofa.
+In camera da letto c'è un letto. | There is a bed in the bedroom.
+C'è una finestra e una porta. | There is a window and a door.
+Entra pure! | Come in!

@@ -1,0 +1,15 @@
+# Level 2, Lesson 4: Hobbies
+# one sentence per line:  Italian | English
+Qual è il tuo hobby? | What's your hobby?
+Mi piace leggere. | I like reading.
+Mi piace disegnare. | I like drawing.
+Sai nuotare? | Can you swim?
+Sì, so nuotare. | Yes, I can swim.
+No, non so nuotare. | No, I can't swim.
+So suonare il pianoforte. | I can play the piano.
+A mio fratello piace giocare a ping-pong. | My brother likes playing ping-pong.
+Lei canta molto bene. | She sings very well.
+Ci piace ballare. | We like dancing.
+Sai andare in bicicletta? | Can you ride a bike?
+Giochiamo a basket insieme? | Shall we play basketball together?
+Buona idea! | Good idea!

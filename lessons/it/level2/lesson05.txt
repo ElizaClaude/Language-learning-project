@@ -1,0 +1,15 @@
+# Level 2, Lesson 5: Seasons and months
+# one sentence per line:  Italian | English
+Ci sono quattro stagioni. | There are four seasons.
+In primavera fa bel tempo. | In spring the weather is nice.
+In estate fa caldo. | In summer it's hot.
+In autunno cadono le foglie. | In autumn the leaves fall.
+In inverno fa freddo e nevica. | In winter it's cold and it snows.
+Quale stagione ti piace? | Which season do you like?
+Mi piace l'estate perché posso nuotare. | I like summer because I can swim.
+Un anno ha dodici mesi. | A year has twelve months.
+Gennaio è il primo mese. | January is the first month.
+Natale è a dicembre. | Christmas is in December.
+In agosto siamo in vacanza. | In August we're on vacation.
+In che mese siamo? | What month is it now?
+Siamo a ottobre. | It's October now.
