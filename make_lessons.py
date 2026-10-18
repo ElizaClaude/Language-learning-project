@@ -59,9 +59,13 @@ def silence(mp3_bytes, seconds):
     return frame * round(seconds * rate / per_frame)
 
 
+def clip_key(text, voice, rate):
+    """File name (without .mp3) of the cached clip for this text, voice and speed."""
+    return hashlib.sha1(f"{voice}|{rate}|{text}".encode("utf-8")).hexdigest()[:16]
+
+
 async def speak(text, voice, rate):
-    key = hashlib.sha1(f"{voice}|{rate}|{text}".encode("utf-8")).hexdigest()[:16]
-    path = CLIPS / f"{key}.mp3"
+    path = CLIPS / f"{clip_key(text, voice, rate)}.mp3"
     if not path.exists():
         await edge_tts.Communicate(text, voice, rate=rate).save(str(path))
     return path.read_bytes()

@@ -1,5 +1,4 @@
-# voice-clip cache: rebuilt by make_lessons.py, no need to store it online
-clips/
+# clips/ IS published since 17 Oct: the page joins lessons from these sentence clips
 __pycache__/
 # private notes and step reports stay on this PC only
 HANDOFF.md
