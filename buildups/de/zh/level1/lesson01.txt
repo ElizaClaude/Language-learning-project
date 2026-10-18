@@ -1,0 +1,38 @@
+# 你好！
+# Pimsleur-style build-up (test, 17 Oct). A sentence line: "German = Chinese".
+# The indented lines under it are its pieces, played in this order: words first, then phrases.
+# After the pieces, the whole sentence is played again.
+Hallo! Ich heiße Tom. = 你好！我叫汤姆。
+  Hallo! = 你好！
+  ich = 我
+  heiße = 叫
+  Tom = 汤姆
+  ich heiße Tom = 我叫汤姆
+Wie heißt du? = 你叫什么名字？
+  wie = 怎么
+  heißt = 叫
+  du = 你
+  heißt du = 你叫
+Ich heiße Anna. = 我叫安娜。
+  Anna = 安娜
+  ich heiße = 我叫
+Guten Morgen, Frau Li. = 早上好，李女士。
+  Morgen = 早上
+  Frau = 女士
+  Guten Morgen = 早上好
+  Frau Li = 李女士
+Wie geht es dir? = 你好吗？
+  dir = 你
+  wie geht es = 怎么样
+Mir geht es gut, danke. = 我很好，谢谢。
+  mir = 我
+  gut = 好
+  danke = 谢谢
+  mir geht es gut = 我很好
+Das ist mein Freund. = 这是我的朋友。
+  das = 这
+  ist = 是
+  mein = 我的
+  Freund = 朋友
+  das ist = 这是
+  mein Freund = 我的朋友

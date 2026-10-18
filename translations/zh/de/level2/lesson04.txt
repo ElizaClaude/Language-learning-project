@@ -1,0 +1,14 @@
+# Hobbys
+Was ist dein Hobby?
+Ich lese gern.
+Ich male gern.
+Kannst du schwimmen?
+Ja, ich kann schwimmen.
+Nein, ich kann nicht schwimmen.
+Ich kann Klavier spielen.
+Mein großer Bruder spielt gern Tischtennis.
+Sie singt sehr gut.
+Wir tanzen gern.
+Kannst du Fahrrad fahren?
+Spielen wir zusammen Basketball?
+Gute Idee!

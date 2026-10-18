@@ -1,0 +1,13 @@
+# Zahlen 1 bis 10
+Eins, zwei, drei, vier, fünf.
+Sechs, sieben, acht, neun, zehn.
+Zähl mit mir!
+Wie viele Bücher hast du?
+Ich habe drei Bücher.
+Wie viele Vögel siehst du?
+Ich sehe vier Vögel.
+Ich habe zwei Hände.
+Hier sind fünf Bleistifte.
+Wie alt ist deine kleine Schwester?
+Sie ist neun.
+Zehn Äpfel, bitte.

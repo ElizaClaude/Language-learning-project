@@ -1,0 +1,20 @@
+# Wörter: Farben
+die Farbe
+rot
+blau
+grün
+gelb
+schwarz
+weiß
+Welche Farbe?
+der Ball
+ich mag
+am liebsten
+die Katze
+der Hund
+der Apfel
+ja
+nein
+schau
+der Regenbogen
+schön

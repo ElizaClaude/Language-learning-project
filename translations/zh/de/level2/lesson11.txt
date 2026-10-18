@@ -1,0 +1,14 @@
+# Gefühle und Gesundheit
+Wie fühlst du dich?
+Ich bin glücklich.
+Ich bin traurig.
+Ich bin müde.
+Er ist wütend geworden.
+Hast du Angst?
+Was ist los?
+Ich habe Kopfschmerzen.
+Ich habe Fieber.
+Ich bin erkältet.
+Du solltest zum Arzt gehen.
+Trink viel Wasser und ruh dich gut aus.
+Gute Besserung!

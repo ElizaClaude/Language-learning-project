@@ -1,0 +1,14 @@
+# Einkaufen
+Was kostet das?
+Zwei Yuan.
+Ich möchte dieses T-Shirt.
+Welche Größe möchtest du?
+Gibt es das in Blau?
+Das ist zu teuer.
+Das ist billig.
+Ich nehme es.
+Was kostet ein Pfund Äpfel?
+Drei Yuan das Pfund.
+Hier ist das Geld.
+Fünf Yuan zurück.
+Danke, auf Wiedersehen!

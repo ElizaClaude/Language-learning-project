@@ -1,0 +1,13 @@
+# Wetter
+Wie ist das Wetter heute?
+Heute ist es sonnig.
+Heute ist es bewölkt.
+Es regnet.
+Es schneit!
+Heute ist es sehr windig.
+Es ist heiß.
+Es ist kalt.
+Ist es warm in Peking?
+Ja, es ist warm.
+Nimm deinen Regenschirm mit.
+Lass uns einen Schneemann bauen!

@@ -1,0 +1,14 @@
+# Farben
+Welche Farbe ist das?
+Das ist rot.
+Mein Ball ist blau.
+Ich mag Grün.
+Was ist deine Lieblingsfarbe?
+Meine Lieblingsfarbe ist Gelb.
+Die Katze ist schwarz.
+Der Hund ist weiß.
+Ist der Apfel rot?
+Ja, er ist rot.
+Nein, er ist grün.
+Schau, ein Regenbogen!
+Er ist wirklich schön.

@@ -1,0 +1,14 @@
+# Tiere
+Was ist das?
+Das ist ein Hund.
+Ich habe eine Katze.
+Der Affe ist lustig.
+Der Panda ist schwarz und weiß.
+Der Tiger ist groß.
+Die Maus ist klein.
+Die Ente kann schwimmen.
+Der kleine Vogel kann fliegen.
+Magst du Pferde?
+Ja, ich mag Pferde.
+Gehen wir in den Zoo!
+Ich sehe einen Elefanten.

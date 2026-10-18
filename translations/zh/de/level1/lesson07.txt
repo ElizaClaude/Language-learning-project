@@ -1,0 +1,14 @@
+# Essen und Trinken
+Ich habe Hunger.
+Ich habe Durst.
+Möchtest du Milch trinken?
+Ja, gern, danke.
+Nein, danke.
+Was möchtest du essen?
+Ich möchte Nudeln essen.
+Ich mag Reis und Fisch.
+Ich mag keine Karotten.
+Darf ich etwas Wasser trinken?
+Ein Ei und ein Glas Saft, bitte.
+Das Brot ist lecker.
+Guten Appetit!

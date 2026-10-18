@@ -3,7 +3,7 @@
 Short audio lessons for learning German, Chinese (Mandarin), Spanish and Italian.
 Each sentence is spoken in the language you learn, then in your own language, and the pair is played twice.
 Choose both on the page ("I want to learn" / "I speak"). Ready: every course from English,
-and German from Chinese (Level 1). More pairs are coming.
+German for Chinese speakers and Chinese for German speakers (Levels 0-2).
 About 4 minutes per lesson, 12 lessons per level.
 
 Listen: https://elizaclaude.github.io/Language-learning-project/
