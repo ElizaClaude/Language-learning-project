@@ -1,0 +1,497 @@
+# Spanish (Spain) Level 1: build-up pieces for the step-by-step lessons (make_pimsleur.py).
+# "= sentence" must equal the sentence in lessons/es/level1/; the lines below it are its pieces:
+# Spanish | English. Words first, then phrases. A piece already taught earlier is skipped automatically.
+# columns: en
+
+## lesson01
+= ¡Hola! Me llamo Tom.
+hola | hello
+me llamo | my name is
+me llamo Tom | my name is Tom
+= ¿Cómo te llamas?
+cómo | how
+te llamas | your name is
+= Me llamo Ana.
+= Buenos días, maestra Li.
+buenos días | good morning
+maestra | teacher
+maestra Li | Ms Li
+= ¿Cómo estás?
+estás | you are
+= Estoy bien, gracias.
+estoy | I am
+bien | well
+gracias | thank you
+estoy bien | I'm fine
+= Este es mi amigo.
+este | this
+es | is
+mi | my
+amigo | friend
+este es | this is
+mi amigo | my friend
+= Se llama Ben.
+se llama | his name is
+= Mucho gusto.
+mucho | a lot
+gusto | pleasure
+= ¿Cuántos años tienes?
+cuántos | how many
+años | years
+tienes | you have
+cuántos años | how old
+= Tengo siete años.
+tengo | I have
+siete | seven
+siete años | seven years old
+= ¡Adiós!
+adiós | goodbye
+= ¡Hasta mañana!
+hasta | until
+mañana | tomorrow
+
+## lesson02
+= ¿De qué color es?
+qué | what
+color | color
+de qué color | what color
+= Es rojo.
+rojo | red
+= Mi pelota es azul.
+pelota | ball
+azul | blue
+mi pelota | my ball
+= Me gusta el verde.
+me gusta | I like
+el verde | green
+= ¿Cuál es tu color favorito?
+cuál | which
+tu | your
+favorito | favorite
+tu color favorito | your favorite color
+= Mi color favorito es el amarillo.
+amarillo | yellow
+mi color favorito | my favorite color
+= El gato es negro.
+gato | cat
+negro | black
+el gato | the cat
+= El perro es blanco.
+perro | dog
+blanco | white
+el perro | the dog
+= ¿La manzana es roja?
+manzana | apple
+roja | red
+la manzana | the apple
+= Sí, es roja.
+sí | yes
+= No, es verde.
+no | no
+verde | green
+= ¡Mira, un arcoíris!
+mira | look
+arcoíris | rainbow
+un arcoíris | a rainbow
+= Es muy bonito.
+muy | very
+bonito | beautiful
+muy bonito | very beautiful
+
+## lesson03
+= Uno, dos, tres, cuatro, cinco.
+uno | one
+dos | two
+tres | three
+cuatro | four
+cinco | five
+= Seis, siete, ocho, nueve, diez.
+seis | six
+ocho | eight
+nueve | nine
+diez | ten
+= ¡Cuenta conmigo!
+cuenta | count
+conmigo | with me
+= ¿Cuántos libros tienes?
+libros | books
+cuántos libros | how many books
+= Tengo tres libros.
+tres libros | three books
+= ¿Cuántos pájaros ves?
+pájaros | birds
+ves | you see
+= Veo cuatro pájaros.
+veo | I see
+cuatro pájaros | four birds
+= Tengo dos manos.
+manos | hands
+dos manos | two hands
+= Aquí hay cinco lápices.
+aquí | here
+hay | there are
+lápices | pencils
+aquí hay | here are
+cinco lápices | five pencils
+= ¿Cuántos años tiene tu hermana?
+tiene | has
+hermana | sister
+tu hermana | your sister
+= Tiene nueve años.
+nueve años | nine years old
+= Diez manzanas, por favor.
+manzanas | apples
+por favor | please
+diez manzanas | ten apples
+
+## lesson04
+= Esta es mi familia.
+esta | this
+familia | family
+mi familia | my family
+= Este es mi papá.
+papá | dad
+= Esta es mi mamá.
+mamá | mom
+= ¿Quién es?
+quién | who
+= Este es mi hermano.
+hermano | brother
+= Esta es mi hermana.
+mi hermana | my sister
+= Mi abuelo es mayor.
+abuelo | grandpa
+mayor | old
+mi abuelo | my grandpa
+= A mi abuela le gusta cocinar.
+abuela | grandma
+cocinar | to cook
+le gusta | she likes
+a mi abuela | my grandma
+= ¿Tienes un hermano?
+un hermano | a brother
+= No, pero tengo una hermana.
+pero | but
+una hermana | a sister
+= Mi papá es médico.
+médico | doctor
+= Mi mamá es maestra.
+= Quiero mucho a mi familia.
+quiero | I love
+quiero mucho | I love very much
+
+## lesson05
+= Esta es mi cabeza.
+cabeza | head
+= Tengo dos ojos.
+ojos | eyes
+dos ojos | two eyes
+= Tengo una nariz y una boca.
+nariz | nose
+y | and
+boca | mouth
+una nariz | a nose
+una boca | a mouth
+= Tócate las orejas.
+tócate | touch
+orejas | ears
+las orejas | your ears
+= Levanta la mano.
+levanta | raise
+mano | hand
+la mano | your hand
+= ¡Aplaude!
+aplaude | clap
+= ¡Pisa fuerte!
+pisa | step
+fuerte | hard
+= Cierra los ojos.
+cierra | close
+los ojos | your eyes
+= Abre la boca.
+abre | open
+la boca | your mouth
+= Lávate las manos.
+lávate | wash
+las manos | your hands
+= Me duele la pierna.
+pierna | leg
+me duele | it hurts
+la pierna | my leg
+= El elefante tiene orejas grandes.
+elefante | elephant
+grandes | big
+orejas grandes | big ears
+= El conejo tiene orejas largas.
+conejo | rabbit
+largas | long
+orejas largas | long ears
+
+## lesson06
+= ¿Qué es esto?
+esto | this
+= Es un perro.
+un perro | a dog
+= Tengo un gato.
+un gato | a cat
+= El mono es gracioso.
+mono | monkey
+gracioso | funny
+= El panda es blanco y negro.
+panda | panda
+blanco y negro | black and white
+= El tigre es grande.
+tigre | tiger
+grande | big
+= El ratón es pequeño.
+ratón | mouse
+pequeño | small
+= El pato sabe nadar.
+pato | duck
+sabe | can
+nadar | to swim
+sabe nadar | can swim
+= El pájaro puede volar.
+pájaro | bird
+puede | can
+volar | to fly
+puede volar | can fly
+= ¿Te gustan los caballos?
+caballos | horses
+te gustan | do you like
+= Sí, me gustan los caballos.
+me gustan | I like
+= ¡Vamos al zoológico!
+vamos | let's go
+zoológico | zoo
+al zoológico | to the zoo
+= Veo un elefante.
+un elefante | an elephant
+
+## lesson07
+= Tengo hambre.
+hambre | hunger
+= Tengo sed.
+sed | thirst
+= ¿Quieres leche?
+quieres | do you want
+leche | milk
+= Sí, por favor.
+= No, gracias.
+= ¿Qué quieres comer?
+comer | to eat
+= Quiero un bocadillo.
+bocadillo | sandwich
+un bocadillo | a sandwich
+= Me gusta el arroz con pescado.
+arroz | rice
+con | with
+pescado | fish
+arroz con pescado | rice with fish
+= No me gustan las zanahorias.
+zanahorias | carrots
+no me gustan | I don't like
+= ¿Me das agua, por favor?
+agua | water
+me das | can you give me
+= Un huevo y un zumo, por favor.
+huevo | egg
+zumo | juice
+un huevo | an egg
+un zumo | a juice
+= El pan está delicioso.
+pan | bread
+delicioso | delicious
+está delicioso | is delicious
+= ¡Buen provecho!
+buen provecho | enjoy your meal
+
+## lesson08
+= Esta es mi escuela.
+escuela | school
+= Estamos en primero de primaria.
+estamos | we are
+primaria | primary school
+primero de primaria | first grade
+= Ella es nuestra maestra.
+ella | she
+nuestra | our
+nuestra maestra | our teacher
+= Poneos de pie, por favor.
+poneos de pie | stand up
+= Sentaos, por favor.
+sentaos | sit down
+= Abrid los libros.
+abrid | open
+los libros | your books
+= Tengo un lápiz.
+lápiz | pencil
+un lápiz | a pencil
+= Tengo una regla.
+regla | ruler
+una regla | a ruler
+= ¿Es tu goma?
+goma | eraser
+tu goma | your eraser
+= Sí, es mía.
+es mía | it's mine
+= ¿Dónde está mi bolígrafo?
+dónde | where
+bolígrafo | pen
+dónde está | where is
+= Está en tu mochila.
+mochila | schoolbag
+en tu mochila | in your bag
+= Mi mochila es nueva.
+nueva | new
+
+## lesson09
+= Me gustan las manzanas.
+= ¿Te gustan los plátanos?
+plátanos | bananas
+= Sí, me gustan.
+= La naranja es dulce.
+naranja | orange
+dulce | sweet
+= El limón es ácido.
+limón | lemon
+ácido | sour
+= ¿Cuántas peras hay?
+cuántas | how many
+peras | pears
+= Seis peras.
+= Las uvas son moradas.
+uvas | grapes
+son | are
+moradas | purple
+= Las fresas son rojas.
+fresas | strawberries
+rojas | red
+= Quiero una sandía.
+sandía | watermelon
+= Toma, un melocotón para ti.
+toma | here you are
+melocotón | peach
+para ti | for you
+= ¡Muchas gracias!
+muchas gracias | thank you very much
+= La fruta es saludable.
+fruta | fruit
+saludable | healthy
+
+## lesson10
+= ¿Es tu coche de juguete?
+coche | car
+juguete | toy
+coche de juguete | toy car
+= No, es su coche.
+su | his
+su coche | his car
+= Tengo un osito de peluche.
+osito de peluche | teddy bear
+= Mi muñeca es bonita.
+muñeca | doll
+bonita | pretty
+= ¿Dónde está mi pelota?
+= Está debajo de la silla.
+debajo de | under
+silla | chair
+debajo de la silla | under the chair
+= Está sobre la mesa.
+sobre | on
+mesa | table
+sobre la mesa | on the table
+= El barco está en la caja.
+barco | boat
+caja | box
+en la caja | in the box
+= Mi cometa vuela alto.
+cometa | kite
+vuela | flies
+alto | high
+= ¿Puedo jugar contigo?
+puedo | may I
+jugar | to play
+contigo | with you
+= ¡Sí, claro!
+claro | of course
+= ¡Vamos a jugar!
+vamos a jugar | let's play
+= Guarda tus juguetes.
+guarda | put away
+juguetes | toys
+tus juguetes | your toys
+
+## lesson11
+= ¿Qué tiempo hace hoy?
+tiempo | weather
+hoy | today
+qué tiempo hace | what's the weather like
+= Hace sol.
+sol | sun
+hace sol | it's sunny
+= Está nublado.
+nublado | cloudy
+= Está lloviendo.
+lloviendo | raining
+= ¡Está nevando!
+nevando | snowing
+= Hace viento.
+viento | wind
+= Hace calor.
+calor | heat
+hace calor | it's hot
+= Hace frío.
+frío | cold
+= ¿Hace calor en Sevilla?
+en Sevilla | in Seville
+= Sí, hace mucho calor.
+mucho calor | very hot
+= Coge el paraguas.
+coge | take
+paraguas | umbrella
+= ¡Hagamos un muñeco de nieve!
+hagamos | let's make
+nieve | snow
+muñeco de nieve | snowman
+
+## lesson12
+= Llevo un sombrero.
+llevo | I'm wearing
+sombrero | hat
+= Este es mi vestido nuevo.
+vestido | dress
+nuevo | new
+mi vestido nuevo | my new dress
+= Tu camisa es bonita.
+camisa | shirt
+= Mi camiseta es amarilla.
+camiseta | T-shirt
+amarilla | yellow
+= Mis calcetines son azules.
+mis | my
+calcetines | socks
+azules | blue
+= ¿Dónde están mis zapatos?
+zapatos | shoes
+dónde están | where are
+= Están debajo de la cama.
+cama | bed
+debajo de la cama | under the bed
+= ¿Son tus pantalones?
+pantalones | pants
+tus pantalones | your pants
+= No, son de mi hermano.
+de mi hermano | my brother's
+= La falda es demasiado corta.
+falda | skirt
+demasiado | too
+corta | short
+demasiado corta | too short
+= Ponte la chaqueta.
+ponte | put on
+chaqueta | jacket
+= Ponte el gorro, hace frío.
+gorro | woolly hat
+= Quítate los zapatos.
+quítate | take off

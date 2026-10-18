@@ -1,0 +1,419 @@
+# Chinese Level 2: build-up pieces for the step-by-step lessons (make_pimsleur.py).
+# "= sentence" must equal the sentence in lessons/zh/level2/; the lines below it are its pieces:
+# Chinese | German | English. Words first, then phrases. A piece already taught earlier is skipped automatically.
+# columns: de en
+
+## lesson01
+= 现在几点了？
+现在 | jetzt | now
+几点 | wie spät | what time
+= 现在七点。
+七点 | sieben Uhr | seven o'clock
+= 现在七点半。
+半 | halb | half
+七点半 | halb acht | half past seven
+= 我七点起床。
+起床 | aufstehen | to get up
+= 我七点半吃早饭。
+早饭 | das Frühstück | breakfast
+吃早饭 | frühstücken | have breakfast
+= 我八点去上学。
+八点 | acht Uhr | eight o'clock
+上学 | zur Schule gehen | go to school
+= 八点一刻上课。
+一刻 | ein Viertel | a quarter
+上课 | der Unterricht beginnt | class starts
+八点一刻 | Viertel nach acht | a quarter past eight
+= 我十二点吃午饭。
+午饭 | das Mittagessen | lunch
+十二点 | zwölf Uhr | twelve o'clock
+= 我四点回家。
+回家 | nach Hause gehen | go home
+= 然后我做作业。
+然后 | dann | then
+做 | machen | to do
+作业 | die Hausaufgaben | homework
+= 我们六点吃晚饭。
+晚饭 | das Abendessen | dinner
+= 我九点睡觉。
+睡觉 | schlafen gehen | go to bed
+= 快点儿，要迟到了！
+快点儿 | beeil dich | hurry up
+迟到 | zu spät kommen | be late
+要迟到了 | wir kommen zu spät | we'll be late
+
+## lesson02
+= 今天星期几？
+星期 | die Woche | week
+星期几 | welcher Wochentag | which day of the week
+= 今天星期一。
+星期一 | Montag | Monday
+= 明天星期二。
+星期二 | Dienstag | Tuesday
+= 星期三我有音乐课。
+星期三 | Mittwoch | Wednesday
+音乐课 | der Musikunterricht | music class
+= 星期四我踢足球。
+星期四 | Donnerstag | Thursday
+足球 | der Fußball | soccer
+踢足球 | Fußball spielen | play soccer
+= 我最喜欢星期五。
+星期五 | Freitag | Friday
+= 星期六我去看奶奶。
+星期六 | Samstag | Saturday
+去看 | besuchen | to visit
+= 星期天我睡懒觉。
+星期天 | Sonntag | Sunday
+睡懒觉 | ausschlafen | sleep in
+= 你周末做什么？
+周末 | das Wochenende | weekend
+= 我去公园。
+公园 | der Park | park
+= 一个星期有七天。
+七天 | sieben Tage | seven days
+= 星期一你有什么课？
+课 | der Unterricht | class
+什么课 | welche Fächer | which classes
+= 我有数学课和英语课。
+数学 | Mathe | math
+英语 | Englisch | English
+
+## lesson03
+= 这是我的家。
+家 | das Zuhause | home
+= 我家有三个房间。
+房间 | das Zimmer | room
+我家 | bei uns | my home
+三个房间 | drei Zimmer | three rooms
+= 这是客厅。
+客厅 | das Wohnzimmer | living room
+= 厨房很大。
+厨房 | die Küche | kitchen
+= 我的房间很小，但是很漂亮。
+我的房间 | mein Zimmer | my room
+= 洗手间在哪儿？
+洗手间 | die Toilette | bathroom
+= 在厨房旁边。
+旁边 | neben | next to
+= 妈妈在厨房里。
+在厨房里 | in der Küche | in the kitchen
+= 爸爸在客厅看电视。
+电视 | der Fernseher | TV
+看电视 | fernsehen | watch TV
+= 猫在沙发上睡觉。
+沙发 | das Sofa | sofa
+在沙发上 | auf dem Sofa | on the sofa
+= 卧室里有一张床。
+卧室 | das Schlafzimmer | bedroom
+一张床 | ein Bett | a bed
+= 有一个窗户和一扇门。
+窗户 | das Fenster | window
+门 | die Tür | door
+一扇门 | eine Tür | a door
+= 请进！
+进 | herein | come in
+
+## lesson04
+= 你的爱好是什么？
+爱好 | das Hobby | hobby
+= 我喜欢看书。
+看书 | lesen | to read
+= 我喜欢画画。
+画画 | malen | to draw
+= 你会游泳吗？
+你会 | kannst du | can you
+= 会，我会游泳。
+我会 | ich kann | I can
+= 不会，我不会游泳。
+不会 | kann nicht | can't
+= 我会弹钢琴。
+钢琴 | das Klavier | piano
+弹钢琴 | Klavier spielen | play the piano
+= 我哥哥喜欢打乒乓球。
+乒乓球 | Tischtennis | ping-pong
+打乒乓球 | Tischtennis spielen | play ping-pong
+= 她唱歌唱得很好。
+唱歌 | singen | to sing
+唱得很好 | singt sehr gut | sings very well
+= 我们喜欢跳舞。
+跳舞 | tanzen | to dance
+= 你会骑自行车吗？
+自行车 | das Fahrrad | bike
+骑自行车 | Fahrrad fahren | ride a bike
+= 我们一起打篮球吧？
+篮球 | Basketball | basketball
+打篮球 | Basketball spielen | play basketball
+= 好主意！
+主意 | die Idee | idea
+
+## lesson05
+= 一年有四个季节。
+年 | das Jahr | year
+季节 | die Jahreszeit | season
+一年 | ein Jahr | a year
+四个季节 | vier Jahreszeiten | four seasons
+= 春天很暖和。
+春天 | der Frühling | spring
+= 夏天很热。
+夏天 | der Sommer | summer
+= 秋天树叶落了。
+秋天 | der Herbst | autumn
+树叶 | die Blätter | leaves
+落 | fallen | to fall
+= 冬天很冷，会下雪。
+冬天 | der Winter | winter
+= 你喜欢哪个季节？
+哪个 | welcher | which
+哪个季节 | welche Jahreszeit | which season
+= 我喜欢夏天，因为我可以游泳。
+因为 | weil | because
+= 一年有十二个月。
+月 | der Monat | month
+十二个月 | zwölf Monate | twelve months
+= 一月是第一个月。
+一月 | Januar | January
+第一个月 | der erste Monat | the first month
+= 春节一般在一月或者二月。
+春节 | das chinesische Neujahrsfest | Chinese New Year
+一般 | meistens | usually
+或者 | oder | or
+二月 | Februar | February
+= 七月我们放暑假。
+七月 | Juli | July
+暑假 | die Sommerferien | summer vacation
+放暑假 | Sommerferien haben | have summer vacation
+= 现在是几月？
+几月 | welcher Monat | which month
+= 现在是十月。
+十月 | Oktober | October
+
+## lesson06
+= 这个多少钱？
+这个 | das | this
+多少钱 | wie viel kostet | how much
+= 两块钱。
+钱 | das Geld | money
+两块钱 | zwei Yuan | two yuan
+= 我想要这件T恤。
+这件T恤 | dieses T-Shirt | this T-shirt
+= 你要多大号的？
+要 | wollen | to want
+多大号 | welche Größe | what size
+= 有蓝色的吗？
+蓝色的 | in Blau | in blue
+= 太贵了。
+太 | zu | too
+贵 | teuer | expensive
+= 很便宜。
+便宜 | billig | cheap
+= 我买了。
+买 | kaufen | to buy
+= 苹果多少钱一斤？
+一斤 | ein Pfund | half a kilo
+= 三块钱一斤。
+三块钱 | drei Yuan | three yuan
+= 给你钱。
+= 找你五块。
+找 | herausgeben | to give change
+五块 | fünf Yuan | five yuan
+= 谢谢，再见！
+
+## lesson07
+= 我很饿。
+= 我们去饭馆吧！
+饭馆 | das Restaurant | restaurant
+去饭馆 | ins Restaurant gehen | go to a restaurant
+= 你们想点什么？
+你们 | ihr | you all
+点什么 | was bestellen | order what
+= 我要一碗汤。
+汤 | die Suppe | soup
+一碗汤 | eine Schüssel Suppe | a bowl of soup
+= 我要鸡肉和米饭。
+鸡肉 | das Hähnchen | chicken
+我要 | ich möchte | I'd like
+= 你们想喝点什么？
+喝点什么 | etwas trinken | something to drink
+= 请给我一杯橙汁。
+橙汁 | der Orangensaft | orange juice
+一杯橙汁 | ein Glas Orangensaft | a glass of orange juice
+= 真好吃！
+= 我吃饱了。
+饱 | satt | full
+吃饱了 | ich bin satt | I'm full
+= 服务员，买单！
+服务员 | der Kellner | waiter
+买单 | zahlen | pay the bill
+= 一共二十块。
+一共 | insgesamt | in total
+二十 | zwanzig | twenty
+= 我会用筷子。
+筷子 | die Stäbchen | chopsticks
+用筷子 | mit Stäbchen essen | use chopsticks
+= 请给我一把勺子。
+勺子 | der Löffel | spoon
+一把勺子 | einen Löffel | a spoon
+
+## lesson08
+= 你爸爸是做什么工作的？
+工作 | die Arbeit | work
+做什么工作 | was arbeitet | what job
+= 他是警察。
+警察 | der Polizist | police officer
+= 我阿姨是护士。
+阿姨 | die Tante | aunt
+护士 | die Krankenschwester | nurse
+= 我叔叔是厨师。
+叔叔 | der Onkel | uncle
+厨师 | der Koch | cook
+= 她在医院工作。
+医院 | das Krankenhaus | hospital
+在医院 | im Krankenhaus | in the hospital
+= 他在饭馆工作。
+在饭馆 | im Restaurant | in a restaurant
+= 你长大想做什么？
+长大 | groß werden | to grow up
+= 我想当飞行员。
+当 | werden | to become
+飞行员 | der Pilot | pilot
+= 我想当医生。
+= 司机开公共汽车。
+司机 | der Fahrer | driver
+开 | fahren | to drive
+公共汽车 | der Bus | bus
+= 农民在地里干活。
+农民 | der Bauer | farmer
+地里 | auf dem Feld | in the field
+干活 | arbeiten | to work
+= 老师帮助我们。
+帮助 | helfen | to help
+= 这是很重要的工作。
+重要 | wichtig | important
+
+## lesson09
+= 你怎么去学校？
+怎么 | wie | how
+去学校 | zur Schule | to school
+= 我走路去。
+走路 | zu Fuß gehen | to walk
+= 我骑自行车去。
+= 我爸爸开车去上班。
+开车 | Auto fahren | to drive
+上班 | zur Arbeit gehen | go to work
+= 我们坐公共汽车去。
+坐公共汽车 | mit dem Bus fahren | take the bus
+= 地铁很快。
+地铁 | die U-Bahn | subway
+快 | schnell | fast
+= 公共汽车站在哪儿？
+公共汽车站 | die Bushaltestelle | bus stop
+= 一直往前走。
+一直 | immer | straight on
+往前 | nach vorne | forward
+走 | gehen | to walk
+= 然后往左拐。
+左 | links | left
+拐 | abbiegen | to turn
+往左拐 | links abbiegen | turn left
+= 然后往右拐。
+右 | rechts | right
+往右拐 | rechts abbiegen | turn right
+= 远吗？
+远 | weit | far
+= 不远，很近。
+近 | nah | close
+= 红灯停，绿灯行。
+红灯 | die rote Ampel | red light
+停 | anhalten | to stop
+绿灯 | die grüne Ampel | green light
+行 | gehen | to go
+
+## lesson10
+= 你的生日是几月几号？
+生日 | der Geburtstag | birthday
+几月几号 | welches Datum | what date
+= 我的生日是五月三号。
+五月 | Mai | May
+五月三号 | der dritte Mai | May third
+= 今天是我的生日！
+= 祝你生日快乐！
+祝 | wünschen | to wish
+快乐 | fröhlich | happy
+生日快乐 | alles Gute zum Geburtstag | happy birthday
+= 你今年几岁了？
+今年 | dieses Jahr | this year
+= 我今年十岁了。
+十岁 | zehn Jahre alt | ten years old
+= 这是给你的礼物。
+礼物 | das Geschenk | present
+给你的 | für dich | for you
+= 谢谢！真漂亮。
+= 我们一起吃蛋糕吧。
+蛋糕 | der Kuchen | cake
+吃蛋糕 | Kuchen essen | eat cake
+= 快吹蜡烛！
+吹 | pusten | to blow
+蜡烛 | die Kerzen | candles
+= 许个愿吧！
+许愿 | sich etwas wünschen | make a wish
+= 我的朋友们都来了。
+朋友们 | die Freunde | friends
+都 | alle | all
+来了 | sind gekommen | came
+= 今天几月几号？
+
+## lesson11
+= 你感觉怎么样？
+感觉 | sich fühlen | to feel
+= 我很高兴。
+= 我很难过。
+难过 | traurig | sad
+= 我很累。
+累 | müde | tired
+= 他生气了。
+生气 | wütend | angry
+= 你害怕吗？
+害怕 | Angst haben | to be scared
+= 怎么了？
+= 我头疼。
+头疼 | Kopfschmerzen | headache
+= 我发烧了。
+发烧 | Fieber haben | to have a fever
+= 我感冒了。
+感冒 | erkältet sein | to have a cold
+= 你应该去看医生。
+应该 | sollen | should
+看医生 | zum Arzt gehen | see a doctor
+= 多喝水，好好休息。
+休息 | sich ausruhen | to rest
+多喝水 | viel Wasser trinken | drink lots of water
+好好休息 | ruh dich gut aus | rest well
+= 祝你早日康复！
+早日 | bald | soon
+康复 | gesund werden | to get well
+
+## lesson12
+= 你昨天做什么了？
+昨天 | gestern | yesterday
+= 我踢足球了。
+= 我看了一本书。
+一本书 | ein Buch | a book
+看了 | habe gelesen | read
+= 我们去动物园了。
+去动物园了 | sind in den Zoo gegangen | went to the zoo
+= 我去看奶奶了。
+= 我们吃了面条。
+吃了 | haben gegessen | ate
+= 我看了一部电影。
+电影 | der Film | movie
+一部电影 | einen Film | a movie
+= 很有意思。
+有意思 | interessant | interesting
+= 你周末去哪儿了？
+哪儿 | wo | where
+去哪儿了 | wo warst du | where did you go
+= 我去公园了。
+= 天气很好。
+= 你做完作业了吗？
+做完 | fertig machen | to finish
+= 做完了！

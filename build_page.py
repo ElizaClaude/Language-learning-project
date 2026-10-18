@@ -47,7 +47,9 @@ def join(lines, slow):
 
 def main():
     p2, p3 = size("pause2"), size("pause3")
-    data = {"langs": LANGS, "courses": {}, "bases": {}}
+    # step-by-step lessons (make_pimsleur.py) live in data/<learn>_<from>.json, fetched by the page when needed
+    steps = sorted(p.stem.replace("_", "|") for p in (HERE / "data").glob("*_*.json"))
+    data = {"langs": LANGS, "courses": {}, "bases": {}, "steps": steps}
     check = []
     for target, base, txt, sentences, base_title in courses():
         pairs = read_lesson(txt)
@@ -81,6 +83,11 @@ def main():
         t, b = pair.split("|")
         print(f"learn {LANGS[t]['label']} from {LANGS[b]['label']}: {len(lessons)} lessons, "
               f"{sum(x['dur'] for x in lessons.values()) / 60:.0f} min")
+    for pair in steps:
+        d = json.loads((HERE / "data" / f"{pair.replace('|', '_')}.json").read_text(encoding="utf-8"))
+        t, b = pair.split("|")
+        print(f"step by step: {LANGS[t]['label']} from {LANGS[b]['label']}: {len(d['parts'])} parts, "
+              f"{sum(p['dur'] for p in d['parts']) / 60:.0f} min")
     print(f"index.html: {len(page) / 1e3:.0f} kB")
 
     if "--check" in sys.argv:

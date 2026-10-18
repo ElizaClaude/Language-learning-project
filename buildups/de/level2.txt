@@ -1,0 +1,449 @@
+# German Level 2: build-up pieces for the step-by-step lessons (make_pimsleur.py).
+# "= sentence" must equal the sentence in lessons/de/level2/; the lines below it are its pieces:
+# German | Chinese | English. Words first, then phrases. A piece already taught earlier is skipped automatically.
+# columns: zh en
+
+## lesson01
+= Wie spät ist es?
+spät | 晚 | late
+wie spät | 几点 | what time
+= Es ist sieben Uhr.
+Uhr | 点 | o'clock
+sieben Uhr | 七点 | seven o'clock
+= Es ist halb acht.
+halb | 半 | half
+halb acht | 七点半 | half past seven
+= Ich stehe um sieben Uhr auf.
+um | 在 | at
+ich stehe auf | 我起床 | I get up
+um sieben Uhr | 七点 | at seven o'clock
+= Ich frühstücke um halb acht.
+frühstücke | 吃早饭 | have breakfast
+um halb acht | 七点半 | at half past seven
+= Ich gehe um acht Uhr zur Schule.
+ich gehe | 我去 | I go
+zur Schule | 去上学 | to school
+= Der Unterricht fängt um Viertel nach acht an.
+Unterricht | 课 | class
+Viertel | 一刻 | quarter
+fängt an | 开始 | starts
+Viertel nach acht | 八点一刻 | a quarter past eight
+= Ich esse um zwölf Uhr zu Mittag.
+zwölf | 十二 | twelve
+zu Mittag | 吃午饭 | for lunch
+= Um vier Uhr komme ich nach Hause.
+nach Hause | 回家 | home
+komme ich nach Hause | 我回家 | I come home
+= Dann mache ich meine Hausaufgaben.
+dann | 然后 | then
+mache | 做 | do
+Hausaufgaben | 作业 | homework
+= Wir essen um sechs Uhr zu Abend.
+wir essen | 我们吃 | we eat
+zu Abend | 吃晚饭 | for dinner
+= Ich gehe um neun Uhr ins Bett.
+ins Bett | 上床睡觉 | to bed
+= Beeil dich, es ist spät!
+beeil dich | 快点 | hurry up
+es ist spät | 已经很晚了 | it's late
+
+## lesson02
+= Welcher Tag ist heute?
+Tag | 天 | day
+welcher Tag | 星期几 | which day
+= Heute ist Montag.
+Montag | 星期一 | Monday
+= Morgen ist Dienstag.
+Dienstag | 星期二 | Tuesday
+= Am Mittwoch habe ich Musik.
+Mittwoch | 星期三 | Wednesday
+Musik | 音乐课 | music
+am Mittwoch | 星期三 | on Wednesday
+= Am Donnerstag spiele ich Fußball.
+Donnerstag | 星期四 | Thursday
+Fußball | 足球 | soccer
+spiele ich Fußball | 我踢足球 | I play soccer
+= Freitag ist mein Lieblingstag.
+Freitag | 星期五 | Friday
+Lieblingstag | 最喜欢的一天 | favorite day
+= Am Samstag besuche ich meine Oma.
+Samstag | 星期六 | Saturday
+besuche | 看望 | visit
+= Am Sonntag schlafe ich lange.
+Sonntag | 星期天 | Sunday
+schlafe | 睡觉 | sleep
+lange | 很久 | long
+= Was machst du am Wochenende?
+machst du | 你做 | do you do
+Wochenende | 周末 | weekend
+am Wochenende | 周末 | on the weekend
+= Ich gehe in den Park.
+Park | 公园 | park
+in den Park | 去公园 | to the park
+= Eine Woche hat sieben Tage.
+Woche | 星期 | week
+sieben Tage | 七天 | seven days
+= Was hast du am Montag?
+was hast du | 你有什么 | what do you have
+= Ich habe Mathe und Englisch.
+Mathe | 数学 | math
+Englisch | 英语 | English
+
+## lesson03
+= Das ist unser Haus.
+unser | 我们的 | our
+Haus | 房子 | house
+= Unsere Wohnung hat drei Zimmer.
+Wohnung | 公寓 | apartment
+Zimmer | 房间 | rooms
+drei Zimmer | 三个房间 | three rooms
+= Das ist das Wohnzimmer.
+Wohnzimmer | 客厅 | living room
+= Die Küche ist groß.
+Küche | 厨房 | kitchen
+= Mein Zimmer ist klein, aber schön.
+mein Zimmer | 我的房间 | my room
+klein, aber schön | 很小，但是很漂亮 | small but nice
+= Wo ist das Badezimmer?
+Badezimmer | 卫生间 | bathroom
+= Es ist neben der Küche.
+neben | 旁边 | next to
+neben der Küche | 在厨房旁边 | next to the kitchen
+= Meine Mutter ist in der Küche.
+in der Küche | 在厨房里 | in the kitchen
+= Mein Vater sieht im Wohnzimmer fern.
+sieht fern | 看电视 | watches TV
+im Wohnzimmer | 在客厅里 | in the living room
+= Die Katze schläft auf dem Sofa.
+schläft | 睡觉 | sleeps
+Sofa | 沙发 | sofa
+auf dem Sofa | 在沙发上 | on the sofa
+= Im Schlafzimmer steht ein Bett.
+Schlafzimmer | 卧室 | bedroom
+ein Bett | 一张床 | a bed
+= Es gibt ein Fenster und eine Tür.
+es gibt | 有 | there is
+Fenster | 窗户 | window
+Tür | 门 | door
+= Komm herein!
+komm | 来 | come
+herein | 进来 | in
+
+## lesson04
+= Was ist dein Hobby?
+Hobby | 爱好 | hobby
+dein Hobby | 你的爱好 | your hobby
+= Ich lese gern.
+lese | 看书 | read
+= Ich male gern.
+male | 画画 | draw
+= Kannst du schwimmen?
+kannst du | 你会 | can you
+= Ja, ich kann schwimmen.
+ich kann | 我会 | I can
+= Nein, ich kann nicht schwimmen.
+nicht | 不 | not
+ich kann nicht | 我不会 | I can't
+= Ich kann Klavier spielen.
+Klavier | 钢琴 | piano
+Klavier spielen | 弹钢琴 | play the piano
+= Mein Bruder spielt gern Tischtennis.
+Tischtennis | 乒乓球 | ping-pong
+spielt gern | 喜欢打 | likes playing
+= Sie singt sehr gut.
+singt | 唱歌 | sings
+sehr gut | 很好 | very well
+= Wir tanzen gern.
+wir | 我们 | we
+tanzen | 跳舞 | dance
+= Kannst du Fahrrad fahren?
+Fahrrad | 自行车 | bike
+Fahrrad fahren | 骑自行车 | ride a bike
+= Spielen wir zusammen Basketball?
+zusammen | 一起 | together
+Basketball | 篮球 | basketball
+= Gute Idee!
+Idee | 主意 | idea
+
+## lesson05
+= Es gibt vier Jahreszeiten.
+Jahreszeiten | 季节 | seasons
+vier Jahreszeiten | 四个季节 | four seasons
+= Im Frühling ist es warm.
+Frühling | 春天 | spring
+im Frühling | 在春天 | in spring
+= Im Sommer ist es heiß.
+Sommer | 夏天 | summer
+= Im Herbst fallen die Blätter.
+Herbst | 秋天 | autumn
+fallen | 落 | fall
+Blätter | 树叶 | leaves
+= Im Winter ist es kalt und es schneit.
+Winter | 冬天 | winter
+= Welche Jahreszeit magst du?
+welche Jahreszeit | 哪个季节 | which season
+= Ich mag den Sommer, denn ich kann schwimmen.
+denn | 因为 | because
+= Ein Jahr hat zwölf Monate.
+Jahr | 年 | year
+Monate | 月 | months
+zwölf Monate | 十二个月 | twelve months
+= Januar ist der erste Monat.
+Januar | 一月 | January
+der erste Monat | 第一个月 | the first month
+= Im Dezember ist Weihnachten.
+Dezember | 十二月 | December
+Weihnachten | 圣诞节 | Christmas
+= Im Juli haben wir Ferien.
+Juli | 七月 | July
+Ferien | 假期 | vacation
+haben wir | 我们有 | we have
+= Welcher Monat ist jetzt?
+jetzt | 现在 | now
+welcher Monat | 几月 | which month
+= Jetzt ist Oktober.
+Oktober | 十月 | October
+
+## lesson06
+= Was kostet das?
+was kostet | 多少钱 | how much is
+= Es kostet zwei Euro.
+Euro | 欧元 | euros
+zwei Euro | 两欧元 | two euros
+= Ich möchte dieses T-Shirt.
+dieses | 这件 | this
+= Welche Größe?
+Größe | 尺码 | size
+= Haben Sie das in Blau?
+haben Sie | 您有 | do you have
+in Blau | 蓝色的 | in blue
+= Das ist zu teuer.
+teuer | 贵 | expensive
+zu teuer | 太贵了 | too expensive
+= Das ist billig.
+billig | 便宜 | cheap
+= Ich nehme es.
+ich nehme | 我买 | I'll take
+= Was kosten die Äpfel?
+die Äpfel | 苹果 | the apples
+= Ein Kilo kostet drei Euro.
+Kilo | 公斤 | kilo
+ein Kilo | 一公斤 | one kilo
+= Hier ist mein Geld.
+Geld | 钱 | money
+= Hier ist Ihr Wechselgeld.
+Ihr | 您的 | your
+Wechselgeld | 零钱 | change
+= Danke, auf Wiedersehen!
+
+## lesson07
+= Ich habe großen Hunger.
+großen Hunger | 很饿 | very hungry
+= Gehen wir ins Restaurant!
+Restaurant | 饭馆 | restaurant
+ins Restaurant | 去饭馆 | to the restaurant
+= Was möchten Sie bestellen?
+bestellen | 点菜 | order
+möchten Sie | 您想 | would you like
+= Ich hätte gern eine Suppe.
+Suppe | 汤 | soup
+ich hätte gern | 我想要 | I'd like
+= Und für mich Hähnchen mit Reis.
+für mich | 给我 | for me
+Hähnchen | 鸡肉 | chicken
+mit Reis | 配米饭 | with rice
+= Möchten Sie etwas trinken?
+etwas | 一点 | something
+trinken | 喝 | drink
+= Ein Glas Orangensaft, bitte.
+Glas | 杯 | glass
+Orangensaft | 橙汁 | orange juice
+ein Glas | 一杯 | a glass
+= Das schmeckt sehr gut!
+schmeckt | 尝起来 | tastes
+= Ich bin satt.
+satt | 饱 | full
+= Die Rechnung, bitte.
+Rechnung | 账单 | check
+= Das macht zwanzig Euro.
+zwanzig | 二十 | twenty
+das macht | 一共 | that makes
+= Ich kann mit Stäbchen essen.
+Stäbchen | 筷子 | chopsticks
+mit Stäbchen | 用筷子 | with chopsticks
+= Messer und Gabel, bitte.
+Messer | 刀 | knife
+Gabel | 叉 | fork
+
+## lesson08
+= Was ist dein Vater von Beruf?
+Beruf | 职业 | job
+von Beruf | 做什么工作 | as a job
+= Er ist Polizist.
+Polizist | 警察 | police officer
+= Meine Tante ist Krankenschwester.
+Tante | 阿姨 | aunt
+Krankenschwester | 护士 | nurse
+= Mein Onkel ist Koch.
+Onkel | 叔叔 | uncle
+Koch | 厨师 | cook
+= Sie arbeitet im Krankenhaus.
+arbeitet | 工作 | works
+Krankenhaus | 医院 | hospital
+im Krankenhaus | 在医院 | in the hospital
+= Er arbeitet in einem Restaurant.
+in einem Restaurant | 在一家饭馆 | in a restaurant
+= Was willst du werden?
+willst du | 你想 | do you want
+werden | 成为 | become
+= Ich will Pilot werden.
+Pilot | 飞行员 | pilot
+ich will | 我想 | I want
+= Ich will Ärztin werden.
+Ärztin | 医生 | doctor
+= Der Fahrer fährt den Bus.
+Fahrer | 司机 | driver
+fährt | 开 | drives
+Bus | 公共汽车 | bus
+= Der Bauer arbeitet auf dem Feld.
+Bauer | 农民 | farmer
+Feld | 田地 | field
+auf dem Feld | 在地里 | in the field
+= Die Lehrerin hilft uns.
+hilft | 帮助 | helps
+uns | 我们 | us
+= Das ist eine wichtige Arbeit.
+wichtige | 重要的 | important
+Arbeit | 工作 | work
+
+## lesson09
+= Wie kommst du zur Schule?
+wie kommst du | 你怎么去 | how do you get
+= Ich gehe zu Fuß.
+zu Fuß | 走路 | on foot
+= Ich fahre mit dem Fahrrad.
+ich fahre | 我去 | I go
+mit dem Fahrrad | 骑自行车 | by bike
+= Mein Vater fährt mit dem Auto zur Arbeit.
+mit dem Auto | 开车 | by car
+zur Arbeit | 去上班 | to work
+= Wir fahren mit dem Bus.
+mit dem Bus | 坐公共汽车 | by bus
+= Die U-Bahn ist schnell.
+U-Bahn | 地铁 | subway
+schnell | 快 | fast
+= Wo ist die Bushaltestelle?
+Bushaltestelle | 公共汽车站 | bus stop
+= Geh geradeaus.
+geh | 走 | go
+geradeaus | 一直往前 | straight ahead
+= Dann bieg links ab.
+links | 左 | left
+bieg ab | 转弯 | turn
+= Dann bieg rechts ab.
+rechts | 右 | right
+= Ist es weit?
+weit | 远 | far
+= Nein, es ist ganz nah.
+nah | 近 | close
+ganz nah | 很近 | very close
+= Halt! Die Ampel ist rot.
+halt | 停 | stop
+Ampel | 红绿灯 | traffic light
+
+## lesson10
+= Wann hast du Geburtstag?
+wann | 什么时候 | when
+Geburtstag | 生日 | birthday
+= Mein Geburtstag ist am dritten Mai.
+Mai | 五月 | May
+am dritten Mai | 五月三号 | on May third
+= Heute ist mein Geburtstag!
+mein Geburtstag | 我的生日 | my birthday
+= Alles Gute zum Geburtstag!
+alles Gute | 一切都好 | all the best
+= Wie alt wirst du?
+wirst du | 你满 | are you turning
+= Ich werde zehn.
+ich werde | 我满 | I'm turning
+= Das ist ein Geschenk für dich.
+Geschenk | 礼物 | present
+ein Geschenk | 一份礼物 | a present
+= Danke! Es ist wunderschön.
+wunderschön | 真漂亮 | lovely
+= Wir essen Kuchen.
+Kuchen | 蛋糕 | cake
+= Puste die Kerzen aus!
+Kerzen | 蜡烛 | candles
+puste aus | 吹灭 | blow out
+= Wünsch dir was!
+wünsch dir | 许愿 | wish
+= Meine Freunde kommen zu meiner Party.
+Freunde | 朋友们 | friends
+Party | 聚会 | party
+zu meiner Party | 来我的聚会 | to my party
+= Welches Datum ist heute?
+Datum | 日期 | date
+
+## lesson11
+= Wie fühlst du dich?
+fühlst du dich | 你感觉 | do you feel
+= Ich bin glücklich.
+glücklich | 高兴 | happy
+= Ich bin traurig.
+traurig | 难过 | sad
+= Ich bin müde.
+müde | 累 | tired
+= Er ist wütend.
+wütend | 生气 | angry
+= Hast du Angst?
+Angst | 害怕 | fear
+= Was ist los?
+= Ich habe Kopfschmerzen.
+Kopfschmerzen | 头疼 | headache
+= Ich habe Fieber.
+Fieber | 发烧 | fever
+= Ich bin erkältet.
+erkältet | 感冒了 | have a cold
+= Du solltest zum Arzt gehen.
+du solltest | 你应该 | you should
+zum Arzt | 去看医生 | to the doctor
+= Trink viel Wasser und ruh dich aus.
+trink | 喝 | drink
+viel Wasser | 很多水 | lots of water
+ruh dich aus | 休息 | rest
+= Gute Besserung!
+Besserung | 康复 | recovery
+
+## lesson12
+= Was hast du gestern gemacht?
+gestern | 昨天 | yesterday
+gemacht | 做了 | done
+= Ich habe Fußball gespielt.
+gespielt | 踢了 | played
+= Ich habe ein Buch gelesen.
+gelesen | 看了 | read
+ein Buch | 一本书 | a book
+= Wir sind in den Zoo gegangen.
+gegangen | 去了 | went
+= Ich habe meine Oma besucht.
+besucht | 看望了 | visited
+= Wir haben Nudeln gegessen.
+gegessen | 吃了 | ate
+= Ich habe einen Film gesehen.
+Film | 电影 | movie
+gesehen | 看了 | watched
+= Es hat viel Spaß gemacht.
+Spaß | 乐趣 | fun
+viel Spaß | 很好玩 | a lot of fun
+= Wo warst du am Wochenende?
+wo warst du | 你去哪儿了 | where were you
+= Ich war im Park.
+ich war | 我去了 | I was
+im Park | 在公园 | in the park
+= Das Wetter war schön.
+= Hast du deine Hausaufgaben gemacht?
+deine Hausaufgaben | 你的作业 | your homework
+= Ja, schon fertig!
+schon | 已经 | already
+fertig | 完了 | done

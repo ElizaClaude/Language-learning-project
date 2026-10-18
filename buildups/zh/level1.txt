@@ -1,0 +1,467 @@
+# Chinese Level 1: build-up pieces for the step-by-step lessons (make_pimsleur.py).
+# "= sentence" must equal the sentence in lessons/zh/level1/; the lines below it are its pieces:
+# Chinese | German | English. Words first, then phrases. A piece already taught earlier is skipped automatically.
+# columns: de en
+
+## lesson01
+= 你好！我叫汤姆。
+你好 | Hallo | hello
+我 | ich | I
+叫 | heißen | to be called
+我叫汤姆 | ich heiße Tom | my name is Tom
+= 你叫什么名字？
+你 | du | you
+什么 | was | what
+名字 | der Name | name
+什么名字 | welcher Name | what name
+= 我叫安娜。
+我叫 | ich heiße | my name is
+= 早上好，李老师。
+早上 | der Morgen | morning
+好 | gut | good
+老师 | der Lehrer | teacher
+早上好 | Guten Morgen | good morning
+李老师 | Lehrerin Li | Teacher Li
+= 你好吗？
+= 我很好，谢谢。
+很 | sehr | very
+谢谢 | danke | thank you
+很好 | sehr gut | very good
+= 这是我的朋友。
+这 | das | this
+是 | ist | is
+朋友 | der Freund | friend
+这是 | das ist | this is
+我的 | mein | my
+我的朋友 | mein Freund | my friend
+= 他叫本。
+他 | er | he
+他叫 | er heißt | his name is
+= 很高兴认识你。
+高兴 | froh | glad
+认识 | kennenlernen | to meet
+认识你 | dich kennenlernen | to meet you
+= 你几岁了？
+几 | wie viele | how many
+岁 | Jahre alt | years old
+几岁 | wie alt | how old
+= 我七岁了。
+七 | sieben | seven
+七岁 | sieben Jahre alt | seven years old
+= 再见！
+再 | wieder | again
+见 | sehen | to see
+= 明天见！
+明天 | morgen | tomorrow
+
+## lesson02
+= 这是什么颜色？
+颜色 | die Farbe | color
+什么颜色 | welche Farbe | what color
+= 是红色。
+红色 | rot | red
+= 我的球是蓝色的。
+球 | der Ball | ball
+蓝色 | blau | blue
+我的球 | mein Ball | my ball
+= 我喜欢绿色。
+喜欢 | mögen | to like
+绿色 | grün | green
+我喜欢 | ich mag | I like
+= 你最喜欢什么颜色？
+最 | am meisten | most
+最喜欢 | am liebsten mögen | to like best
+= 我最喜欢黄色。
+黄色 | gelb | yellow
+= 这只猫是黑色的。
+猫 | die Katze | cat
+黑色 | schwarz | black
+这只猫 | diese Katze | this cat
+= 这只狗是白色的。
+狗 | der Hund | dog
+白色 | weiß | white
+这只狗 | dieser Hund | this dog
+= 苹果是红色的吗？
+苹果 | der Apfel | apple
+= 是的，它是红色的。
+是的 | ja | yes
+它 | es | it
+= 不，它是绿色的。
+不 | nein | no
+= 看，彩虹！
+看 | schau | look
+彩虹 | der Regenbogen | rainbow
+= 它真漂亮。
+真 | wirklich | really
+漂亮 | schön | beautiful
+
+## lesson03
+= 一，二，三，四，五。
+一 | eins | one
+二 | zwei | two
+三 | drei | three
+四 | vier | four
+五 | fünf | five
+= 六，七，八，九，十。
+六 | sechs | six
+八 | acht | eight
+九 | neun | nine
+十 | zehn | ten
+= 跟我一起数！
+跟我 | mit mir | with me
+一起 | zusammen | together
+数 | zählen | to count
+= 你有几本书？
+有 | haben | to have
+书 | das Buch | book
+几本书 | wie viele Bücher | how many books
+= 我有三本书。
+我有 | ich habe | I have
+三本书 | drei Bücher | three books
+= 你看到几只鸟？
+看到 | sehen | to see
+鸟 | der Vogel | bird
+几只鸟 | wie viele Vögel | how many birds
+= 我看到四只鸟。
+四只鸟 | vier Vögel | four birds
+= 我有两只手。
+两 | zwei | two
+手 | die Hand | hand
+两只手 | zwei Hände | two hands
+= 这里有五支铅笔。
+这里 | hier | here
+铅笔 | der Bleistift | pencil
+这里有 | hier gibt es | here are
+五支铅笔 | fünf Bleistifte | five pencils
+= 你妹妹几岁？
+妹妹 | die kleine Schwester | little sister
+你妹妹 | deine kleine Schwester | your little sister
+= 她九岁。
+她 | sie | she
+= 请给我十个苹果。
+请 | bitte | please
+给我 | gib mir | give me
+十个苹果 | zehn Äpfel | ten apples
+
+## lesson04
+= 这是我的家人。
+家人 | die Familie | family
+= 这是我爸爸。
+爸爸 | Papa | dad
+= 这是我妈妈。
+妈妈 | Mama | mom
+= 这是谁？
+谁 | wer | who
+= 这是我哥哥。
+哥哥 | der große Bruder | older brother
+= 这是我姐姐。
+姐姐 | die große Schwester | older sister
+= 我爷爷年纪很大了。
+爷爷 | Opa | grandpa
+年纪 | das Alter | age
+年纪很大 | sehr alt | very old
+= 我奶奶喜欢做饭。
+奶奶 | Oma | grandma
+做饭 | kochen | to cook
+喜欢做饭 | kocht gern | likes to cook
+= 你有哥哥吗？
+你有 | hast du | do you have
+= 没有，但是我有一个姐姐。
+没有 | nein, habe ich nicht | no, I don't
+但是 | aber | but
+一个姐姐 | eine große Schwester | an older sister
+= 我爸爸是医生。
+医生 | der Arzt | doctor
+= 我妈妈是老师。
+= 我爱我的家人。
+爱 | lieben | to love
+我爱 | ich liebe | I love
+
+## lesson05
+= 这是我的头。
+头 | der Kopf | head
+= 我有两只眼睛。
+眼睛 | die Augen | eyes
+两只眼睛 | zwei Augen | two eyes
+= 我有一个鼻子和一张嘴。
+鼻子 | die Nase | nose
+和 | und | and
+嘴 | der Mund | mouth
+一个鼻子 | eine Nase | a nose
+一张嘴 | einen Mund | a mouth
+= 摸摸你的耳朵。
+摸摸 | berühre | touch
+耳朵 | die Ohren | ears
+你的耳朵 | deine Ohren | your ears
+= 举起你的手。
+举起 | heb | raise
+你的手 | deine Hand | your hand
+= 拍拍手！
+拍拍 | klatsch | clap
+= 跺跺脚！
+跺跺 | stampf | stamp
+脚 | die Füße | feet
+= 闭上眼睛。
+闭上 | schließ | close
+= 张开嘴巴。
+张开 | öffne | open
+嘴巴 | der Mund | mouth
+= 去洗手。
+去 | geh | go
+洗手 | Hände waschen | wash your hands
+= 我的腿疼。
+腿 | das Bein | leg
+疼 | tut weh | hurts
+我的腿 | mein Bein | my leg
+= 大象的耳朵很大。
+大象 | der Elefant | elephant
+大 | groß | big
+= 兔子的耳朵很长。
+兔子 | das Kaninchen | rabbit
+长 | lang | long
+
+## lesson06
+= 这是什么？
+= 这是一只狗。
+一只狗 | ein Hund | a dog
+= 我有一只猫。
+一只猫 | eine Katze | a cat
+= 猴子很有趣。
+猴子 | der Affe | monkey
+有趣 | lustig | funny
+= 熊猫是黑白色的。
+熊猫 | der Panda | panda
+黑白色 | schwarz-weiß | black and white
+= 老虎很大。
+老虎 | der Tiger | tiger
+= 老鼠很小。
+老鼠 | die Maus | mouse
+小 | klein | small
+= 鸭子会游泳。
+鸭子 | die Ente | duck
+会 | können | can
+游泳 | schwimmen | to swim
+= 小鸟会飞。
+小鸟 | der kleine Vogel | little bird
+飞 | fliegen | to fly
+= 你喜欢马吗？
+马 | das Pferd | horse
+你喜欢 | magst du | do you like
+= 是的，我喜欢马。
+= 我们去动物园吧！
+我们 | wir | we
+动物园 | der Zoo | zoo
+去动物园 | in den Zoo gehen | go to the zoo
+= 我看到一头大象。
+一头大象 | einen Elefanten | an elephant
+
+## lesson07
+= 我饿了。
+饿 | hungrig | hungry
+= 我渴了。
+渴 | durstig | thirsty
+= 你想喝牛奶吗？
+想 | möchten | would like
+喝 | trinken | to drink
+牛奶 | die Milch | milk
+= 好的，谢谢。
+好的 | okay | OK
+= 不用了，谢谢。
+不用了 | nicht nötig | no need
+= 你想吃什么？
+吃 | essen | to eat
+= 我想吃面条。
+面条 | die Nudeln | noodles
+我想吃 | ich möchte essen | I'd like to eat
+= 我喜欢米饭和鱼。
+米饭 | der Reis | rice
+鱼 | der Fisch | fish
+= 我不喜欢胡萝卜。
+胡萝卜 | die Karotten | carrots
+不喜欢 | mag nicht | don't like
+= 我可以喝点水吗？
+可以 | dürfen | may
+水 | das Wasser | water
+喝点水 | etwas Wasser trinken | drink some water
+= 请给我一个鸡蛋和一杯果汁。
+鸡蛋 | das Ei | egg
+果汁 | der Saft | juice
+一个鸡蛋 | ein Ei | an egg
+一杯果汁 | ein Glas Saft | a glass of juice
+= 面包很好吃。
+面包 | das Brot | bread
+好吃 | lecker | tasty
+= 请慢用！
+慢用 | genießen | enjoy
+
+## lesson08
+= 这是我的学校。
+学校 | die Schule | school
+= 我们在一年级。
+在 | in | in
+一年级 | die erste Klasse | Grade One
+= 这是我们的老师。
+我们的 | unser | our
+= 请起立。
+起立 | aufstehen | stand up
+= 请坐。
+坐 | sitzen | to sit
+= 打开你们的书。
+打开 | öffnen | to open
+你们的 | eure | your
+= 我有一支铅笔。
+一支铅笔 | ein Bleistift | a pencil
+= 我有一把尺子。
+尺子 | das Lineal | ruler
+一把尺子 | ein Lineal | a ruler
+= 这是你的橡皮吗？
+你的 | dein | your
+橡皮 | der Radiergummi | eraser
+= 是的，是我的。
+是我的 | das ist meiner | it's mine
+= 我的钢笔在哪儿？
+钢笔 | der Füller | pen
+在哪儿 | wo ist | where is
+= 在你的书包里。
+书包 | die Schultasche | schoolbag
+你的书包 | deine Schultasche | your schoolbag
+= 我的书包是新的。
+新 | neu | new
+
+## lesson09
+= 我喜欢苹果。
+= 你喜欢香蕉吗？
+香蕉 | die Bananen | bananas
+= 是的，我喜欢。
+= 橙子很甜。
+橙子 | die Orange | orange
+甜 | süß | sweet
+= 柠檬很酸。
+柠檬 | die Zitrone | lemon
+酸 | sauer | sour
+= 有几个梨？
+梨 | die Birne | pear
+几个 | wie viele | how many
+= 六个梨。
+= 葡萄是紫色的。
+葡萄 | die Trauben | grapes
+紫色 | lila | purple
+= 草莓是红色的。
+草莓 | die Erdbeeren | strawberries
+= 我想要一个西瓜。
+想要 | möchten | to want
+西瓜 | die Wassermelone | watermelon
+= 给你一个桃子。
+给你 | für dich | for you
+桃子 | der Pfirsich | peach
+= 非常感谢！
+非常 | sehr | very
+感谢 | danken | to thank
+= 多吃水果对身体好。
+水果 | das Obst | fruit
+身体 | der Körper | body
+多吃 | viel essen | eat more
+对身体好 | gut für den Körper | good for you
+
+## lesson10
+= 这是你的小汽车吗？
+小汽车 | das Spielzeugauto | toy car
+= 不，这是他的小汽车。
+他的 | sein | his
+= 我有一只泰迪熊。
+泰迪熊 | der Teddybär | teddy bear
+= 我的娃娃很漂亮。
+娃娃 | die Puppe | doll
+= 我的球在哪儿？
+= 在椅子下面。
+椅子 | der Stuhl | chair
+下面 | unter | under
+= 在桌子上。
+桌子 | der Tisch | table
+上 | auf | on
+= 小船在箱子里。
+小船 | das kleine Boot | little boat
+箱子 | die Kiste | box
+在箱子里 | in der Kiste | in the box
+= 我的风筝飞得很高。
+风筝 | der Drachen | kite
+高 | hoch | high
+飞得很高 | fliegt sehr hoch | flies very high
+= 我可以和你一起玩吗？
+玩 | spielen | to play
+和你 | mit dir | with you
+= 当然可以！
+当然 | natürlich | of course
+= 我们一起玩吧！
+= 把你的玩具收好。
+玩具 | die Spielsachen | toys
+收好 | aufräumen | to put away
+
+## lesson11
+= 今天天气怎么样？
+今天 | heute | today
+天气 | das Wetter | weather
+怎么样 | wie | how is it
+= 今天是晴天。
+晴天 | ein sonniger Tag | a sunny day
+= 今天是阴天。
+阴天 | ein bewölkter Tag | a cloudy day
+= 下雨了。
+下雨 | regnen | to rain
+= 下雪了！
+下雪 | schneien | to snow
+= 今天风很大。
+风 | der Wind | wind
+风很大 | sehr windig | very windy
+= 天气很热。
+热 | heiß | hot
+= 天气很冷。
+冷 | kalt | cold
+= 北京暖和吗？
+北京 | Peking | Beijing
+暖和 | warm | warm
+= 是的，很暖和。
+= 带上你的雨伞。
+带上 | mitnehmen | to take along
+雨伞 | der Regenschirm | umbrella
+= 我们堆雪人吧！
+雪人 | der Schneemann | snowman
+堆雪人 | einen Schneemann bauen | build a snowman
+
+## lesson12
+= 我戴着一顶帽子。
+戴着 | ich trage | wearing
+帽子 | der Hut | hat
+一顶帽子 | einen Hut | a hat
+= 这是我的新连衣裙。
+连衣裙 | das Kleid | dress
+新连衣裙 | neues Kleid | new dress
+= 你的衬衫很好看。
+衬衫 | das Hemd | shirt
+好看 | schön | nice-looking
+= 我的T恤是黄色的。
+T恤 | das T-Shirt | T-shirt
+= 我的袜子是蓝色的。
+袜子 | die Socken | socks
+= 我的鞋子在哪儿？
+鞋子 | die Schuhe | shoes
+= 在床底下。
+床 | das Bett | bed
+底下 | unter | under
+= 这是你的裤子吗？
+裤子 | die Hose | pants
+= 不是，这是我哥哥的。
+不是 | nein | no
+我哥哥的 | von meinem großen Bruder | my older brother's
+= 这条裙子太短了。
+裙子 | der Rock | skirt
+短 | kurz | short
+太短了 | zu kurz | too short
+= 穿上你的外套。
+穿上 | anziehen | to put on
+外套 | die Jacke | jacket
+= 戴上帽子，天很冷。
+戴上 | aufsetzen | to put on a hat
+天很冷 | es ist kalt | it's cold
+= 把鞋脱掉。
+脱掉 | ausziehen | to take off

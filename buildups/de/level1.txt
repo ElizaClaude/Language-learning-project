@@ -1,0 +1,480 @@
+# German Level 1: build-up pieces for the step-by-step lessons (make_pimsleur.py).
+# "= sentence" must equal the sentence in lessons/de/level1/; the lines below it are its pieces:
+# German | Chinese | English. Words first, then phrases. A piece already taught earlier is skipped automatically.
+# columns: zh en
+
+## lesson01
+= Hallo! Ich heiße Tom.
+Hallo! | 你好！ | Hello!
+ich | 我 | I
+heiße | 叫 | am called
+ich heiße Tom | 我叫汤姆 | my name is Tom
+= Wie heißt du?
+wie | 怎么 | how
+du | 你 | you
+heißt du | 你叫 | are you called
+= Ich heiße Anna.
+ich heiße | 我叫 | my name is
+= Guten Morgen, Frau Li.
+Morgen | 早上 | morning
+Frau | 女士 | Ms
+Guten Morgen | 早上好 | good morning
+Frau Li | 李女士 | Ms Li
+= Wie geht es dir?
+dir | 你 | to you
+wie geht es | 怎么样 | how is it going
+= Mir geht es gut, danke.
+mir | 我 | to me
+gut | 好 | good
+danke | 谢谢 | thank you
+mir geht es gut | 我很好 | I'm fine
+= Das ist mein Freund.
+das | 这 | this
+ist | 是 | is
+mein | 我的 | my
+Freund | 朋友 | friend
+das ist | 这是 | this is
+mein Freund | 我的朋友 | my friend
+= Er heißt Ben.
+er | 他 | he
+er heißt | 他叫 | his name is
+= Schön, dich kennenzulernen.
+schön | 高兴 | nice
+dich | 你 | you
+kennenzulernen | 认识 | to meet
+dich kennenzulernen | 认识你 | to meet you
+= Wie alt bist du?
+alt | 年纪大 | old
+bist du | 你是 | are you
+wie alt | 几岁 | how old
+= Ich bin sieben Jahre alt.
+bin | 是 | am
+sieben | 七 | seven
+Jahre | 年 | years
+ich bin | 我是 | I am
+sieben Jahre alt | 七岁 | seven years old
+= Auf Wiedersehen!
+= Bis morgen!
+bis | 到 | until
+morgen | 明天 | tomorrow
+
+## lesson02
+= Welche Farbe ist das?
+welche | 什么 | which
+Farbe | 颜色 | color
+welche Farbe | 什么颜色 | what color
+ist das | 这是 | is this
+= Das ist rot.
+rot | 红色 | red
+= Mein Ball ist blau.
+Ball | 球 | ball
+blau | 蓝色 | blue
+mein Ball | 我的球 | my ball
+= Ich mag Grün.
+mag | 喜欢 | like
+Grün | 绿色 | green
+ich mag | 我喜欢 | I like
+= Was ist deine Lieblingsfarbe?
+was | 什么 | what
+deine | 你的 | your
+Lieblingsfarbe | 最喜欢的颜色 | favorite color
+deine Lieblingsfarbe | 你最喜欢的颜色 | your favorite color
+= Meine Lieblingsfarbe ist Gelb.
+meine | 我的 | my
+Gelb | 黄色 | yellow
+meine Lieblingsfarbe | 我最喜欢的颜色 | my favorite color
+= Die Katze ist schwarz.
+Katze | 猫 | cat
+schwarz | 黑色 | black
+die Katze | 这只猫 | the cat
+= Der Hund ist weiß.
+Hund | 狗 | dog
+weiß | 白色 | white
+der Hund | 这只狗 | the dog
+= Ist der Apfel rot?
+Apfel | 苹果 | apple
+der Apfel | 这个苹果 | the apple
+= Ja, er ist rot.
+ja | 是的 | yes
+er ist rot | 它是红色的 | it's red
+= Nein, er ist grün.
+nein | 不 | no
+grün | 绿色 | green
+= Schau, ein Regenbogen!
+schau | 看 | look
+Regenbogen | 彩虹 | rainbow
+ein Regenbogen | 一道彩虹 | a rainbow
+= Er ist sehr schön.
+sehr | 非常 | very
+sehr schön | 非常漂亮 | very beautiful
+
+## lesson03
+= Eins, zwei, drei, vier, fünf.
+eins | 一 | one
+zwei | 二 | two
+drei | 三 | three
+vier | 四 | four
+fünf | 五 | five
+= Sechs, sieben, acht, neun, zehn.
+sechs | 六 | six
+acht | 八 | eight
+neun | 九 | nine
+zehn | 十 | ten
+= Zähl mit mir!
+zähl | 数一数 | count
+mit mir | 跟我 | with me
+= Wie viele Bücher hast du?
+wie viele | 多少 | how many
+Bücher | 书 | books
+hast du | 你有 | do you have
+= Ich habe drei Bücher.
+ich habe | 我有 | I have
+drei Bücher | 三本书 | three books
+= Wie viele Vögel siehst du?
+Vögel | 鸟 | birds
+siehst du | 你看见 | do you see
+= Ich sehe vier Vögel.
+ich sehe | 我看见 | I see
+vier Vögel | 四只鸟 | four birds
+= Ich habe zwei Hände.
+Hände | 手 | hands
+zwei Hände | 两只手 | two hands
+= Hier sind fünf Stifte.
+hier | 这里 | here
+Stifte | 笔 | pencils
+hier sind | 这里有 | here are
+fünf Stifte | 五支笔 | five pencils
+= Wie alt ist deine Schwester?
+Schwester | 姐姐 | sister
+deine Schwester | 你姐姐 | your sister
+= Sie ist neun.
+sie | 她 | she
+sie ist | 她是 | she is
+= Zehn Äpfel, bitte.
+Äpfel | 苹果 | apples
+bitte | 请 | please
+zehn Äpfel | 十个苹果 | ten apples
+
+## lesson04
+= Das ist meine Familie.
+Familie | 家人 | family
+meine Familie | 我的家人 | my family
+= Das ist mein Vater.
+Vater | 爸爸 | father
+= Das ist meine Mutter.
+Mutter | 妈妈 | mother
+= Wer ist das?
+wer | 谁 | who
+= Das ist mein Bruder.
+Bruder | 哥哥 | brother
+= Das ist meine Schwester.
+meine Schwester | 我姐姐 | my sister
+= Mein Opa ist alt.
+Opa | 爷爷 | grandpa
+mein Opa | 我爷爷 | my grandpa
+= Meine Oma kocht gern.
+Oma | 奶奶 | grandma
+kocht | 做饭 | cooks
+gern | 喜欢 | gladly
+kocht gern | 喜欢做饭 | likes to cook
+= Hast du einen Bruder?
+einen Bruder | 兄弟 | a brother
+= Nein, aber ich habe eine Schwester.
+aber | 但是 | but
+eine Schwester | 一个姐姐 | a sister
+= Mein Vater ist Arzt.
+Arzt | 医生 | doctor
+= Meine Mutter ist Lehrerin.
+Lehrerin | 老师 | teacher
+= Ich liebe meine Familie.
+liebe | 爱 | love
+ich liebe | 我爱 | I love
+
+## lesson05
+= Das ist mein Kopf.
+Kopf | 头 | head
+= Ich habe zwei Augen.
+Augen | 眼睛 | eyes
+zwei Augen | 两只眼睛 | two eyes
+= Ich habe eine Nase und einen Mund.
+Nase | 鼻子 | nose
+und | 和 | and
+Mund | 嘴 | mouth
+eine Nase | 一个鼻子 | a nose
+einen Mund | 一张嘴 | a mouth
+= Berühre deine Ohren.
+berühre | 摸 | touch
+Ohren | 耳朵 | ears
+deine Ohren | 你的耳朵 | your ears
+= Heb deine Hand.
+heb | 举起 | raise
+Hand | 手 | hand
+deine Hand | 你的手 | your hand
+= Klatsch in die Hände!
+klatsch | 拍 | clap
+= Stampf mit den Füßen!
+stampf | 跺 | stamp
+Füßen | 脚 | feet
+mit den Füßen | 用脚 | with your feet
+= Schließ die Augen.
+schließ | 闭上 | close
+= Öffne den Mund.
+öffne | 张开 | open
+= Wasch deine Hände.
+wasch | 洗 | wash
+deine Hände | 你的手 | your hands
+= Mein Bein tut weh.
+Bein | 腿 | leg
+tut weh | 疼 | hurts
+mein Bein | 我的腿 | my leg
+= Der Elefant hat große Ohren.
+Elefant | 大象 | elephant
+hat | 有 | has
+große Ohren | 大耳朵 | big ears
+= Das Kaninchen hat lange Ohren.
+Kaninchen | 兔子 | rabbit
+lange Ohren | 长耳朵 | long ears
+
+## lesson06
+= Was ist das?
+= Das ist ein Hund.
+ein Hund | 一只狗 | a dog
+= Ich habe eine Katze.
+eine Katze | 一只猫 | a cat
+= Der Affe ist lustig.
+Affe | 猴子 | monkey
+lustig | 好玩 | funny
+= Der Panda ist schwarz und weiß.
+Panda | 熊猫 | panda
+schwarz und weiß | 黑白的 | black and white
+= Der Tiger ist groß.
+Tiger | 老虎 | tiger
+groß | 大 | big
+= Die Maus ist klein.
+Maus | 老鼠 | mouse
+klein | 小 | small
+= Die Ente kann schwimmen.
+Ente | 鸭子 | duck
+kann | 会 | can
+schwimmen | 游泳 | swim
+= Der Vogel kann fliegen.
+Vogel | 鸟 | bird
+fliegen | 飞 | fly
+= Magst du Pferde?
+Pferde | 马 | horses
+magst du | 你喜欢 | do you like
+= Ja, ich mag Pferde.
+ich mag Pferde | 我喜欢马 | I like horses
+= Gehen wir in den Zoo!
+gehen wir | 我们去 | let's go
+Zoo | 动物园 | zoo
+in den Zoo | 去动物园 | to the zoo
+= Ich sehe einen Elefanten.
+einen Elefanten | 一头大象 | an elephant
+
+## lesson07
+= Ich habe Hunger.
+Hunger | 饿 | hunger
+= Ich habe Durst.
+Durst | 渴 | thirst
+= Möchtest du Milch?
+möchtest du | 你想要 | would you like
+Milch | 牛奶 | milk
+= Ja, bitte.
+= Nein, danke.
+= Was möchtest du essen?
+essen | 吃 | eat
+= Ich möchte Nudeln.
+ich möchte | 我想要 | I'd like
+Nudeln | 面条 | noodles
+= Ich mag Reis und Fisch.
+Reis | 米饭 | rice
+Fisch | 鱼 | fish
+= Ich mag keine Karotten.
+Karotten | 胡萝卜 | carrots
+ich mag keine | 我不喜欢 | I don't like
+= Kann ich Wasser haben?
+Wasser | 水 | water
+kann ich | 我可以 | can I
+= Ein Ei und einen Saft, bitte.
+Ei | 鸡蛋 | egg
+Saft | 果汁 | juice
+ein Ei | 一个鸡蛋 | an egg
+einen Saft | 一杯果汁 | a juice
+= Das Brot ist lecker.
+Brot | 面包 | bread
+lecker | 好吃 | delicious
+= Guten Appetit!
+Appetit | 胃口 | appetite
+
+## lesson08
+= Das ist meine Schule.
+Schule | 学校 | school
+= Wir sind in Klasse eins.
+wir sind | 我们在 | we are
+Klasse | 年级 | class
+Klasse eins | 一年级 | Class One
+= Das ist unsere Lehrerin.
+unsere | 我们的 | our
+= Steht bitte auf.
+steht auf | 起立 | stand up
+= Setzt euch, bitte.
+setzt euch | 坐下 | sit down
+= Öffnet eure Bücher.
+öffnet | 打开 | open
+eure Bücher | 你们的书 | your books
+= Ich habe einen Bleistift.
+Bleistift | 铅笔 | pencil
+= Ich habe ein Lineal.
+Lineal | 尺子 | ruler
+= Ist das dein Radiergummi?
+dein | 你的 | your
+Radiergummi | 橡皮 | eraser
+= Ja, er gehört mir.
+gehört mir | 是我的 | belongs to me
+= Wo ist mein Kugelschreiber?
+wo | 哪儿 | where
+Kugelschreiber | 圆珠笔 | pen
+wo ist | 在哪儿 | where is
+= Er ist in deiner Tasche.
+Tasche | 包 | bag
+in deiner Tasche | 在你的包里 | in your bag
+= Meine Schultasche ist neu.
+Schultasche | 书包 | schoolbag
+neu | 新的 | new
+
+## lesson09
+= Ich mag Äpfel.
+= Magst du Bananen?
+Bananen | 香蕉 | bananas
+= Ja, die mag ich.
+= Die Orange ist süß.
+Orange | 橙子 | orange
+süß | 甜 | sweet
+= Die Zitrone ist sauer.
+Zitrone | 柠檬 | lemon
+sauer | 酸 | sour
+= Wie viele Birnen?
+Birnen | 梨 | pears
+= Sechs Birnen.
+= Die Trauben sind lila.
+Trauben | 葡萄 | grapes
+sind | 是 | are
+lila | 紫色 | purple
+= Erdbeeren sind rot.
+Erdbeeren | 草莓 | strawberries
+= Ich möchte eine Wassermelone.
+Wassermelone | 西瓜 | watermelon
+= Hier, ein Pfirsich für dich.
+Pfirsich | 桃子 | peach
+für dich | 给你 | for you
+= Danke schön!
+= Obst ist gesund.
+Obst | 水果 | fruit
+gesund | 健康 | healthy
+
+## lesson10
+= Ist das dein Auto?
+Auto | 小汽车 | car
+dein Auto | 你的小汽车 | your car
+= Nein, das ist sein Auto.
+sein | 他的 | his
+= Ich habe einen Teddybär.
+Teddybär | 泰迪熊 | teddy bear
+= Meine Puppe ist schön.
+Puppe | 洋娃娃 | doll
+= Wo ist mein Ball?
+= Er ist unter dem Stuhl.
+unter | 下面 | under
+Stuhl | 椅子 | chair
+unter dem Stuhl | 在椅子下面 | under the chair
+= Er ist auf dem Tisch.
+auf | 上 | on
+Tisch | 桌子 | table
+auf dem Tisch | 在桌子上 | on the table
+= Das Boot ist in der Kiste.
+Boot | 小船 | boat
+Kiste | 箱子 | box
+in der Kiste | 在箱子里 | in the box
+= Mein Drachen fliegt hoch.
+Drachen | 风筝 | kite
+fliegt | 飞 | flies
+hoch | 高 | high
+= Darf ich mit dir spielen?
+darf ich | 我可以 | may I
+mit dir | 和你 | with you
+spielen | 玩 | play
+= Ja, natürlich!
+natürlich | 当然 | of course
+= Lass uns spielen!
+lass uns | 我们来 | let's
+= Räum deine Spielsachen auf.
+Spielsachen | 玩具 | toys
+räum auf | 收好 | tidy up
+
+## lesson11
+= Wie ist das Wetter heute?
+Wetter | 天气 | weather
+heute | 今天 | today
+= Es ist sonnig.
+es ist | 是 | it is
+sonnig | 晴朗 | sunny
+= Es ist bewölkt.
+bewölkt | 多云 | cloudy
+= Es regnet.
+regnet | 下雨 | rains
+= Es schneit!
+schneit | 下雪 | snows
+= Es ist windig.
+windig | 刮风 | windy
+= Es ist heiß.
+heiß | 热 | hot
+= Es ist kalt.
+kalt | 冷 | cold
+= Ist es warm in Peking?
+warm | 暖和 | warm
+in Peking | 在北京 | in Beijing
+= Ja, es ist warm.
+= Nimm deinen Regenschirm.
+nimm | 带上 | take
+Regenschirm | 雨伞 | umbrella
+= Lass uns einen Schneemann bauen!
+Schneemann | 雪人 | snowman
+bauen | 堆 | build
+einen Schneemann bauen | 堆雪人 | build a snowman
+
+## lesson12
+= Ich trage einen Hut.
+trage | 戴着 | wear
+Hut | 帽子 | hat
+= Das ist mein neues Kleid.
+Kleid | 连衣裙 | dress
+neues | 新 | new
+mein neues Kleid | 我的新连衣裙 | my new dress
+= Dein Hemd ist schön.
+Hemd | 衬衫 | shirt
+= Mein T-Shirt ist gelb.
+T-Shirt | T恤 | T-shirt
+gelb | 黄色 | yellow
+= Meine Socken sind blau.
+Socken | 袜子 | socks
+= Wo sind meine Schuhe?
+Schuhe | 鞋子 | shoes
+wo sind | 在哪儿 | where are
+= Sie sind unter dem Bett.
+Bett | 床 | bed
+unter dem Bett | 在床底下 | under the bed
+= Ist das deine Hose?
+Hose | 裤子 | pants
+= Nein, das ist die Hose von meinem Bruder.
+von meinem Bruder | 我哥哥的 | my brother's
+= Der Rock ist zu kurz.
+Rock | 裙子 | skirt
+zu kurz | 太短 | too short
+= Zieh deine Jacke an.
+Jacke | 外套 | jacket
+zieh an | 穿上 | put on
+= Zieh deine Mütze an, es ist kalt.
+Mütze | 毛线帽 | woolly hat
+= Zieh deine Schuhe aus.
+zieh aus | 脱掉 | take off

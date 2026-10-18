@@ -1,0 +1,470 @@
+# Spanish (Spain) Level 2: build-up pieces for the step-by-step lessons (make_pimsleur.py).
+# "= sentence" must equal the sentence in lessons/es/level2/; the lines below it are its pieces:
+# Spanish | English. Words first, then phrases. A piece already taught earlier is skipped automatically.
+# columns: en
+
+## lesson01
+= ¿Qué hora es?
+hora | time
+qué hora | what time
+= Son las siete.
+las siete | seven o'clock
+= Son las siete y media.
+media | half
+y media | half past
+= Me levanto a las siete.
+me levanto | I get up
+a las siete | at seven
+= Desayuno a las siete y media.
+desayuno | I have breakfast
+= Voy a la escuela a las ocho.
+voy | I go
+a la escuela | to school
+a las ocho | at eight
+= La clase empieza a las ocho y cuarto.
+clase | class
+empieza | starts
+cuarto | quarter
+y cuarto | a quarter past
+= Como a las dos.
+como | I eat lunch
+a las dos | at two
+= Llego a casa a las cuatro.
+llego | I arrive
+casa | home
+a casa | home
+= Luego hago la tarea.
+luego | then
+hago | I do
+tarea | homework
+= Cenamos a las nueve.
+cenamos | we have dinner
+= Me acuesto a las diez.
+me acuesto | I go to bed
+= ¡Date prisa, es tarde!
+date prisa | hurry up
+tarde | late
+es tarde | it's late
+
+## lesson02
+= ¿Qué día es hoy?
+día | day
+qué día | what day
+= Hoy es lunes.
+lunes | Monday
+= Mañana es martes.
+martes | Tuesday
+= El miércoles tengo música.
+miércoles | Wednesday
+música | music
+= El jueves juego al fútbol.
+jueves | Thursday
+juego | I play
+fútbol | soccer
+juego al fútbol | I play soccer
+= El viernes es mi día favorito.
+viernes | Friday
+mi día favorito | my favorite day
+= El sábado visito a mi abuela.
+sábado | Saturday
+visito | I visit
+= El domingo duermo hasta tarde.
+domingo | Sunday
+duermo | I sleep
+hasta tarde | until late
+= ¿Qué haces el fin de semana?
+haces | you do
+fin de semana | weekend
+el fin de semana | on the weekend
+= Voy al parque.
+parque | park
+al parque | to the park
+= Una semana tiene siete días.
+semana | week
+siete días | seven days
+= ¿Qué clases tienes el lunes?
+clases | classes
+qué clases | which classes
+= Tengo matemáticas e inglés.
+matemáticas | math
+inglés | English
+
+## lesson03
+= Esta es mi casa.
+mi casa | my house
+= Mi piso tiene tres habitaciones.
+piso | apartment
+habitaciones | bedrooms
+tres habitaciones | three bedrooms
+= Este es el salón.
+salón | living room
+= La cocina es grande.
+cocina | kitchen
+= Mi habitación es pequeña, pero bonita.
+habitación | room
+pequeña | small
+mi habitación | my room
+= ¿Dónde está el baño?
+baño | bathroom
+= Está al lado de la cocina.
+al lado de | next to
+al lado de la cocina | next to the kitchen
+= Mi mamá está en la cocina.
+en la cocina | in the kitchen
+= Mi papá ve la tele en el salón.
+ve | watches
+tele | TV
+ve la tele | watches TV
+en el salón | in the living room
+= El gato duerme en el sofá.
+duerme | sleeps
+sofá | sofa
+en el sofá | on the sofa
+= Hay una cama en mi habitación.
+una cama | a bed
+= Hay una ventana y una puerta.
+ventana | window
+puerta | door
+= ¡Pasa!
+pasa | come in
+
+## lesson04
+= ¿Cuál es tu afición?
+afición | hobby
+tu afición | your hobby
+= Me gusta leer.
+leer | to read
+= Me gusta dibujar.
+dibujar | to draw
+= ¿Sabes nadar?
+sabes | can you
+= Sí, sé nadar.
+sé | I can
+= No, no sé nadar.
+no sé | I can't
+= Sé tocar el piano.
+tocar | to play
+piano | piano
+tocar el piano | play the piano
+= A mi hermano le gusta jugar al ping-pong.
+ping-pong | ping-pong
+jugar al ping-pong | play ping-pong
+= Ella canta muy bien.
+canta | sings
+muy bien | very well
+= Nos gusta bailar.
+nos gusta | we like
+bailar | to dance
+= ¿Sabes montar en bici?
+montar | to ride
+bici | bike
+montar en bici | ride a bike
+= ¿Jugamos al baloncesto juntos?
+jugamos | shall we play
+baloncesto | basketball
+juntos | together
+= ¡Buena idea!
+idea | idea
+buena idea | good idea
+
+## lesson05
+= Hay cuatro estaciones.
+estaciones | seasons
+cuatro estaciones | four seasons
+= En primavera hace buen tiempo.
+primavera | spring
+buen tiempo | nice weather
+= En verano hace calor.
+verano | summer
+= En otoño caen las hojas.
+otoño | autumn
+caen | fall
+hojas | leaves
+las hojas | the leaves
+= En invierno hace frío.
+invierno | winter
+= ¿Qué estación te gusta?
+estación | season
+qué estación | which season
+= Me gusta el verano porque puedo nadar.
+porque | because
+puedo nadar | I can swim
+= Un año tiene doce meses.
+año | year
+doce | twelve
+meses | months
+doce meses | twelve months
+= Enero es el primer mes.
+enero | January
+primer | first
+mes | month
+el primer mes | the first month
+= La Navidad es en diciembre.
+Navidad | Christmas
+diciembre | December
+= En agosto estamos de vacaciones.
+agosto | August
+vacaciones | vacation
+estamos de vacaciones | we're on vacation
+= ¿En qué mes estamos?
+qué mes | which month
+= Estamos en octubre.
+octubre | October
+
+## lesson06
+= ¿Cuánto cuesta?
+cuánto | how much
+cuesta | costs
+= Cuesta dos euros.
+euros | euros
+dos euros | two euros
+= Quiero esta camiseta.
+esta camiseta | this T-shirt
+= ¿De qué talla?
+talla | size
+= ¿La tiene en azul?
+la tiene | do you have it
+en azul | in blue
+= Está demasiado cara.
+cara | expensive
+= Está barata.
+barata | cheap
+= Me la llevo.
+me la llevo | I'll take it
+= ¿A cuánto están las manzanas?
+a cuánto | how much
+= A tres euros el kilo.
+kilo | kilo
+el kilo | a kilo
+= Aquí tiene el dinero.
+dinero | money
+aquí tiene | here you are
+= Aquí está su cambio.
+cambio | change
+su cambio | your change
+= ¡Gracias, adiós!
+
+## lesson07
+= Tengo mucha hambre.
+mucha hambre | very hungry
+= ¡Vamos a un restaurante!
+restaurante | restaurant
+a un restaurante | to a restaurant
+= ¿Qué vais a pedir?
+vais a | are you going to
+pedir | to order
+= Quiero una sopa.
+sopa | soup
+una sopa | a soup
+= Y para mí, pollo con arroz.
+para mí | for me
+pollo | chicken
+pollo con arroz | chicken with rice
+= ¿Qué vais a tomar?
+tomar | to have
+= Un zumo de naranja, por favor.
+zumo de naranja | orange juice
+= ¡Está muy rico!
+rico | tasty
+muy rico | very tasty
+= Estoy lleno.
+lleno | full
+= La cuenta, por favor.
+cuenta | bill
+la cuenta | the check
+= Son veinte euros.
+veinte | twenty
+veinte euros | twenty euros
+= Me gusta la tortilla de patatas.
+patatas | potatoes
+tortilla de patatas | Spanish omelette
+= Un tenedor y un cuchillo, por favor.
+tenedor | fork
+cuchillo | knife
+
+## lesson08
+= ¿En qué trabaja tu papá?
+trabaja | works
+en qué trabaja | what does he do
+= Es policía.
+policía | police officer
+= Mi tía es enfermera.
+tía | aunt
+enfermera | nurse
+= Mi tío es cocinero.
+tío | uncle
+cocinero | cook
+= Ella trabaja en un hospital.
+hospital | hospital
+en un hospital | in a hospital
+= Él trabaja en un restaurante.
+él | he
+en un restaurante | in a restaurant
+= ¿Qué quieres ser de grande?
+ser | to be
+de grande | when you grow up
+= Quiero ser piloto.
+piloto | pilot
+quiero ser | I want to be
+= Quiero ser médica.
+médica | doctor
+= El conductor conduce el autobús.
+conductor | driver
+conduce | drives
+autobús | bus
+= El agricultor trabaja en el campo.
+agricultor | farmer
+campo | field
+en el campo | in the field
+= La maestra nos ayuda.
+nos | us
+ayuda | helps
+= Es un trabajo importante.
+trabajo | work
+importante | important
+
+## lesson09
+= ¿Cómo vas a la escuela?
+vas | you go
+= Voy andando.
+andando | walking
+= Voy en bicicleta.
+bicicleta | bicycle
+en bicicleta | by bike
+= Mi papá va al trabajo en coche.
+va | goes
+al trabajo | to work
+en coche | by car
+= Vamos en autobús.
+en autobús | by bus
+= El metro es rápido.
+metro | subway
+rápido | fast
+= ¿Dónde está la parada del autobús?
+parada | stop
+la parada del autobús | the bus stop
+= Sigue recto.
+sigue | keep going
+recto | straight
+= Luego gira a la izquierda.
+gira | turn
+izquierda | left
+a la izquierda | to the left
+= Luego gira a la derecha.
+derecha | right
+a la derecha | to the right
+= ¿Está lejos?
+lejos | far
+= No, está muy cerca.
+cerca | close
+muy cerca | very close
+= ¡Alto! El semáforo está en rojo.
+alto | stop
+semáforo | traffic light
+en rojo | on red
+
+## lesson10
+= ¿Cuándo es tu cumpleaños?
+cuándo | when
+cumpleaños | birthday
+tu cumpleaños | your birthday
+= Mi cumpleaños es el tres de mayo.
+mayo | May
+el tres de mayo | May third
+= ¡Hoy es mi cumpleaños!
+mi cumpleaños | my birthday
+= ¡Feliz cumpleaños!
+feliz | happy
+= ¿Cuántos años cumples?
+cumples | you turn
+= Cumplo diez años.
+cumplo | I turn
+diez años | ten years
+= Este regalo es para ti.
+regalo | present
+este regalo | this present
+= ¡Gracias! Está precioso.
+precioso | lovely
+= Vamos a comer tarta.
+tarta | cake
+comer tarta | eat cake
+= ¡Sopla las velas!
+sopla | blow out
+velas | candles
+= ¡Pide un deseo!
+pide | make
+deseo | wish
+un deseo | a wish
+= Mis amigos vienen a mi fiesta.
+amigos | friends
+vienen | are coming
+fiesta | party
+a mi fiesta | to my party
+= ¿Qué fecha es hoy?
+fecha | date
+
+## lesson11
+= ¿Cómo te sientes?
+te sientes | you feel
+= Estoy feliz.
+= Estoy triste.
+triste | sad
+= Estoy cansado.
+cansado | tired
+= Él está enfadado.
+enfadado | angry
+= ¿Tienes miedo?
+miedo | fear
+= ¿Qué te pasa?
+qué te pasa | what's wrong
+= Me duele la cabeza.
+la cabeza | my head
+= Tengo fiebre.
+fiebre | fever
+= Estoy resfriado.
+resfriado | have a cold
+= Deberías ir al médico.
+deberías | you should
+ir | to go
+al médico | to the doctor
+= Toma mucha agua y descansa.
+mucha agua | lots of water
+descansa | rest
+= ¡Que te mejores!
+que te mejores | get well soon
+
+## lesson12
+= ¿Qué hiciste ayer?
+ayer | yesterday
+hiciste | you did
+= Jugué al fútbol.
+jugué | I played
+= Leí un libro.
+leí | I read
+un libro | a book
+= Fuimos al zoológico.
+fuimos | we went
+= Visité a mi abuela.
+visité | I visited
+= Comimos paella.
+comimos | we ate
+paella | paella
+= Vi una película.
+vi | I watched
+película | movie
+una película | a movie
+= Fue muy divertido.
+fue | it was
+divertido | fun
+= ¿Dónde estuviste el fin de semana?
+estuviste | you were
+= Estuve en el parque.
+estuve | I was
+en el parque | at the park
+= Hizo buen tiempo.
+hizo | it was
+= ¿Hiciste la tarea?
+la tarea | your homework
+= ¡Sí, ya terminé!
+ya | already
+terminé | I finished

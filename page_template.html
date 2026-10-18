@@ -70,6 +70,10 @@ h1 {
 .switch button[data-ready="false"]:not([aria-pressed="true"]) { opacity: .45; }
 .switch button:disabled { opacity: .2; cursor: default; }
 .pick { display: grid; gap: .3rem; }
+.switch[hidden] { display: none; }
+.script .kind { display: inline-block; font-size: .7rem; font-weight: 700; text-transform: uppercase; letter-spacing: .05em;
+  color: var(--accent); margin-right: .4rem; }
+.script li.k1 { margin-left: 1rem; }
 .pick-label { font-size: .8rem; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; padding-left: .25rem; }
 .empty { background: var(--surface); border: 1px dashed var(--line); border-radius: 14px; padding: 1rem; margin: 0; color: var(--muted); }
 .han { font-family: var(--font-han); }
@@ -141,6 +145,9 @@ input[type="range"] { width: 100%; accent-color: var(--accent); margin: 0; }
       <div class="switch" id="learn" role="group" aria-labelledby="learn-label"></div></div>
     <div class="pick"><span class="pick-label" id="from-label">I speak</span>
       <div class="switch" id="from" role="group" aria-labelledby="from-label"></div></div>
+    <div class="switch" id="format" role="group" aria-label="Lesson format" hidden>
+      <button type="button" data-format="steps">Step by step · 3 min</button>
+      <button type="button" data-format="classic">Classic</button></div>
   </header>
   <main id="levels"></main>
   <section class="script" id="script" hidden aria-label="Sentences of the current lesson"></section>
@@ -169,7 +176,7 @@ input[type="range"] { width: 100%; accent-color: var(--accent); margin: 0; }
 
 <script>
 const DATA = /*DATA*/;
-const REPEATS = 2;                      // each pair is said twice (as in make_lessons.py)
+const REPEATS = 2;                      // classic lessons: each pair is said twice (as in make_lessons.py)
 const SPEEDS = [0.5, 0.75, 1, 1.25];   // 0.5 = the slow clips: the language you learn at half speed, yours at normal speed
 const $ = id => document.getElementById(id);
 const audio = $("audio");
@@ -178,50 +185,92 @@ const store = {
   get(k, d) { try { const v = localStorage.getItem("tvl:" + k); return v === null ? d : JSON.parse(v); } catch { return d; } },
   set(k, v) { try { localStorage.setItem("tvl:" + k, JSON.stringify(v)); } catch {} },
 };
-const ready = (t, b) => !!DATA.bases[t + "|" + b];
+const hasClassic = (t, b) => !!DATA.bases[t + "|" + b];
+const hasSteps = (t, b) => DATA.steps.includes(t + "|" + b);
+const ready = (t, b) => hasClassic(t, b) || hasSteps(t, b);
 let target = DATA.langs[store.get("lang")] ? store.get("lang") : "de";   // the language to learn
 let base = DATA.langs[store.get("base")] ? store.get("base") : "en";     // the language to learn from
+let format = store.get("format", "steps");                               // "steps" (3-minute parts) or "classic"
 let pos = store.get("pos", {});        // lesson key -> fraction 0-1 (old values in seconds are converted)
 let done = store.get("done", {});      // lesson key -> true
 let speed = store.get("speed", 1);
 let auto = store.get("auto", true);
 let showText = false;
-let current = null;                    // {t, b, i}
+let current = null;                    // {t, b, f, i}
 let playable = false;                  // false while a lesson is still being joined
 let token = 0;                         // newest load() call; older ones stop when they finish
 
 const fmt = s => { s = Math.max(0, Math.floor(s || 0)); return Math.floor(s / 60) + ":" + String(s % 60).padStart(2, "0"); };
 const label = l => DATA.langs[l].label;
-// lessons of one pair; key = where progress is saved (for "from English" the old MP3 path, so old progress stays)
-const lessonsOf = (t, b) => {
+const formatOf = (t, b) => hasSteps(t, b) && (format === "steps" || !hasClassic(t, b)) ? "steps" : "classic";
+
+// ---- step-by-step data: data/<learn>_<from>.json, fetched when first needed ----
+const stepData = {};                   // "t|b" -> data, or a Promise while loading
+function loadSteps(t, b) {
+  const id = t + "|" + b;
+  if (!stepData[id]) {
+    stepData[id] = fetch(`data/${t}_${b}.json`).then(r => { if (!r.ok) throw new Error(id); return r.json(); })
+      .then(d => { stepData[id] = d; render(); return d; })
+      .catch(() => { delete stepData[id]; $("levels").innerHTML = `<p class="empty">Could not load the lessons. Check the internet and try again.</p>`; });
+  }
+  return stepData[id];
+}
+
+// every playable item, whatever the format: {key, level, num, title, sub, dur, durSlow, text, seq(slow)}
+function lessonsOf(t, b, f = formatOf(t, b)) {
+  if (f === "steps") {
+    const D = stepData[t + "|" + b];
+    if (!D || D instanceof Promise) return [];
+    return D.parts.map(p => {
+      const nNew = p.steps.filter(s => s[0] === 0).length / 2;
+      const nReview = p.steps.findIndex(s => s[0] !== 2);
+      return {
+        key: `${t}-${b}/steps/${p.lesson}_${p.k}`, level: p.level, num: `${p.n}.${p.k}`, title: p.title,
+        sub: `Part ${p.k} · ${nNew} new sentence${nNew === 1 ? "" : "s"}` + (nReview > 0 ? ` · ${nReview} to review` : ""),
+        dur: p.dur, durSlow: p.durSlow,
+        text: p.steps.map(([kind, ti, bi]) => [kind, D.T[ti][0], D.B[bi][0]]),
+        seq: slow => p.steps.flatMap(([kind, ti, bi]) => D.kinds[kind].map(x =>
+          x === "T" ? D.T[ti][slow ? 2 : 1] : x === "B" ? D.B[bi][1] : x)),
+      };
+    });
+  }
   const bs = DATA.bases[t + "|" + b] || {};
-  return (DATA.courses[t] || []).filter(x => bs[x.id]).map(x => ({
-    ...x, t, b, base: bs[x.id], key: b === "en" ? `audio/${t}/${x.id}.mp3` : `${t}-${b}/${x.id}`,
-  }));
-};
-const cur = () => current && lessonsOf(current.t, current.b)[current.i];
-const fracOf = x => { const p = pos[x.key] || 0; return p > 1 ? p / x.base.dur : p; };
-const durOf = x => speed === 0.5 ? x.base.durSlow : x.base.dur;
-const titleOf = x => x.base.title || x.title;
+  return (DATA.courses[t] || []).filter(x => bs[x.id]).map(x => {
+    const B = bs[x.id];
+    return {
+      // for "from English" the key is the old MP3 path, so progress from before 17 Oct stays
+      key: b === "en" ? `audio/${t}/${x.id}.mp3` : `${t}-${b}/${x.id}`, level: x.level, num: String(x.n).padStart(2, "0"),
+      title: B.title || x.title, sub: `${x.lines.length} ${x.level === 0 ? "words and phrases" : "sentences"}`,
+      dur: B.dur, durSlow: B.durSlow,
+      text: x.lines.map((l, j) => [0, l[0], B.lines[j][0]]),
+      seq: slow => x.lines.flatMap((l, j) => {
+        const one = [slow ? l[2] : l[1], "pause2", B.lines[j][1], "pause3"];
+        return Array(REPEATS).fill(one).flat();
+      }),
+    };
+  });
+}
+const cur = () => current && lessonsOf(current.t, current.b, current.f)[current.i];
+const fracOf = x => { const p = pos[x.key] || 0; return p > 1 ? p / x.dur : p; };
+const durOf = x => speed === 0.5 ? x.durSlow : x.dur;
 const savePos = () => {
   const x = cur();
   if (!x || !playable || !(audio.duration > 0) || !(audio.currentTime > 0)) return;
   pos[x.key] = audio.currentTime / audio.duration; store.set("pos", pos);
 };
 
-// ---- joining a lesson from its sentence clips ----
+// ---- joining a lesson from its clips ----
 const clip = k => fetch(`clips/${k}.mp3`).then(r => { if (!r.ok) throw new Error(k); return r.arrayBuffer(); });
-const pauses = Promise.all([clip("pause2"), clip("pause3")]);
 const blobs = new Map();               // "key|slow" -> Promise<Blob>, the last few lessons only
 function lessonBlob(x, slow) {
   const id = x.key + "|" + slow;
   if (!blobs.has(id)) {
-    const p = Promise.all([pauses, ...x.lines.map((l, j) => Promise.all([clip(slow ? l[2] : l[1]), clip(x.base.lines[j][1])]))])
-      .then(([[p2, p3], ...pairs]) => {
-        const parts = [];
-        for (const [fo, mine] of pairs) for (let r = 0; r < REPEATS; r++) parts.push(fo, p2, mine, p3);
-        return new Blob(parts, { type: "audio/mpeg" });
-      });
+    const seq = x.seq(slow);
+    const names = [...new Set(seq)];
+    const p = Promise.all(names.map(clip)).then(bufs => {
+      const byName = new Map(names.map((n, j) => [n, bufs[j]]));
+      return new Blob(seq.map(n => byName.get(n)), { type: "audio/mpeg" });
+    });
     p.catch(() => blobs.delete(id));
     blobs.set(id, p);
     while (blobs.size > 4) blobs.delete(blobs.keys().next().value);
@@ -243,10 +292,20 @@ function render() {
     b.disabled = b.dataset.lang === target;
     b.dataset.ready = ready(target, b.dataset.lang);
   }
-  $("sub").textContent = `Each sentence is said in ${label(target)}, then in ${label(base)}, and the pair is played twice.`;
+  const f = formatOf(target, base);
+  $("format").hidden = !(hasSteps(target, base) && hasClassic(target, base));
+  for (const b of $("format").children) b.setAttribute("aria-pressed", b.dataset.format === f);
+  $("sub").textContent = f === "steps"
+    ? `Parts of at most 3 minutes. Each new ${label(target)} sentence is said whole, then word by word, then whole again, with ${label(base)} after each piece. Quizzes bring back earlier sentences.`
+    : `Each sentence is said in ${label(target)}, then in ${label(base)}, and the pair is played twice.`;
   const main = $("levels");
   main.innerHTML = "";
-  const list = lessonsOf(target, base);
+  if (f === "steps" && !(stepData[target + "|" + base] && !(stepData[target + "|" + base] instanceof Promise))) {
+    main.innerHTML = `<p class="empty">Loading the lessons…</p>`;
+    loadSteps(target, base);
+    return;
+  }
+  const list = lessonsOf(target, base, f);
   if (!list.length) {
     const from = Object.keys(DATA.langs).filter(b => ready(target, b)).map(label);
     main.innerHTML = `<p class="empty">Learning ${label(target)} from ${label(base)} is not ready yet.` +
@@ -259,20 +318,20 @@ function render() {
     sec.style.display = "grid"; sec.style.gap = ".6rem";
     const total = lv.reduce((a, x) => a + durOf(x), 0);
     const nDone = lv.filter(x => done[x.key]).length;
-    sec.innerHTML = `<h2>Level ${level}${level === 0 ? " · first words" : ""} <small>${lv.length} lessons · ${Math.round(total / 60)} min · ${nDone} done</small></h2>`;
+    sec.innerHTML = `<h2>Level ${level}${level === 0 ? " · first words" : ""} <small>${lv.length} ${f === "steps" ? "parts" : "lessons"} · ${Math.round(total / 60)} min · ${nDone} done</small></h2>`;
     const ol = document.createElement("ol"); ol.className = "lessons";
     for (const x of lv) {
       const idx = list.indexOf(x);
       const li = document.createElement("li");
       const b = document.createElement("button");
       b.type = "button"; b.className = "lesson";
-      b.setAttribute("aria-current", !!current && current.t === target && current.b === base && current.i === idx);
+      b.setAttribute("aria-current", !!current && current.t === target && current.b === base && current.f === f && current.i === idx);
       const p = fracOf(x) * durOf(x);
       const state = done[x.key] ? `<span class="state done">✓ done</span>`
         : p > 5 ? `<span class="state">resume ${fmt(p)}</span>` : `<span class="state">${fmt(durOf(x))}</span>`;
-      b.innerHTML = `<span class="num">${String(x.n).padStart(2, "0")}</span>
-        <span class="t"><b class="${hanBase}">${titleOf(x)}</b><span>${x.lines.length} ${level === 0 ? "words and phrases" : "sentences"}</span></span>${state}`;
-      b.addEventListener("click", () => load(target, base, idx, true));
+      b.innerHTML = `<span class="num">${x.num}</span>
+        <span class="t"><b class="${hanBase}">${x.title}</b><span>${x.sub}</span></span>${state}`;
+      b.addEventListener("click", () => load(target, base, f, idx, true));
       li.append(b); ol.append(li);
     }
     sec.append(ol); main.append(sec);
@@ -285,28 +344,30 @@ function renderScript() {
   const x = cur();
   box.hidden = !(showText && x);
   if (box.hidden) return;
-  const hanT = x.t === "zh" ? " han" : "", hanB = x.b === "zh" ? " han" : "";
-  box.innerHTML = "<ol>" + x.lines.map((l, j) =>
-    `<li><span class="fo${hanT}">${l[0]}</span><span class="en${hanB}">${x.base.lines[j][0]}</span></li>`).join("") + "</ol>";
+  const hanT = current.t === "zh" ? " han" : "", hanB = current.b === "zh" ? " han" : "";
+  const mark = kind => kind === 2 ? `<span class="kind">quiz</span>` : kind === 1 ? `<span class="kind">piece</span>` : "";
+  box.innerHTML = "<ol>" + x.text.filter((s, j, a) => !(s[0] === 0 && a.findIndex(z => z[0] === 0 && z[1] === s[1]) < j))
+    .map(([kind, fo, mine]) => `<li class="k${kind}">${mark(kind)}<span class="fo${hanT}">${fo}</span><span class="en${hanB}">${mine}</span></li>`)
+    .join("") + "</ol>";
 }
 
-async function load(t, b, i, play) {
-  const list = lessonsOf(t, b);
+async function load(t, b, f, i, play) {
+  const list = lessonsOf(t, b, f);
   if (i < 0 || i >= list.length) return;
   const x = list[i];
-  const same = current && current.t === t && current.b === b && current.i === i;
+  const same = current && current.t === t && current.b === b && current.f === f && current.i === i;
   if (!same) {
     const my = ++token;
-    current = { t, b, i };
+    current = { t, b, f, i };
     playable = false;
     // Phones only allow sound that starts from a tap. Start a short silence right away, inside
     // the tap, and swap in the joined lesson when it is ready (the player stays allowed to play).
     if (play) { audio.src = "clips/pause2.mp3"; audio.play().catch(() => {}); }
-    $("now-title").textContent = `Loading ${x.n}. ${titleOf(x)}…`;
+    $("now-title").textContent = `Loading ${x.num}. ${x.title}…`;
     updateButtons(); render();
     let blob;
     try { blob = await lessonBlob(x, speed === 0.5); }
-    catch { if (my === token) $("now-title").textContent = "Could not load the lesson. Check the internet and tap it again."; current = my === token ? null : current; return; }
+    catch { if (my === token) { $("now-title").textContent = "Could not load the lesson. Check the internet and tap it again."; current = null; } return; }
     if (my !== token) return;
     const start = done[x.key] ? 0 : fracOf(x);
     setSource(blob);
@@ -316,9 +377,9 @@ async function load(t, b, i, play) {
       audio.playbackRate = rateOf();
       playable = true;
     }, { once: true });
-    $("now-title").textContent = `${DATA.langs[t].short} · ${x.n}. ${titleOf(x)}`;
+    $("now-title").textContent = `${DATA.langs[t].short} · ${x.num}. ${x.title}`;
     if ("mediaSession" in navigator) {
-      navigator.mediaSession.metadata = new MediaMetadata({ title: `${x.n}. ${titleOf(x)}`,
+      navigator.mediaSession.metadata = new MediaMetadata({ title: `${x.num}. ${x.title}`,
         artist: `Two-Voice Lessons · ${label(t)} from ${label(b)}`, album: `Level ${x.level}` });
     }
     if (done[x.key]) { delete done[x.key]; store.set("done", done); }
@@ -333,7 +394,7 @@ async function load(t, b, i, play) {
 const rateOf = () => speed === 0.5 ? 1 : speed;
 
 function updateButtons() {
-  const n = current ? lessonsOf(current.t, current.b).length : 0;
+  const n = current ? lessonsOf(current.t, current.b, current.f).length : 0;
   $("prev").disabled = !current || current.i === 0;
   $("next").disabled = !current || current.i >= n - 1;
   for (const id of ["back", "fwd", "seek"]) $(id).disabled = !current;
@@ -352,17 +413,17 @@ function setPlayIcon() {
 
 $("play").addEventListener("click", () => {
   if (!current) {
-    const list = lessonsOf(target, base);
+    const f = formatOf(target, base), list = lessonsOf(target, base, f);
     if (!list.length) return;
     const first = list.findIndex(x => !done[x.key]);
-    return load(target, base, first < 0 ? 0 : first, true);
+    return load(target, base, f, first < 0 ? 0 : first, true);
   }
   audio.paused ? audio.play().catch(() => {}) : audio.pause();
 });
 $("back").addEventListener("click", () => { if (playable) audio.currentTime = Math.max(0, audio.currentTime - 10); });
 $("fwd").addEventListener("click", () => { if (playable) audio.currentTime = Math.min(audio.duration || 0, audio.currentTime + 10); });
-$("prev").addEventListener("click", () => current && load(current.t, current.b, current.i - 1, true));
-$("next").addEventListener("click", () => current && load(current.t, current.b, current.i + 1, true));
+$("prev").addEventListener("click", () => current && load(current.t, current.b, current.f, current.i - 1, true));
+$("next").addEventListener("click", () => current && load(current.t, current.b, current.f, current.i + 1, true));
 $("seek").addEventListener("input", e => { if (playable && audio.duration) audio.currentTime = e.target.value / 100 * audio.duration; });
 $("speed").addEventListener("click", async () => {
   const wasSlow = speed === 0.5;
@@ -384,6 +445,9 @@ $("speed").addEventListener("click", async () => {
 });
 $("auto").addEventListener("click", () => { auto = !auto; store.set("auto", auto); updateButtons(); });
 $("text").addEventListener("click", () => { showText = !showText; updateButtons(); renderScript(); });
+for (const b of $("format").children) {
+  b.addEventListener("click", () => { format = b.dataset.format; store.set("format", format); render(); });
+}
 
 function langButton(code, onClick) {
   const L = DATA.langs[code];
@@ -424,9 +488,9 @@ audio.addEventListener("pause", () => {
 });
 audio.addEventListener("ended", () => {
   if (!playable) return;                 // the short silence while a lesson loads
-  const list = lessonsOf(current.t, current.b), x = list[current.i];
+  const list = lessonsOf(current.t, current.b, current.f), x = list[current.i];
   done[x.key] = true; delete pos[x.key]; store.set("done", done); store.set("pos", pos);
-  if (auto && current.i < list.length - 1) load(current.t, current.b, current.i + 1, true); else render();
+  if (auto && current.i < list.length - 1) load(current.t, current.b, current.f, current.i + 1, true); else render();
 });
 if ("mediaSession" in navigator) {
   const ms = navigator.mediaSession;
