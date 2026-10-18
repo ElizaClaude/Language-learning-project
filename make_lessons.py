@@ -27,9 +27,11 @@ CLIPS = HERE / "clips"
 
 # language code: (voice, speed). A negative rate = slower than normal speech.
 FOREIGN = {"de": ("de-DE-KatjaNeural", "-10%"),
-           "zh": ("zh-CN-XiaoxiaoNeural", "-15%"),
+           "zh": ("zh-CN-YunyangNeural", "-10%"),  # 17 Oct: Xiaoxiao sounded too high and childlike (Eliza)
            "es": ("es-ES-ElviraNeural", "-10%"),   # Spain Spanish (Eliza, 16 Oct)
            "it": ("it-IT-ElsaNeural", "-10%")}
+# A second voice: the same sentence is heard first in FOREIGN's voice, the next time in this one (Eliza, 17 Oct)
+SECOND = {"zh": ("zh-CN-YunxiNeural", "-10%")}
 SLOW_RATE = "-50%"            # --slow: foreign voice at half speed (edge-tts clamps anything slower)
 ENGLISH_VOICE = "en-US-JennyNeural"
 ENGLISH_RATE = "+0%"
@@ -71,6 +73,30 @@ async def speak(text, voice, rate):
     return path.read_bytes()
 
 
+def voices(lang, slow=False):
+    """The voice(s) of a language being learned, as [(voice, rate), ...]: one, or two that take turns."""
+    out = [FOREIGN[lang]] + ([SECOND[lang]] if lang in SECOND else [])
+    return [(v, SLOW_RATE if slow else r) for v, r in out]
+
+
+async def speak_many(jobs, parallel=6):
+    """Make the missing clips for [(text, voice, rate), ...], `parallel` at a time, retrying network errors."""
+    jobs = list(dict.fromkeys(j for j in jobs if not (CLIPS / f"{clip_key(*j)}.mp3").exists()))
+    sem = asyncio.Semaphore(parallel)
+
+    async def one(j):
+        async with sem:
+            for attempt in range(4):
+                try:
+                    return await speak(*j)
+                except Exception:
+                    if attempt == 3:
+                        raise
+                    await asyncio.sleep(3 * (attempt + 1))
+    await asyncio.gather(*(one(j) for j in jobs))
+    return len(jobs)
+
+
 def read_lesson(path):
     pairs = []
     for line in path.read_text(encoding="utf-8").splitlines():
@@ -86,15 +112,13 @@ async def make_lesson(lang, path, slow=False):
     folder = AUDIO / lang / "slow" if slow else AUDIO / lang
     out = folder / f"{path.parent.name}_{path.stem}.mp3"
     out.parent.mkdir(parents=True, exist_ok=True)
-    voice, rate = FOREIGN[lang]
-    if slow:
-        rate = SLOW_RATE
+    vs = voices(lang, slow)
     pieces = []
     for foreign, english in read_lesson(path):
-        fo = await speak(foreign, voice, rate)
         en = await speak(english, ENGLISH_VOICE, ENGLISH_RATE)
-        pair = [fo, silence(fo, PAUSE_AFTER_FOREIGN), en, silence(en, PAUSE_AFTER_ENGLISH)]
-        pieces += pair * REPEATS
+        for r in range(REPEATS):                          # with two voices, they take turns
+            fo = await speak(foreign, *vs[r % len(vs)])
+            pieces += [fo, silence(fo, PAUSE_AFTER_FOREIGN), en, silence(en, PAUSE_AFTER_ENGLISH)]
     out.write_bytes(b"".join(pieces))
     print(f"{out.relative_to(AUDIO).as_posix()}: {len(pieces) // (4 * REPEATS)} sentences x{REPEATS}, "
           f"{out.stat().st_size / 1e3:.0f} kB")

@@ -202,6 +202,8 @@ let token = 0;                         // newest load() call; older ones stop wh
 
 const fmt = s => { s = Math.max(0, Math.floor(s || 0)); return Math.floor(s / 60) + ":" + String(s % 60).padStart(2, "0"); };
 const label = l => DATA.langs[l].label;
+// [text, key, slow key, (2nd voice key, 2nd voice slow key)]: with two voices (Chinese) they take turns, r = 0, 1, 2 ...
+const voiceKey = (l, r, slow) => l[1 + 2 * (r % ((l.length - 1) / 2)) + (slow ? 1 : 0)];
 const formatOf = (t, b) => hasSteps(t, b) && (format === "steps" || !hasClassic(t, b)) ? "steps" : "classic";
 
 // ---- step-by-step data: data/<learn>_<from>.json, fetched when first needed ----
@@ -229,8 +231,17 @@ function lessonsOf(t, b, f = formatOf(t, b)) {
         sub: `Part ${p.k} · ${nNew} new sentence${nNew === 1 ? "" : "s"}` + (nReview > 0 ? ` · ${nReview} to review` : ""),
         dur: p.dur, durSlow: p.durSlow,
         text: p.steps.map(([kind, ti, bi]) => [kind, D.T[ti][0], D.B[bi][0]]),
-        seq: slow => p.steps.flatMap(([kind, ti, bi]) => D.kinds[kind].map(x =>
-          x === "T" ? D.T[ti][slow ? 2 : 1] : x === "B" ? D.B[bi][1] : x)),
+        seq: slow => {                   // two voices take turns; a text that comes back gets the other voice
+          const said = {};               // (same rule as voice_turns() in make_pimsleur.py)
+          let next = 0;
+          return p.steps.flatMap(([kind, ti, bi]) => {
+            const nv = (D.T[ti].length - 1) / 2;
+            let v = next % nv;
+            if (nv > 1 && said[ti] === v) v = (v + 1) % nv;
+            said[ti] = v; next = v + 1;
+            return D.kinds[kind].map(x => x === "T" ? voiceKey(D.T[ti], v, slow) : x === "B" ? D.B[bi][1] : x);
+          });
+        },
       };
     });
   }
@@ -243,10 +254,8 @@ function lessonsOf(t, b, f = formatOf(t, b)) {
       title: B.title || x.title, sub: `${x.lines.length} ${x.level === 0 ? "words and phrases" : "sentences"}`,
       dur: B.dur, durSlow: B.durSlow,
       text: x.lines.map((l, j) => [0, l[0], B.lines[j][0]]),
-      seq: slow => x.lines.flatMap((l, j) => {
-        const one = [slow ? l[2] : l[1], "pause2", B.lines[j][1], "pause3"];
-        return Array(REPEATS).fill(one).flat();
-      }),
+      seq: slow => x.lines.flatMap((l, j) => Array.from({ length: REPEATS }, (_, r) =>
+        [voiceKey(l, r, slow), "pause2", B.lines[j][1], "pause3"]).flat()),
     };
   });
 }

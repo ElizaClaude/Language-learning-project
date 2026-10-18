@@ -33,7 +33,7 @@ import sys
 from pathlib import Path
 
 from make_clips import BASE, read_translation
-from make_lessons import CLIPS, FOREIGN, LESSONS, SLOW_RATE, clip_key, read_lesson, silence, speak
+from make_lessons import CLIPS, FOREIGN, LESSONS, clip_key, read_lesson, silence, speak_many, voices
 
 HERE = Path(__file__).resolve().parent
 BUILDUPS = HERE / "buildups"
@@ -113,17 +113,21 @@ def course(learn, base):
 
 
 class Clips:
-    """Text -> clip keys and sizes; makes missing clips PARALLEL at a time."""
+    """Text -> clip keys and sizes; makes missing clips PARALLEL at a time.
+    T entries: [text, key, slow key] + [key, slow key] of a second voice (Chinese has two that take turns)."""
     def __init__(self, learn, base):
-        self.tv, self.tr = FOREIGN[learn]
+        self.tvoices = list(zip(voices(learn), voices(learn, slow=True)))
         self.bv, self.br = BASE[base]
         self.T, self.B, self.ti, self.bi = [], [], {}, {}
 
     def t(self, text):
         if text not in self.ti:
             self.ti[text] = len(self.T)
-            self.T.append([text, clip_key(text, self.tv, self.tr), clip_key(text, self.tv, SLOW_RATE)])
+            self.T.append([text] + [clip_key(text, *vr) for pair in self.tvoices for vr in pair])
         return self.ti[text]
+
+    def tkey(self, ti, vi, slow):
+        return self.T[ti][1 + 2 * vi + (1 if slow else 0)]
 
     def b(self, text):
         if text not in self.bi:
@@ -132,34 +136,40 @@ class Clips:
         return self.bi[text]
 
     async def make_all(self):
-        jobs = [(t, self.tv, self.tr) for t, _, _ in self.T] + [(t, self.tv, SLOW_RATE) for t, _, _ in self.T] + \
+        jobs = [(t[0], *vr) for t in self.T for pair in self.tvoices for vr in pair] + \
                [(b, self.bv, self.br) for b, _ in self.B]
-        jobs = [j for j in jobs if not (CLIPS / f"{clip_key(*j)}.mp3").exists()]
-        sem = asyncio.Semaphore(PARALLEL)
-
-        async def one(j):
-            async with sem:
-                for attempt in range(4):
-                    try:
-                        return await speak(*j)
-                    except Exception:              # network hiccup: wait and try again
-                        if attempt == 3:
-                            raise
-                        await asyncio.sleep(3 * (attempt + 1))
-        await asyncio.gather(*(one(j) for j in jobs))
-        return len(jobs)
+        return await speak_many(jobs, PARALLEL)
 
 
 def size(key):
     return (CLIPS / f"{key}.mp3").stat().st_size
 
 
-def step_seconds(c, step, slow):
+def step_seconds(c, step, slow, vi=None):
+    """Length of one step. vi = which voice says the learned language; None = the longest voice (for packing)."""
     kind, ti, bi = step
-    first, p1, second, p2 = KINDS[kind]
-    tk = c.T[ti][2 if slow else 1]
-    keys = {"T": tk, "B": c.B[bi][1]}
-    return (size(keys[first]) + size(keys[second])) / BYTES_PER_SECOND + PAUSE_SECONDS[p1] + PAUSE_SECONDS[p2]
+    _, p1, _, p2 = KINDS[kind]
+    t = max(size(c.tkey(ti, v, slow)) for v in range(len(c.tvoices))) if vi is None else size(c.tkey(ti, vi, slow))
+    return (t + size(c.B[bi][1])) / BYTES_PER_SECOND + PAUSE_SECONDS[p1] + PAUSE_SECONDS[p2]
+
+
+def voice_turns(steps, nv):
+    """Which voice says the learned language in each step (the page uses the same rule): the voices take
+    turns, and a text that comes back is said by the other voice than last time (Eliza: "first with one,
+    second with another")."""
+    said, nxt, out = {}, 0, []
+    for _, ti, _ in steps:
+        v = nxt % nv
+        if nv > 1 and said.get(ti) == v:
+            v = (v + 1) % nv
+        said[ti], nxt = v, v + 1
+        out.append(v)
+    return out
+
+
+def part_seconds(c, steps, slow):
+    """Exact length of a part as the page plays it."""
+    return sum(step_seconds(c, st, slow, v) for st, v in zip(steps, voice_turns(steps, len(c.tvoices))))
 
 
 def plan(learn, base):
@@ -216,7 +226,7 @@ def pack(c, lessons):
             k_in_lesson += 1
             steps = review + new + check
             parts.append({"lesson": lid, "level": level, "n": n, "title": title, "k": k_in_lesson,
-                          "dur": round(secs(steps)), "durSlow": round(sum(step_seconds(c, st, True) for st in steps)),
+                          "dur": round(part_seconds(c, steps, False)), "durSlow": round(part_seconds(c, steps, True)),
                           "steps": steps})
     return parts
 

@@ -16,14 +16,14 @@ pause files clips/pause2.mp3 and clips/pause3.mp3.
 import asyncio
 
 from make_lessons import (CLIPS, ENGLISH_RATE, ENGLISH_VOICE, FOREIGN, LESSONS, PAUSE_AFTER_ENGLISH,
-                          PAUSE_AFTER_FOREIGN, SLOW_RATE, read_lesson, silence, speak)
+                          PAUSE_AFTER_FOREIGN, read_lesson, silence, speak_many, voices)
 
 HERE = LESSONS.parent
 TRANSLATIONS = HERE / "translations"
 # voice of each language when it is the learner's own language: normal speed
 BASE = {"en": (ENGLISH_VOICE, ENGLISH_RATE),
         "de": ("de-DE-KatjaNeural", "+0%"),
-        "zh": ("zh-CN-XiaoxiaoNeural", "+0%"),
+        "zh": ("zh-CN-YunyangNeural", "+0%"),     # 17 Oct (was Xiaoxiao)
         "es": ("es-ES-ElviraNeural", "+0%"),
         "it": ("it-IT-ElsaNeural", "+0%")}
 
@@ -49,7 +49,7 @@ def courses():
 
 async def main():
     CLIPS.mkdir(exist_ok=True)
-    made = 0
+    made, jobs = 0, []
     for target, base, txt, sentences, _ in courses():
         pairs = read_lesson(txt)
         if sentences is None:
@@ -57,13 +57,11 @@ async def main():
         if len(sentences) != len(pairs):
             raise SystemExit(f"{target}->{base} {txt.parent.name}/{txt.name}: "
                              f"{len(pairs)} sentences but {len(sentences)} translations")
-        voice, rate = FOREIGN[target]
-        for (fo, _), b in zip(pairs, sentences):
-            for text, v, r in [(fo, voice, rate), (fo, voice, SLOW_RATE), (b, *BASE[base])]:
-                await speak(text, v, r)
+        for (fo, _), b in zip(pairs, sentences):     # every voice of the target, normal and slow, + the base voice
+            jobs += [(fo, *vr) for vr in voices(target) + voices(target, slow=True)] + [(b, *BASE[base])]
         if base != "en":
             made += 1
-            print(f"{target} from {base}: {txt.parent.name}/{txt.name} ok ({len(pairs)} sentences)")
+    print(f"{await speak_many(jobs)} new clips")
     sample = next(p for p in CLIPS.glob("*.mp3") if not p.stem.startswith("pause")).read_bytes()
     (CLIPS / "pause2.mp3").write_bytes(silence(sample, PAUSE_AFTER_FOREIGN))
     (CLIPS / "pause3.mp3").write_bytes(silence(sample, PAUSE_AFTER_ENGLISH))

@@ -15,7 +15,7 @@ import sys
 from pathlib import Path
 
 from make_clips import BASE, courses
-from make_lessons import CLIPS, FOREIGN, REPEATS, SLOW_RATE, clip_key, read_lesson
+from make_lessons import CLIPS, REPEATS, SECOND, clip_key, read_lesson, voices
 
 HERE = Path(__file__).resolve().parent
 LANGS = {"de": {"label": "German", "short": "DE", "native": "Deutsch"},
@@ -36,12 +36,19 @@ def size(key):
     return (CLIPS / f"{key}.mp3").stat().st_size
 
 
-def join(lines, slow):
-    """The lesson's bytes, exactly as the page joins them. lines = [[text, key, slow key, base key], ...]"""
+def target_key(line, r, slow):
+    """Clip of a target line [text, key, slow key, (2nd voice key, 2nd voice slow key)] for repeat r: voices take turns."""
+    nv = (len(line) - 1) // 2
+    return line[1 + 2 * (r % nv) + (1 if slow else 0)]
+
+
+def join(tlines, blines, slow):
+    """The lesson's bytes, exactly as the page joins them."""
     p2, p3 = (CLIPS / "pause2.mp3").read_bytes(), (CLIPS / "pause3.mp3").read_bytes()
     out = []
-    for _, k, ks, kb in lines:
-        out += [(CLIPS / f"{ks if slow else k}.mp3").read_bytes(), p2, (CLIPS / f"{kb}.mp3").read_bytes(), p3] * REPEATS
+    for t, b in zip(tlines, blines):
+        for r in range(REPEATS):
+            out += [(CLIPS / f"{target_key(t, r, slow)}.mp3").read_bytes(), p2, (CLIPS / f"{b[1]}.mp3").read_bytes(), p3]
     return b"".join(out)
 
 
@@ -55,23 +62,23 @@ def main():
         pairs = read_lesson(txt)
         if sentences is None:
             sentences = [en for _, en in pairs]
-        voice, rate = FOREIGN[target]
         lid = f"{txt.parent.name}_{txt.stem}"          # e.g. level1_lesson01
         level = int(txt.parent.name[5:])
         course = data["courses"].setdefault(target, {})
         if lid not in course:
             course[lid] = {"level": level, "n": int(txt.stem[6:]), "title": html.escape(lesson_title(txt)),
-                           "lines": [[html.escape(fo), clip_key(fo, voice, rate), clip_key(fo, voice, SLOW_RATE)]
-                                     for fo, _ in pairs]}
+                           "lines": [[html.escape(fo)] + [clip_key(fo, *vr) for n, s in zip(voices(target), voices(target, True))
+                                                          for vr in (n, s)] for fo, _ in pairs]}
         tlines = course[lid]["lines"]
         blines = [[html.escape(b), clip_key(b, *BASE[base])] for b in sentences]
-        dur = sum((size(t[1]) + p2 + size(b[1]) + p3) * REPEATS for t, b in zip(tlines, blines)) * 8 / (KBIT * 1000)
-        dur_slow = sum((size(t[2]) + p2 + size(b[1]) + p3) * REPEATS for t, b in zip(tlines, blines)) * 8 / (KBIT * 1000)
+        dur, dur_slow = (sum(size(target_key(t, r, slow)) + p2 + size(b[1]) + p3
+                             for t, b in zip(tlines, blines) for r in range(REPEATS)) * 8 / (KBIT * 1000)
+                         for slow in (False, True))
         data["bases"].setdefault(f"{target}|{base}", {})[lid] = {
             "title": html.escape(base_title) if base_title else None,
             "lines": blines, "dur": round(dur), "durSlow": round(dur_slow)}
         if base == "en":
-            check.append((target, lid, [[*t, b[1]] for t, b in zip(tlines, blines)]))
+            check.append((target, lid, tlines, blines))
     # lessons as a list per target, in level/lesson order
     data["courses"] = {t: [{"id": lid, **x} for lid, x in sorted(c.items())] for t, c in data["courses"].items()}
 
@@ -92,17 +99,19 @@ def main():
 
     if "--check" in sys.argv:
         same = differ = 0
-        for target, lid, lines in check:
+        for target, lid, tlines, blines in check:
+            if target in SECOND:          # new voices since 17 Oct; the old MP3s in audio/ have the old voice
+                continue
             for slow in (False, True):
                 old = HERE / "audio" / target / ("slow" if slow else "") / f"{lid}.mp3"
                 if not old.exists():
                     continue
-                if join(lines, slow) == old.read_bytes():
+                if join(tlines, blines, slow) == old.read_bytes():
                     same += 1
                 else:
                     differ += 1
                     print("DIFFERENT:", old.relative_to(HERE).as_posix())
-        print(f"check: {same} joined lessons identical to the old MP3s, {differ} different")
+        print(f"check: {same} joined lessons identical to the old MP3s, {differ} different (Chinese skipped: new voices)")
 
 
 if __name__ == "__main__":
