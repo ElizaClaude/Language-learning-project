@@ -269,16 +269,41 @@ const savePos = () => {
 };
 
 // ---- joining a lesson from its clips ----
-const clip = k => fetch(`clips/${k}.mp3`).then(r => { if (!r.ok) throw new Error(k); return r.arrayBuffer(); });
+// Each clip is decoded to plain sound samples, and the lesson is joined into one WAV file (uncompressed
+// sound). Until 19 Oct the MP3 bytes were joined directly; Eliza's phone then made random jumps and
+// crackles: in a long joined MP3 the player can lose its place. A WAV file has an exact place for every moment.
+const RATE = 24000;                    // sample rate of the clips (samples per second)
+let decoder = null;
+const getDecoder = () => decoder ||
+  (decoder = new (window.OfflineAudioContext || window.webkitOfflineAudioContext)(1, RATE, RATE));
+const clip = k => fetch(`clips/${k}.mp3`).then(r => { if (!r.ok) throw new Error(k); return r.arrayBuffer(); })
+  .then(buf => new Promise((ok, bad) => getDecoder().decodeAudioData(buf, ok, bad)))
+  .then(sound => sound.getChannelData(0));
+function wavBlob(chunks) {             // 16-bit mono WAV: a 44-byte header, then the samples
+  const n = chunks.reduce((a, c) => a + c.length, 0);
+  const buf = new ArrayBuffer(44 + 2 * n), v = new DataView(buf);
+  const text = (at, s) => { for (let i = 0; i < s.length; i++) v.setUint8(at + i, s.charCodeAt(i)); };
+  text(0, "RIFF"); v.setUint32(4, 36 + 2 * n, true); text(8, "WAVE"); text(12, "fmt ");
+  v.setUint32(16, 16, true); v.setUint16(20, 1, true); v.setUint16(22, 1, true);
+  v.setUint32(24, RATE, true); v.setUint32(28, 2 * RATE, true); v.setUint16(32, 2, true); v.setUint16(34, 16, true);
+  text(36, "data"); v.setUint32(40, 2 * n, true);
+  const out = new Int16Array(buf, 44, n);
+  let o = 0;
+  for (const c of chunks) for (let i = 0; i < c.length; i++) {
+    const s = Math.max(-1, Math.min(1, c[i]));
+    out[o++] = s < 0 ? s * 0x8000 : s * 0x7fff;
+  }
+  return new Blob([buf], { type: "audio/wav" });
+}
 const blobs = new Map();               // "key|slow" -> Promise<Blob>, the last few lessons only
 function lessonBlob(x, slow) {
   const id = x.key + "|" + slow;
   if (!blobs.has(id)) {
     const seq = x.seq(slow);
     const names = [...new Set(seq)];
-    const p = Promise.all(names.map(clip)).then(bufs => {
-      const byName = new Map(names.map((n, j) => [n, bufs[j]]));
-      return new Blob(seq.map(n => byName.get(n)), { type: "audio/mpeg" });
+    const p = Promise.all(names.map(clip)).then(sounds => {
+      const byName = new Map(names.map((n, j) => [n, sounds[j]]));
+      return wavBlob(seq.map(n => byName.get(n)));
     });
     p.catch(() => blobs.delete(id));
     blobs.set(id, p);
@@ -379,11 +404,14 @@ async function load(t, b, f, i, play) {
     catch { if (my === token) { $("now-title").textContent = "Could not load the lesson. Check the internet and tap it again."; current = null; } return; }
     if (my !== token) return;
     const start = done[x.key] ? 0 : fracOf(x);
+    // Resuming: stay muted until the saved place is set, so the first moment of the lesson is not heard.
+    if (play && start > 0) audio.muted = true;
     setSource(blob);
     audio.playbackRate = rateOf();
     audio.addEventListener("loadedmetadata", () => {
       audio.currentTime = Math.min(start * audio.duration, Math.max(0, audio.duration - 1));
       audio.playbackRate = rateOf();
+      audio.muted = false;
       playable = true;
     }, { once: true });
     $("now-title").textContent = `${DATA.langs[t].short} · ${x.num}. ${x.title}`;
